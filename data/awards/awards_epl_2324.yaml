@@ -1,0 +1,99 @@
+# English Premier League — 2023/24 Individual Awards
+# Window: 2023-08-11 to 2024-05-19 (final matchday)
+#
+# Use: this list is the calibration-window snapshot (training data covers
+# this season). Awards are used to (a) seed the "top established" profile
+# bin and (b) provide a baseline cross-check for the indicator's behaviour
+# at the start of the projection horizon (h=0).
+#
+# Each entry must include: award code, season, recipient(s), source_url
+# (public press release or official announcement), verified flag.
+
+season: "2023/24"
+country: "England"
+competition: "Premier League"
+
+awards:
+  - code: "PFA_POY"
+    name: "PFA Players' Player of the Year"
+    winner: "Phil Foden"
+    runners_up: []
+    source_url: "https://www.thepfa.com/awards/players-player-of-the-year-23-24"
+    verified: false  # widely reported; verify URL before submission
+    notes: "Manchester City; awarded April 2024"
+
+  - code: "FWA_FOTY"
+    name: "FWA Footballer of the Year"
+    winner: "Phil Foden"
+    runners_up: []
+    source_url: "https://www.footballwriters.co.uk"
+    verified: false
+    notes: "Awarded May 2024"
+
+  - code: "PL_POS"
+    name: "Premier League Player of the Season"
+    winner: "Phil Foden"
+    runners_up: []
+    source_url: "https://www.premierleague.com/news/3935996"
+    verified: false
+    notes: "End-of-season award"
+
+  - code: "PFA_YPY"
+    name: "PFA Young Player of the Year"
+    winner: "Cole Palmer"
+    runners_up: []
+    source_url: "https://www.thepfa.com/awards/young-player-of-the-year-23-24"
+    verified: false
+    notes: "Chelsea"
+
+  - code: "PL_YPS"
+    name: "Premier League Young Player of the Season"
+    winner: "Cole Palmer"
+    runners_up: []
+    source_url: "https://www.premierleague.com/news/3935997"
+    verified: false
+    notes: ""
+
+  - code: "GB"
+    name: "Premier League Golden Boot"
+    winner: "Erling Haaland"
+    runners_up: ["Cole Palmer"]
+    source_url: "https://www.premierleague.com/stats/top/players/goals"
+    verified: false
+    notes: "Haaland 27 goals (23/24); Palmer 22"
+
+  - code: "PMK"
+    name: "Premier League Playmaker of the Season"
+    winner: "Cole Palmer"
+    runners_up: []
+    source_url: "https://www.premierleague.com/stats/top/players/goal_assist"
+    verified: false
+    notes: "Palmer 11 assists in 23/24"
+
+  - code: "GG"
+    name: "Premier League Golden Glove"
+    winner: "David Raya"
+    runners_up: []
+    source_url: "https://www.premierleague.com/news/3946252"
+    verified: false
+    notes: "Arsenal; 16 clean sheets"
+
+  # PFA Team of the Year 2023/24 (11-player honour list, widely reported)
+  - code: "PFA_TOTY"
+    name: "PFA Team of the Year 2023/24"
+    winner: null  # team award
+    team:
+      - "David Raya"             # GK
+      - "Kieran Trippier"        # DEF
+      - "William Saliba"         # DEF
+      - "Virgil van Dijk"        # DEF
+      - "Josko Gvardiol"         # DEF
+      - "Rodri"                  # MID (Rodrigo Hernández Cascante)
+      - "Declan Rice"            # MID
+      - "Martin Ødegaard"        # MID
+      - "Phil Foden"             # FWD
+      - "Cole Palmer"            # MID/FWD
+      - "Erling Haaland"         # FWD
+    source_url: "https://www.thepfa.com/awards/team-of-the-year-23-24"
+    verified: false
+    notes: "Composition reported in May 2024"

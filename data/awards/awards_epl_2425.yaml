@@ -1,0 +1,90 @@
+# English Premier League — 2024/25 Individual Awards
+# Window: 2024-08-16 to 2025-05-25
+#
+# Use: this is the FIRST POST-CALIBRATION season. The model's projection
+# horizon h=1 corresponds to this season. Awards here are used as
+# face-validity ground truth: did the model project award recipients in
+# the top of their positional distribution before they received the award?
+#
+# Verification status: entries below were manually checked against official
+# PFA, FWA, and Premier League sources on 2026-05-22.
+
+season: "2024/25"
+country: "England"
+competition: "Premier League"
+
+awards:
+  - code: "PFA_POY"
+    name: "PFA Players' Player of the Year"
+    winner: "Mohamed Salah"
+    runners_up: []
+    source_url: "https://www.thepfa.com/news/2025/8/19/mo-salah-ppoty-2025"
+    verified: true
+    notes: "PFA official source; Liverpool; 29 league goals and 18 assists in 2024/25."
+
+  - code: "FWA_FOTY"
+    name: "FWA Footballer of the Year"
+    winner: "Mohamed Salah"
+    runners_up: []
+    source_url: "https://footballwriters.co.uk/awards/"
+    verified: true
+    notes: "FWA official awards page lists Mohamed Salah (Liverpool) as this year's winner; voted Footballer of the Year in May 2025."
+
+  - code: "PL_POS"
+    name: "Premier League Player of the Season"
+    winner: "Mohamed Salah"
+    runners_up: []
+    source_url: "https://www.premierleague.com/en/news/4314799/salah-wins-202425-ea-sports-player-of-the-season-award"
+    verified: true
+    notes: "Premier League official source; EA SPORTS Player of the Season 2024/25."
+
+  - code: "PFA_YPY"
+    name: "PFA Young Player of the Year"
+    winner: "Morgan Rogers"
+    candidates: ["Morgan Rogers", "Liam Delap", "Dean Huijsen", "Milos Kerkez", "Myles Lewis-Skelly", "Ethan Nwaneri"]
+    source_url: "https://www.thepfa.com/news/2025/8/19/morgan-rogers-pfa-young-player-of-the-year-2025"
+    verified: true
+    notes: "PFA official source; Top Six shortlist listed in source."
+
+  - code: "PL_YPS"
+    name: "Premier League Young Player of the Season"
+    winner: "Ryan Gravenberch"
+    candidates: ["Ryan Gravenberch", "Liam Delap", "Anthony Elanga", "Dean Huijsen", "Cole Palmer", "Joao Pedro", "Morgan Rogers", "William Saliba"]
+    source_url: "https://www.premierleague.com/en/news/4314802"
+    verified: true
+    notes: "Premier League official source; Hublot Young Player of the Season 2024/25. Shortlist source: https://www.premierleague.com/en/news/4309071."
+
+  - code: "GB"
+    name: "Premier League Golden Boot"
+    winner: "Mohamed Salah"
+    runners_up: []
+    source_url: "https://www.premierleague.com/en/news/4314803/salah-sweeps-202425-player-of-the-season-golden-boot-and-playmaker-awards"
+    verified: true
+    notes: "Premier League official source; Salah finished top scorer with 29 goals."
+
+  - code: "PMK"
+    name: "Premier League Playmaker of the Season"
+    winner: "Mohamed Salah"
+    runners_up: []
+    source_url: "https://www.premierleague.com/en/news/4314803/salah-sweeps-202425-player-of-the-season-golden-boot-and-playmaker-awards"
+    verified: true
+    notes: "Premier League official source; Salah led assists with 18."
+
+  - code: "PFA_TOTY"
+    name: "PFA Team of the Year 2024/25"
+    winner: null
+    team:
+      - "Mohamed Salah"
+      - "Virgil van Dijk"
+      - "Ryan Gravenberch"
+      - "Alexis Mac Allister"
+      - "William Saliba"
+      - "Gabriel Magalhaes"
+      - "Declan Rice"
+      - "Matz Sels"
+      - "Chris Wood"
+      - "Alexander Isak"
+      - "Milos Kerkez"
+    source_url: "https://www.thepfa.com/news/2025/8/19/pfa-pl-toty-2025"
+    verified: true
+    notes: "PFA official source; player-voted Premier League Team of the Year."

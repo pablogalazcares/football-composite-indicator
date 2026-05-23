@@ -1,0 +1,23 @@
+# English Premier League — 2025/26 Individual Awards
+# Window: 2025-08 to 2026-05 (season just concluded)
+#
+# Use: projection horizon h=2 from the model's perspective. Most awards
+# announced in late May / early June 2026. Author must verify all entries
+# before submission.
+
+season: "2025/26"
+country: "England"
+competition: "Premier League"
+
+# PLACEHOLDER: all entries require verification before submission.
+# The author should compile this list from official PFA / FWA / Premier
+# League announcements once the 2025/26 awards are finalised.
+
+awards: []
+
+notes: |
+  This file is left intentionally empty. The 2025/26 award cycle concludes
+  in late May / early June 2026 and the author should populate this file
+  with verified entries before submission. The face-validity analysis
+  (P07d_face_validity.py) gracefully skips an empty awards file and reports
+  the season as "not yet evaluated".
