@@ -2,7 +2,7 @@
 
 **Paper**: Galaz-Cares, P. & Sauré, D. (under review). *Measuring Technical–Tactical Performance in Football: A Composite Indicator Integrating Action Value and Defensive Pressure*. Science and Medicine in Football.
 
-**DOI (data + code)**: [to be assigned — Zenodo deposit in progress]
+**DOI (data + code)**: [10.5281/zenodo.20357644](https://doi.org/10.5281/zenodo.20357644)
 
 ---
 
