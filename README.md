@@ -33,10 +33,12 @@ data/
   derived/
     p07_projected_scores.parquet    Projected indicator panel (759 players, h=0 to h=5)
   awards/
-    awards_epl_2324.yaml            EPL individual awards 2023/24 (source-documented)
-    awards_epl_2425.yaml            EPL individual awards 2024/25
-    awards_epl_2526.yaml            EPL individual awards 2025/26
+    awards_epl_2324.yaml            EPL individual awards 2023/24 (auxiliary reference data)
+    awards_epl_2425.yaml            EPL individual awards 2024/25 (auxiliary reference data)
+    awards_epl_2526.yaml            EPL individual awards 2025/26 (auxiliary reference data)
 ```
+
+> **Note on awards files**: `data/awards/` contains manually curated records of EPL individual season awards (PFA Player of the Year, FWA Footballer of the Year, Golden Boot, etc.) used as auxiliary reference data during development. They are not part of the main analysis or any table/figure in the paper, but are released here for completeness under CC BY 4.0.
 
 ---
 
@@ -75,22 +77,32 @@ Random seed used throughout: **42**. Operative alpha: **0.10**.
 
 ### If you only have the derived panel
 
-The file `data/derived/p07_projected_scores.parquet` can be loaded directly for downstream analysis. Schema:
+The file `data/derived/p07_projected_scores.parquet` can be loaded directly for downstream analysis. The file is in **wide format** — one row per player, with separate columns for each projection horizon.
 
-| Column | Description |
-|---|---|
-| `player_id` | StatsBomb player identifier |
-| `player_name` | Player name |
-| `position_group` | GK / DEF / MID / FWD |
-| `age_h0` | Age at base season (2023/24) |
-| `horizon` | Projection horizon (0 = base season, 1–5 = projected) |
-| `score_composite` | Composite indicator (within-position percentile, 0–100) |
-| `score_OBV` | OBV component percentile |
-| `score_PSR` | Pressure Success Rate component percentile |
+Schema:
+
+| Column | Type | Description |
+|---|---|---|
+| `player_id` | int | StatsBomb player identifier |
+| `player_name` | str | Player name |
+| `position_group` | str | GK / DEF / MID / FWD |
+| `age_base` | float | Age at base season (2023/24) |
+| `score_pt_base` | float | Composite indicator at base season (within-position percentile, 0–100) |
+| `score_h0` | float | Composite indicator at h=0 (base season; equals `score_pt_base`) |
+| `score_h1` | float | Projected composite indicator at h=1 (one season ahead) |
+| `score_h2` | float | Projected composite indicator at h=2 |
+| `score_h3` | float | Projected composite indicator at h=3 |
+| `score_h4` | float | Projected composite indicator at h=4 |
+| `score_h5` | float | Projected composite indicator at h=5 |
+
+All scores are within-position percentiles on a 0–100 scale. N=759 players (projection pool C = A ∪ B).
 
 ```python
 import pandas as pd
 df = pd.read_parquet("data/derived/p07_projected_scores.parquet")
+# 759 rows, one per player
+# score_h0 to score_h5: projected composite indicator at each horizon
+print(df[["player_name", "position_group", "age_base", "score_h0", "score_h1", "score_h2"]].head())
 ```
 
 ---
@@ -121,12 +133,12 @@ Raw StatsBomb data are not redistributed. Documentation of the data version and 
 ## Citation
 
 ```bibtex
-@article{galaz-cares2025composite,
+@article{galaz-cares2026composite,
   author  = {Galaz-Cares, Pablo and Sauré, Denis},
   title   = {Measuring Technical--Tactical Performance in Football:
              A Composite Indicator Integrating Action Value and Defensive Pressure},
   journal = {Science and Medicine in Football},
-  year    = {2025},
+  year    = {2026},
   note    = {Under review}
 }
 ```
