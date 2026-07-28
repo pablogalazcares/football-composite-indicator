@@ -65,11 +65,15 @@ scripts/
   P06_projection_universe.py     Projection universe C = A union B (759 players)
   P07_recursive_projection.py    Recursive 5-season projection
   P13a_paper1_figures.py         All figures in the paper
+  P13b_fig_ranking_decay.py      Ranking-decay figure: Spearman ρ at horizon k vs k=0
   pipeline_utils.py              Shared utilities
 
 data/
   derived/
     p07_projected_scores.parquet    Projected indicator panel (759 players, h=0 to h=5), α = 0.06
+    p02b_ar1_for_against.csv        Year-on-year AR1 ρ of mean OBV by event type, position, direction
+    p07b_clipping_counts.csv        [0,100] clipping events of the projection, by horizon
+    p07c_profile_curves.csv         Trajectories of the 13 illustrative career-archetype players
     alpha_selection/
       p05d_alpha_grid_summary.csv       Per-α robust OOF ρ over 50 fold seeds
       p05d_argmax_per_seed.csv          Per-seed argmax of OOF ρ (clusters at α ≈ 0.06)
@@ -77,6 +81,8 @@ data/
       p05c06_extended_summary.csv       Shared-target bootstrap summary
       p05e_significance_summary.csv     Per-seed paired tests (5-fold / 10-fold / bootstrap)
       p05e_fold_scheme_argmax.csv       Robust argmax under 5-fold / 10-fold / LOO
+      p05c_fold_seed_sweep.csv          OOF ρ at α=0 vs α=0.06 across the 50 fold seeds
+      p05c06_extended_bootstrap_distribution.csv  Full 5,000-resample shared-target bootstrap draws
   awards/
     awards_epl_2324.yaml            EPL individual awards 2023/24 (auxiliary reference data)
     awards_epl_2425.yaml            EPL individual awards 2024/25 (auxiliary reference data)
@@ -121,6 +127,7 @@ python scripts/P05z_pin_operative_alpha.py        # pin α = 0.06 and refit oper
 python scripts/P06_projection_universe.py
 python scripts/P07_recursive_projection.py
 python scripts/P13a_paper1_figures.py
+python scripts/P13b_fig_ranking_decay.py          # ranking-decay figure
 ```
 
 Each script reads from `outputs/pipeline/` (prior steps) and writes its outputs there;
@@ -178,7 +185,7 @@ print(df[["player_name", "position_group", "age_base", "score_h0", "score_h1", "
 
 Code: MIT License (see `LICENSE`).
 
-Derived data (`p07_projected_scores.parquet`, `alpha_selection/*.csv`, `awards_epl_*.yaml`): released under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Please cite the paper if you use this dataset.
+Derived data (`p07_projected_scores.parquet`, `p02b_*.csv`, `p07b_*.csv`, `p07c_*.csv`, `alpha_selection/*.csv`, `awards_epl_*.yaml`): released under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Please cite the paper if you use this dataset.
 
 Raw StatsBomb data are not redistributed. Documentation of the data version and processing steps is available from the corresponding author upon request.
 
