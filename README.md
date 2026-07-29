@@ -1,8 +1,8 @@
 # Reproducibility Package — Football Composite Performance Indicator
 
-**Paper**: Galaz-Cares, P. & Sauré, D. (under review). *Measuring Technical–Tactical Performance in Football: A Composite Indicator Integrating Action Value and Defensive Pressure*. Science and Medicine in Football.
+**Paper**: Galaz-Cares, P. & Sauré, D. (under review). *The ranking-informativeness horizon of a composite football performance indicator*.
 
-**DOI (data + code)**: [10.5281/zenodo.20357644](https://doi.org/10.5281/zenodo.20357644)
+**DOI (data + code)**: [10.5281/zenodo.20357643](https://doi.org/10.5281/zenodo.20357643)
 This is the *concept* DOI; it always resolves to the latest archived version. The version underlying the submitted manuscript is **v1.1.0** (operative blend weight α = 0.06).
 
 ---
@@ -131,7 +131,8 @@ python scripts/P13b_fig_ranking_decay.py          # ranking-decay figure
 ```
 
 Each script reads from `outputs/pipeline/` (prior steps) and writes its outputs there;
-the α-selection scripts write their summaries to `outputs/paper1_smf/`.
+the α-selection scripts write their summaries to `outputs/alpha_selection/`; the
+copies published with this package are under `data/derived/alpha_selection/`.
 Random seed for the canonical partition: **42**; the fold-robust selection averages
 over **50** fold-seed partitions (seeds 1000–1049). Operative α: **0.06**.
 
@@ -194,13 +195,12 @@ Raw StatsBomb data are not redistributed. Documentation of the data version and 
 ## Citation
 
 ```bibtex
-@article{galaz-cares2026composite,
-  author  = {Galaz-Cares, Pablo and Sauré, Denis},
-  title   = {Measuring Technical--Tactical Performance in Football:
-             A Composite Indicator Integrating Action Value and Defensive Pressure},
-  journal = {Science and Medicine in Football},
-  year    = {2026},
-  note    = {Under review}
+@unpublished{galaz-cares2026composite,
+  author = {Galaz-Cares, Pablo and Sauré, Denis},
+  title  = {The ranking-informativeness horizon of a composite
+            football performance indicator},
+  year   = {2026},
+  note   = {Under review}
 }
 ```
 

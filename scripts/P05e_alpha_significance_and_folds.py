@@ -26,8 +26,8 @@ Reuses design_matrix / oof_predictions from P05c (zero drift).
 
 Outputs
 -------
-outputs/paper1_smf/p05e_significance_summary.csv
-outputs/paper1_smf/p05e_fold_scheme_argmax.csv
+outputs/alpha_selection/p05e_significance_summary.csv
+outputs/alpha_selection/p05e_fold_scheme_argmax.csv
 """
 
 from __future__ import annotations

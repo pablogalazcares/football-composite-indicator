@@ -5,7 +5,7 @@ P05c06 — Δρ inference at the operative weight alpha*=0.06
 Recomputes, at the NEW operative blend alpha*=0.06, the same inference the
 manuscript reports for the (former) alpha*=0.10:
   - fold-seed sweep (50 seeds) of rho_OOF at alpha=0 and alpha=0.06
-    -> refreshes outputs/paper1_smf/p05c_fold_seed_sweep.csv (was stale)
+    -> refreshes outputs/alpha_selection/p05c_fold_seed_sweep.csv (was stale)
   - canonical-seed rho_OOF at alpha in {0, 0.06, 1}
   - bootstrap (B=5000, players) of Delta rho vs pure OBV and vs pure PSR
   - Williams dependent-correlation test for each comparison
@@ -15,8 +15,8 @@ identical to P05c_significance. Reuses its functions verbatim.
 
 Outputs
 -------
-outputs/paper1_smf/p05c_fold_seed_sweep.csv           (refreshed, alpha=0.06)
-outputs/paper1_smf/p05c06_significance_summary.csv
+outputs/alpha_selection/p05c_fold_seed_sweep.csv           (refreshed, alpha=0.06)
+outputs/alpha_selection/p05c06_significance_summary.csv
 """
 
 from __future__ import annotations

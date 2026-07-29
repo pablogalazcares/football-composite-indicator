@@ -25,9 +25,9 @@ from P05c_significance to guarantee zero methodological drift.
 
 Outputs
 -------
-outputs/paper1_smf/p05d_alpha_grid_sweep_long.csv    (alpha, seed, rho)
-outputs/paper1_smf/p05d_alpha_grid_summary.csv       (per-alpha robust stats)
-outputs/paper1_smf/p05d_alpha_grid_canonical.csv     (alpha, rho at seed=42)
+outputs/alpha_selection/p05d_alpha_grid_sweep_long.csv    (alpha, seed, rho)
+outputs/alpha_selection/p05d_alpha_grid_summary.csv       (per-alpha robust stats)
+outputs/alpha_selection/p05d_alpha_grid_canonical.csv     (alpha, rho at seed=42)
 
 Console prints the robust argmax (max mean-rho alpha) and the canonical
 argmax, so the framing decision can be made from evidence.
