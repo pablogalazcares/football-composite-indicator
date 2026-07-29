@@ -28,8 +28,8 @@ score_t+1, comparing predictions f(score_t, α=0) and f(score_t, α=0.1)):
 
 Outputs
 -------
-outputs/paper1_smf/p05c_delta_rho_significance.csv
-outputs/paper1_smf/p05c_bootstrap_distribution.csv
+outputs/alpha_selection/p05c_delta_rho_significance.csv
+outputs/alpha_selection/p05c_bootstrap_distribution.csv
 
 Notes
 -----
@@ -51,7 +51,7 @@ from sklearn.model_selection import KFold
 
 REPO = Path(__file__).resolve().parents[2]
 TRAINING_PAIRS = REPO / "outputs/pipeline/p04_training_pairs_1000min.parquet"
-OUT_DIR = REPO / "outputs/paper1_smf"
+OUT_DIR = REPO / "outputs/alpha_selection"
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 
 RIDGE_LAMBDA = 10.0

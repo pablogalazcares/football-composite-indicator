@@ -18,8 +18,8 @@ Significance test (all evaluated on α*=0.06 composite target):
 
 Outputs
 -------
-outputs/paper1_smf/p05c06_extended_summary.csv
-outputs/paper1_smf/p05c06_extended_bootstrap_distribution.csv
+outputs/alpha_selection/p05c06_extended_summary.csv
+outputs/alpha_selection/p05c06_extended_bootstrap_distribution.csv
 """
 
 from __future__ import annotations
@@ -34,7 +34,7 @@ from sklearn.model_selection import KFold
 
 REPO = Path(__file__).resolve().parents[2]
 TRAINING_PAIRS = REPO / "outputs/pipeline/p04_training_pairs_1000min.parquet"
-OUT_DIR = REPO / "outputs/paper1_smf"
+OUT_DIR = REPO / "outputs/alpha_selection"
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 
 ALPHA_STAR = 0.06
