@@ -1,6 +1,6 @@
 # Reproducibility Package — Football Composite Performance Indicator
 
-**Paper**: Galaz-Cares, P. & Sauré, D. (under review). *A composite football performance indicator with a validated three-season ranking horizon*.
+**Paper**: Galaz-Cares, P. & Sauré, D. (under review). *Scouting beyond current performance: a composite indicator of on-ball value and pressure for projecting footballer development, and how far ahead it can be trusted*.
 
 **DOI (data + code)**: [10.5281/zenodo.20357643](https://doi.org/10.5281/zenodo.20357643)
 This is the *concept* DOI; it always resolves to the latest archived version. The version underlying the submitted manuscript is **v1.1.0** (operative blend weight α = 0.06).
@@ -197,8 +197,9 @@ Raw StatsBomb data are not redistributed. Documentation of the data version and 
 ```bibtex
 @unpublished{galaz-cares2026composite,
   author = {Galaz-Cares, Pablo and Sauré, Denis},
-  title  = {A composite football performance indicator with a
-            validated three-season ranking horizon},
+  title  = {Scouting beyond current performance: a composite indicator
+            of on-ball value and pressure for projecting footballer
+            development, and how far ahead it can be trusted},
   year   = {2026},
   note   = {Under review}
 }
