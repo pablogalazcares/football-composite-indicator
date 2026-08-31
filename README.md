@@ -1,9 +1,9 @@
 # Reproducibility Package — Football Composite Performance Indicator
 
-**Paper**: Galaz-Cares, P. & Sauré, D. (under review). *Scouting beyond current performance: a composite indicator of on-ball value and pressure for projecting footballer development, and how far ahead it can be trusted*.
+**Paper**: Galaz-Cares, P. & Sauré, D. (under review). *What a projected performance indicator can and cannot tell a club: ranking horizons for on-ball value and pressure in the Premier League*.
 
 **DOI (data + code)**: [10.5281/zenodo.20357643](https://doi.org/10.5281/zenodo.20357643)
-This is the *concept* DOI; it always resolves to the latest archived version. The version underlying the submitted manuscript is **v1.1.0** (operative blend weight α = 0.06).
+This is the *concept* DOI; it always resolves to the latest archived version. The version underlying the submitted manuscript is **v1.3.0** (operative blend weight α = 0.06).
 
 ---
 
@@ -64,6 +64,7 @@ scripts/
   P05z_pin_operative_alpha.py    Pin operative weight to α = 0.06; refit P05 artifacts
   P06_projection_universe.py     Projection universe C = A union B (759 players)
   P07_recursive_projection.py    Recursive 5-season projection
+  P07b_clipping_audit.py         Clipping audit of the projection (Supplementary S3)
   P13a_paper1_figures.py         All figures in the paper
   P13b_fig_ranking_decay.py      Ranking-decay figure: Spearman ρ at horizon k vs k=0
   pipeline_utils.py              Shared utilities
@@ -126,6 +127,7 @@ python scripts/P05c06_extended.py                 # shared-target bootstrap vs O
 python scripts/P05z_pin_operative_alpha.py        # pin α = 0.06 and refit operative artifacts
 python scripts/P06_projection_universe.py
 python scripts/P07_recursive_projection.py
+python scripts/P07b_clipping_audit.py             # clipping audit
 python scripts/P13a_paper1_figures.py
 python scripts/P13b_fig_ranking_decay.py          # ranking-decay figure
 ```
@@ -197,9 +199,9 @@ Raw StatsBomb data are not redistributed. Documentation of the data version and 
 ```bibtex
 @unpublished{galaz-cares2026composite,
   author = {Galaz-Cares, Pablo and Sauré, Denis},
-  title  = {Scouting beyond current performance: a composite indicator
-            of on-ball value and pressure for projecting footballer
-            development, and how far ahead it can be trusted},
+  title  = {What a projected performance indicator can and cannot tell
+            a club: ranking horizons for on-ball value and pressure in
+            the Premier League},
   year   = {2026},
   note   = {Under review}
 }
