@@ -6,12 +6,24 @@ Sports Science & Coaching, manuscript SPO-26-1593 (revision 1).
 
 **DOI (data + code)**: [10.5281/zenodo.20357643](https://doi.org/10.5281/zenodo.20357643)
 This is the *concept* DOI; it always resolves to the latest archived version. The version underlying the **revised**
-manuscript is **v2.0.0**. Versions v1.0.0–v1.3.0 correspond to the originally submitted version (composite OBV + PSR
+manuscript is **v2.0.1**. Versions v1.0.0–v1.3.0 correspond to the originally submitted version (composite OBV + PSR
 indicator), which the revision replaces; they are kept below for the record.
 
 ---
 
-## v2.0.0: revision R1
+## v2.0.x: revision R1
+
+**v2.0.1** (2026-11-10) accompanies the final text of the revised manuscript. It adds no analysis and changes no
+reported number. The report stages (`r13_report.py`, `r13b_framing.py`) now also write the macros that the edited text
+cites:
+- sensitivity ranges by type of variant and their intervals by exposure band;
+- the lower bound of the minutes validation;
+- the event-type cut-off of the efficiency summary.
+
+They also use the manuscript's terminology in table labels: "current-season score", "fully/partially observed
+clubs" and "constrained age curves". The manuscript tests check the new terminology. Re-running the report stages on
+the outputs of a clean run from the raw files reproduces the released `numbers.tex`, `design_numbers.tex`,
+`paper_numbers.json` and all tables exactly. **v2.0.0** (2026-11-10) was the first release of the revision.
 
 The revision replaces the model-implied "ranking horizon" with **observed** rank persistence and out-of-time forecast
 accuracy, using a third season (2024/25). Everything estimated from data is fixed on 2022/23 → 2023/24 and evaluated
@@ -258,11 +270,12 @@ Raw StatsBomb data are not redistributed. Documentation of the data version and 
 ```bibtex
 @unpublished{galaz-cares2026composite,
   author = {Galaz-Cares, Pablo and Sauré, Denis},
-  title  = {What a projected performance indicator can and cannot tell
-            a club: ranking horizons for on-ball value and pressure in
-            the Premier League},
+  title  = {Ranking {Premier League} players one and two seasons ahead
+            with on-ball value: observed persistence, forecast accuracy
+            and uncertainty},
   year   = {2026},
-  note   = {Under review}
+  note   = {Under review (revision 1), International Journal of Sports
+            Science \& Coaching}
 }
 ```
 

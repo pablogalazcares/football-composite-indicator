@@ -1,29 +1,29 @@
 \begin{tabular}{lcccc}
 \toprule
-Forecast & $\rho_{\mathrm{W}}$ & $\Delta\rho_{\mathrm{W}}$ vs current value & MAE & Top-quartile precision \\
+Forecast & $\rho_{\mathrm{W}}$ & $\Delta\rho_{\mathrm{W}}$ vs M0 & MAE & Top-quartile precision \\
 \midrule
 \multicolumn{5}{l}{\textit{Per-action efficiency, one season ahead} ($n$ = 168)} \\
-Current value (M0) & 0.51 [0.39, 0.62] & -- & 7.2 & 0.44 [0.34, 0.63] \\
-AR(1) + position (M1) & 0.51 [0.39, 0.62] & same ranks as M0 & 6.3 & 0.44 [0.34, 0.63] \\
+Current-season score (M0) & 0.51 [0.39, 0.62] & -- & 7.2 & 0.44 [0.34, 0.63] \\
+AR(1) + group (M1) & 0.51 [0.39, 0.62] & same ranks as M0 & 6.3 & 0.44 [0.34, 0.63] \\
 M1 + age (M2) & 0.51 [0.38, 0.62] & $-$0.004 [$-$0.021, 0.010] & 6.3 & 0.49 [0.34, 0.64] \\
-M2 by position (M3) & 0.51 [0.38, 0.61] & $-$0.009 [$-$0.033, 0.013] & 6.3 & 0.47 [0.34, 0.63] \\
+M2, age by group (M3) & 0.51 [0.38, 0.61] & $-$0.009 [$-$0.033, 0.013] & 6.3 & 0.47 [0.34, 0.63] \\
 \addlinespace
 \multicolumn{5}{l}{\textit{Per-action efficiency, two seasons ahead} ($n$ = 134)} \\
-Current value (M0) & 0.29 [0.11, 0.43] & -- & 8.4 & 0.35 [0.21, 0.53] \\
-AR(1) + position (M1) & 0.29 [0.11, 0.43] & same ranks as M0 & 7.4 & 0.35 [0.21, 0.53] \\
+Current-season score (M0) & 0.29 [0.11, 0.43] & -- & 8.4 & 0.35 [0.21, 0.53] \\
+AR(1) + group (M1) & 0.29 [0.11, 0.43] & same ranks as M0 & 7.4 & 0.35 [0.21, 0.53] \\
 M1 + age (M2) & 0.25 [0.08, 0.41] & $-$0.033 [$-$0.098, 0.024] & 7.5 & 0.29 [0.17, 0.47] \\
-M2 by position (M3) & 0.27 [0.10, 0.42] & $-$0.019 [$-$0.100, 0.053] & 7.5 & 0.32 [0.19, 0.51] \\
+M2, age by group (M3) & 0.27 [0.10, 0.42] & $-$0.019 [$-$0.100, 0.053] & 7.5 & 0.32 [0.19, 0.51] \\
 \addlinespace
 \multicolumn{5}{l}{\textit{Contribution per 90 minutes, one season ahead} ($n$ = 168)} \\
-Current value (M0) & 0.50 [0.37, 0.61] & -- & 22.1 & 0.56 [0.42, 0.70] \\
-AR(1) + position (M1) & 0.50 [0.37, 0.61] & same ranks as M0 & 21.4 & 0.56 [0.42, 0.70] \\
+Current-season score (M0) & 0.50 [0.37, 0.61] & -- & 22.1 & 0.56 [0.42, 0.70] \\
+AR(1) + group (M1) & 0.50 [0.37, 0.61] & same ranks as M0 & 21.4 & 0.56 [0.42, 0.70] \\
 M1 + age (M2) & 0.46 [0.34, 0.58] & $-$0.034 [$-$0.072, 0.002] & 21.7 & 0.58 [0.42, 0.70] \\
-M2 by position (M3) & 0.47 [0.34, 0.58] & $-$0.032 [$-$0.069, 0.004] & 21.7 & 0.58 [0.42, 0.70] \\
+M2, age by group (M3) & 0.47 [0.34, 0.58] & $-$0.032 [$-$0.069, 0.004] & 21.7 & 0.58 [0.42, 0.70] \\
 \addlinespace
 \multicolumn{5}{l}{\textit{Contribution per 90 minutes, two seasons ahead} ($n$ = 134)} \\
-Current value (M0) & 0.49 [0.34, 0.60] & -- & 24.1 & 0.50 [0.32, 0.65] \\
-AR(1) + position (M1) & 0.49 [0.34, 0.60] & same ranks as M0 & 24.0 & 0.50 [0.32, 0.65] \\
+Current-season score (M0) & 0.49 [0.34, 0.60] & -- & 24.1 & 0.50 [0.32, 0.65] \\
+AR(1) + group (M1) & 0.49 [0.34, 0.60] & same ranks as M0 & 24.0 & 0.50 [0.32, 0.65] \\
 M1 + age (M2) & 0.41 [0.25, 0.54] & $-$0.083 [$-$0.167, 0.004] & 24.6 & 0.41 [0.28, 0.59] \\
-M2 by position (M3) & 0.41 [0.25, 0.54] & $-$0.084 [$-$0.171, 0.004] & 24.4 & 0.41 [0.29, 0.60] \\
+M2, age by group (M3) & 0.41 [0.25, 0.54] & $-$0.084 [$-$0.171, 0.004] & 24.4 & 0.41 [0.29, 0.60] \\
 \bottomrule
 \end{tabular}
