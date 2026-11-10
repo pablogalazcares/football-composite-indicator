@@ -11,6 +11,8 @@ r13_report.run() llama a `extend(cfg, R)` antes de escribir el registro. Agrega:
 from __future__ import annotations
 
 import json
+import re
+from pathlib import Path
 
 import matplotlib
 
@@ -63,6 +65,11 @@ def design_numbers(cfg: Config) -> None:
          f"\\newcommand{{\\AgeCentre}}{{{int(cfg.raw['models']['age_center'])}}}",
          "\\newcommand{\\NFolds}{five}",
          f"\\newcommand{{\\SeedValue}}{{{cfg.seed}}}"]
+    # corte de correlación interanual para incluir un tipo de evento: se lee del código de r04 para que no diverja
+    src = (Path(__file__).parent / "r04_indicator.py").read_text()
+    cut = sorted(set(re.findall(r"rf >= ([0-9.]+)", src)))
+    assert len(cut) == 1, f"corte de tipos de evento ambiguo en r04: {cut}"
+    L.append(f"\\newcommand{{\\EventTypeCutoff}}{{{float(cut[0]):.2f}}}")
     cfg.res("design_numbers.tex").write_text("\n".join(L) + "\n")
 
 
@@ -98,9 +105,9 @@ def tables_and_figure(cfg: Config) -> None:
     # precisión, ambos resúmenes: M0–M3, Δρ_W frente a M0, MAE y precisión del cuartil superior (todo preespecificado)
     rob = j(cfg, "robustness.json")
     L = ["\\begin{tabular}{lcccc}", "\\toprule",
-         "Forecast & $\\rho_{\\mathrm{W}}$ & $\\Delta\\rho_{\\mathrm{W}}$ vs current value & MAE & Top-quartile precision \\\\",
+         "Forecast & $\\rho_{\\mathrm{W}}$ & $\\Delta\\rho_{\\mathrm{W}}$ vs M0 & MAE & Top-quartile precision \\\\",
          "\\midrule"]
-    names = {"M0": "Current value (M0)", "M1": "AR(1) + position (M1)", "M2": "M1 + age (M2)", "M3": "M2 by position (M3)"}
+    names = {"M0": "Current-season score (M0)", "M1": "AR(1) + group (M1)", "M2": "M1 + age (M2)", "M3": "M2, age by group (M3)"}
     for slab, src in (("Per-action efficiency", "eff"), ("Contribution per 90 minutes", "vol")):
         for key, hz in (("B->C", "one season ahead"), ("A->C", "two seasons ahead")):
             a = mm["accuracy"][key] if src == "eff" else rob["R0_completed"]["vol_accuracy"][key]
@@ -170,7 +177,7 @@ def tables_and_figure(cfg: Config) -> None:
 def supplement_tables(cfg: Config) -> None:
     cov = pd.read_csv(cfg.out("coverage_by_club_season.csv"))
     man = j(cfg, "ingest_manifest.json")
-    L = ["\\begin{tabular}{lccc}", "\\toprule", "Season & Matches with event data & Clubs with all matches & Clubs with partial coverage \\\\", "\\midrule"]
+    L = ["\\begin{tabular}{lccc}", "\\toprule", "Season & Matches with event data & Fully observed clubs & Partially observed clubs \\\\", "\\midrule"]
     for s, nm in (("A", "2022/23"), ("B", "2023/24"), ("C", "2024/25")):
         c = cov[cov.season == s]
         full = int((c.matches_covered == 38).sum())
@@ -190,7 +197,7 @@ def supplement_tables(cfg: Config) -> None:
     mf = j(cfg, "model_fits.json")
     ci = mf["M2_coef_ci95"]
     L = ["\\begin{tabular}{lcc}", "\\toprule", "Term & M2 (95\\% bootstrap CI) & M3 \\\\", "\\midrule"]
-    lab = {"intercept": "Intercept", "s_t": "Current value", "pos_MID": "Midfielder (vs defender)", "pos_FWD": "Forward (vs defender)",
+    lab = {"intercept": "Intercept", "s_t": "Current-season score", "pos_MID": "Midfielder (vs defender)", "pos_FWD": "Forward (vs defender)",
            "age_c": "Age $-$ 26", "age_c2": "(Age $-$ 26)$^2$", "age_c_x_MID": "(Age $-$ 26) $\\times$ midfielder",
            "age_c2_x_MID": "(Age $-$ 26)$^2$ $\\times$ midfielder", "age_c_x_FWD": "(Age $-$ 26) $\\times$ forward",
            "age_c2_x_FWD": "(Age $-$ 26)$^2$ $\\times$ forward"}
@@ -201,11 +208,11 @@ def supplement_tables(cfg: Config) -> None:
     L += ["\\bottomrule", "\\end{tabular}"]
     _table(cfg, "tab_models.tex", L)
     att = j(cfg, "attrition.json")
-    L = ["\\begin{tabular}{llcc}", "\\toprule", "Transition & Club coverage in first season & $n$ & $\\rho_{\\mathrm{W}}$ (95\\% CI) \\\\", "\\midrule"]
+    L = ["\\begin{tabular}{llcc}", "\\toprule", "Transition & Club in first season & $n$ & $\\rho_{\\mathrm{W}}$ (95\\% CI) \\\\", "\\midrule"]
     for k_, v in att["coverage_strata"].items():
         t, s = k_.split("|")
         tt = t.replace("->", ARROW)
-        cov_lab = "partial (20 matches)" if s == "partial_20" else "full (38 matches)"
+        cov_lab = "partially observed (20 matches)" if s == "partial_20" else "fully observed (38 matches)"
         L.append(f"{tt} & {cov_lab} & {v['n']} & "
                  f"{num(v['rho_W'])} [{num(v['ci95'][0])}, {num(v['ci95'][1])}] \\\\")
     L += ["\\bottomrule", "\\end{tabular}"]
@@ -266,6 +273,21 @@ def extra_macros(cfg: Config, R) -> None:
     R.add("sens.nDSigNeg", sum(c[1] < 0 for c in dci), "int")
     R.add("sens.nDSigPos", sum(c[0] > 0 for c in dci), "int")
     R.add("sens.nVariants", len(v), "int")
+    # decisiones analíticas (sin pesos iguales ni tramos de exposición, que cambian el resumen o la muestra)
+    choices = ("macro_0.5", "canonical_position", "min_500", "min_750", "share_club_30", "with_goalkeepers",
+               "same_group_only")
+    for key, lab in (("B->C", "k1"), ("A->C", "k2")):
+        vals = [sens[c][key]["rho_obs_W"]["est"] for c in choices]
+        R.add(f"sens.{lab}.choiceMin", min(vals))
+        R.add(f"sens.{lab}.choiceMax", max(vals))
+        R.add(f"sens.{lab}.expLow", sens["exposure_1000_1999_at_t"][key]["rho_obs_W"]["est"])
+        R.add(f"sens.{lab}.expHigh", sens["exposure_ge2000_at_t"][key]["rho_obs_W"]["est"])
+        R.add_est(f"sens.{lab}.expHigh", sens["exposure_ge2000_at_t"][key]["rho_obs_W"])
+        R.add_est(f"sens.{lab}.expLow", sens["exposure_1000_1999_at_t"][key]["rho_obs_W"])
+    R.add("sens.equalWeights.k2", sens["equal_weights"]["A->C"]["rho_obs_W"]["est"])
+    # cota inferior de la correlación de los totales de minutos, truncada a tres decimales ("above 0.999")
+    R.add("minutes.rhoTotalsFloor", np.floor(min(mv["A"]["season_total_spearman"],
+                                                 mv["B"]["season_total_spearman"]) * 1000) / 1000, "r3")
     R.add("sens.equalWeights.k1", sens["equal_weights"]["B->C"]["rho_obs_W"]["est"])
     R.add("sens.legacyAB", sens["legacy_vs_revision_AB"]["legacy_rho_W"]["est"])
     att = j(cfg, "attrition.json")

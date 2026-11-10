@@ -67,6 +67,12 @@ TERMS = [
     (r"peak age|age of peak", "usar 'age effect' con IC"),
     (r"\bEPL\b", "usar 'Premier League'"),
     (r"\bPSR\b|pressure success rate", "PSR solo en el apéndice del suplemento"),
+    # glosario de la reescritura por legibilidad (results/glosario_R1.md)
+    (r"regular players", "usar 'eligible players'"),
+    (r"implied horizon|rank agreement", "usar 'model-implied persistence'"),
+    (r"current value\b|current season's value", "usar 'current-season score' (M0)"),
+    (r"covered minutes|partially covered|club coverage", "usar 'observed minutes' y 'fully/partially observed clubs'"),
+    (r"imposed age", "usar 'constrained age curves'"),
 ]
 
 

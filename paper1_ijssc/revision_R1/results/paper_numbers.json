@@ -777,6 +777,44 @@
   "sens.nDSigNeg": 2,
   "sens.nDSigPos": 0,
   "sens.nVariants": 11,
+  "sens.k1.choiceMin": 0.45084795748141965,
+  "sens.k1.choiceMax": 0.5237068917017439,
+  "sens.k1.expLow": 0.4839071023686408,
+  "sens.k1.expHigh": 0.5503327840990179,
+  "sens.k1.expHigh.est": 0.5503327840990179,
+  "sens.k1.expHigh.lo": 0.3509889431571861,
+  "sens.k1.expHigh.hi": 0.6864352855378959,
+  "sens.k1.expHigh.ci": [
+    0.3509889431571861,
+    0.6864352855378959
+  ],
+  "sens.k1.expLow.est": 0.4839071023686408,
+  "sens.k1.expLow.lo": 0.28988544544849704,
+  "sens.k1.expLow.hi": 0.623494582028909,
+  "sens.k1.expLow.ci": [
+    0.28988544544849704,
+    0.623494582028909
+  ],
+  "sens.k2.choiceMin": 0.24830140263979775,
+  "sens.k2.choiceMax": 0.307784971810119,
+  "sens.k2.expLow": 0.18394389848365533,
+  "sens.k2.expHigh": 0.3879594764210149,
+  "sens.k2.expHigh.est": 0.3879594764210149,
+  "sens.k2.expHigh.lo": 0.07615284266341951,
+  "sens.k2.expHigh.hi": 0.614069887412507,
+  "sens.k2.expHigh.ci": [
+    0.07615284266341951,
+    0.614069887412507
+  ],
+  "sens.k2.expLow.est": 0.18394389848365533,
+  "sens.k2.expLow.lo": -0.05804661346134086,
+  "sens.k2.expLow.hi": 0.3891358113076222,
+  "sens.k2.expLow.ci": [
+    -0.05804661346134086,
+    0.3891358113076222
+  ],
+  "sens.equalWeights.k2": 0.21710174406858607,
+  "minutes.rhoTotalsFloor": 0.999,
   "sens.equalWeights.k1": 0.3640609730169941,
   "sens.legacyAB": 0.49522726988565324,
   "att.retention.AB.young": 0.676,

@@ -94,11 +94,11 @@ def fig_implied_vs_observed(cfg, mm, imp):
     ks = np.array([1, 2])
     sub = imp["submitted_counterfactuals_from_d02"]["within_weighted_operative"][:2]
     ax.plot(ks - 0.09, sub, color=BLUE, lw=1.5, marker="o", ms=5, mec="white", mew=1,
-            label="Projection with imposed age curves vs current value")
+            label="Projection with constrained age curves vs current-season score")
     iv = imp["implied_vs_observed"]
-    series = (([iv["k1"]["implied_M2_W"], iv["k2"]["implied_M2_W"]], BLUE, "s", "--", "Model M2 projection vs current value", -0.03),
+    series = (([iv["k1"]["implied_M2_W"], iv["k2"]["implied_M2_W"]], BLUE, "s", "--", "Model M2 projection vs current-season score", -0.03),
               ([iv["k1"]["observed_persistence_W"], iv["k2"]["observed_persistence_W"]], ORANGE, "o", "-",
-               "Observed persistence (current value as forecast)", 0.03),
+               "Observed persistence (current-season score as forecast)", 0.03),
               ([iv["k1"]["accuracy_M2_W"], iv["k2"]["accuracy_M2_W"]], AQUA, "o", "-", "Model M2 forecast vs observed value", 0.09))
     for ser, col, mk, ls, lab, dx in series:
         y = [v["est"] for v in ser]
@@ -271,7 +271,7 @@ def tables(cfg, mm, unc, att, ext, sens):
     L += ["\\bottomrule", "\\end{tabular}"]
     (T / "tab_sensitivity.tex").write_text("\n".join(L) + "\n")
     L = ["\\begin{tabular}{llrcccc}", "\\toprule",
-         "Transition & Status next season & $n$ & Mean age & Aged 30+ & Mean score & Partial-coverage club \\\\", "\\midrule"]
+         "Transition & Status next season & $n$ & Mean age & Aged 30+ & Mean score & Partially observed club \\\\", "\\midrule"]
     for key, rowsx in att["tables"].items():
         if "|" in key:
             continue

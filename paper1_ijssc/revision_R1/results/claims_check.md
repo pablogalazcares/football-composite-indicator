@@ -52,7 +52,7 @@ Estados:
 | # | Afirmación | Evidencia | Estado |
 |---|---|---|---|
 | C1 | La eficiencia ordena moderadamente a una temporada y débilmente a dos | A5 | S |
-| C2 | Los modelos con edad no agregan nada en este horizonte | A6 | Q |
+| C2 | Agregar la edad no mejoró el ranking en este horizonte, aunque no se descarta una mejora pequeña (antes "add nothing"; corregido en la reescritura) | A6 | Q |
 | C3 | El acuerdo proyección–actual no mide el desempeño futuro | A12 | S |
 | C4 | Resumir por 90 minutos conserva más orden a dos temporadas, pero su vínculo con el valor de mercado refleja diferencias entre clubes | A9, A10 | E |
 | C5 | Útil a una temporada y, con más cautela, a dos | A5, A8, A9 | Q |
@@ -68,3 +68,27 @@ Estados:
 | D5 | Foden: puesto 48 de 67 en eficiencia y 25 en contribución (2023/24) | `transitions.parquet`; macros `foden.*` | S |
 | D6 | OBV valora acciones de arquero; tipo y versión no publicados | statsbomb_obv_2021 (hudl.com, consultado el 2026-11-09) | L |
 | D7 | Los clubes parciales solo se observan contra los diez completos | `minutes_player_match.parquet`: 90 partidos entre completos, 200 entre completo y parcial, 0 entre parciales | S |
+
+## Reescritura por legibilidad (2026-11-10): afirmaciones nuevas o reformuladas
+
+Ninguna cifra cambió; las macros nuevas salen de resultados existentes (`r13b_framing.py › extra_macros`).
+
+| # | Afirmación | Evidencia | Estado |
+|---|---|---|---|
+| W1 | La exploración previa de 2024/25 no informó el diseño | `PREREGISTRO.md` §0 ("ninguna decisión de diseño … se elige mirando 2024/25"; todo viene de SPEC_R1 §3 y de A→B); confirmado por Pablo el 2026-11-10 | S |
+| W2 | Ninguna elección del plan se ajustó a las correlaciones exploradas en 2024/25 (0,46 y 0,31) | `PREREGISTRO.md` §0; todo lo estimado viene de A→B (`r06_models`) | S |
+| W3 | Tabla 1: estado de cada análisis (primario, secundario, exploratorio; M3 exploratorio) | `PREREGISTRO.md` §2 y §4 (H1–H3; M3 exploratorio en P2); `PREREGISTRO_ADENDA_1.md`; `PREREGISTRO_ADENDA_2.md` | S |
+| W4 | Totales de minutos correlacionan por encima de 0,999 | `minutes_validation.json › season_total_spearman` = 0,99997 y 0,99993; macro `\RMinutesRhoTotalsFloor` | S |
+| W5 | Las diferencias se calculan antes de redondear (0,21 = 0,4932 − 0,2856) | `addendum1.json › E3.persistence_A->C` | S |
+| W6 | Robustez por decisiones analíticas: 0,45–0,52 a una temporada y 0,25–0,31 a dos (7 variantes: umbrales, posición canónica, pesos de dirección 0,5, arqueros, mismo grupo) | `sensitivity.json`; macros `\RSensKOneChoiceMin/Max`, `\RSensKTwoChoiceMin/Max` | S |
+| W7 | Más persistencia con más minutos (≥ 2.000: 0,55 y 0,39; 1.000–1.999: 0,48 y 0,18) | `sensitivity.json › exposure_*`; macros `\RSensKOneExpHigh/Low`, `\RSensKTwoExpHigh/Low` | S |
+| W8 | Con pesos iguales la persistencia baja a 0,36 y 0,22 | `sensitivity.json › equal_weights` | S |
+| W9 | Con pesos de atrición y bootstrap conjunto, todo cambio estimado por la edad fue negativo; límite superior máximo 0,047 | `tab_model_robust.tex` (8 estimaciones negativas); `robustness.json › R4, R5` | S |
+| W10 | Esa mejora posible sería pequeña frente a la caída de la persistencia de 0,51 a 0,29 | 0,047 frente a 0,229 | Q (comparación interpretativa, aprobada por Pablo) |
+| W11 | El MAE del modelo con edad cambia −0,9 puntos, una décima de la DE (9,1) | `robustness.json`; macros `\RRobMaeDiffEffBCEst`, `\RRobScaleEffSdC` | S |
+| W12 | La contribución persiste al menos tanto entre quienes cambian de club (0,60) como entre quienes se quedan (0,48) | `robustness.json › R1_club_context.A->C` | E |
+| W13 | La eficiencia se asocia a lo sumo débilmente con minutos y valor de mercado | `external.json` (minutos 0,04 y 0,09); `addendum1.json › E2` (0,04, 0,04 y 0,19 [0,08; 0,29]) | S |
+| W14 | Entre 2023/24 y 2024/25 la proporción de mayores de 30 entre quienes salen y quienes siguen es similar | `tab_attrition.tex` (15 % frente a 17 %) | S |
+| W15 | Introducción, último párrafo: el acuerdo de una proyección con el ranking actual puede parecer una medida de cuánto dura el ranking | Argumento (es lo que hacía la versión enviada; sin cita) | Q |
+| W16 | "Model-implied persistence" es propiedad del modelo; vale uno si la proyección depende solo del score actual | Suplemento S5 (álgebra y contrafactuales) | S |
+| W17 | Precisión del cuartil superior de M0 = retención del cuartil superior (0,44) | `tab_accuracy_both.tex` (M0, 0,44 [0,34; 0,63], bootstrap) y `tab_top_quartile_both.tex` (0,44, Wilson) | S |
