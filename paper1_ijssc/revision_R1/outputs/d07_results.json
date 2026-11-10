@@ -1,0 +1,163 @@
+{
+  "source": "paper1_3seasons/outputs s01/s02 (2026-06-04), minutes proxy x1.333",
+  "min_threshold_0": {
+    "k1_2324_to_2425_naive_current_score": {
+      "n": 336,
+      "rho": 0.328,
+      "ci95": [
+        0.223,
+        0.426
+      ],
+      "within": {
+        "GK": -0.129,
+        "DEF": 0.339,
+        "MID": 0.173,
+        "FWD": 0.548
+      },
+      "within_weighted": 0.318
+    },
+    "k1_2324_to_2425_model_projection": {
+      "n": 336,
+      "rho": 0.297,
+      "ci95": [
+        0.186,
+        0.4
+      ],
+      "within": {
+        "GK": -0.151,
+        "DEF": 0.319,
+        "MID": 0.161,
+        "FWD": 0.52
+      },
+      "within_weighted": 0.297
+    },
+    "k1_paper_rho_projection_vs_base": 0.943,
+    "k2_2223_to_2425_naive_current_score": {
+      "n": 302,
+      "rho": 0.293,
+      "ci95": [
+        0.176,
+        0.399
+      ],
+      "within": {
+        "GK": 0.58,
+        "DEF": 0.082,
+        "MID": 0.201,
+        "FWD": 0.403
+      },
+      "within_weighted": 0.254
+    },
+    "k2_2223_to_2425_model_projection": {
+      "n": 302,
+      "rho": 0.22,
+      "ci95": [
+        0.105,
+        0.331
+      ],
+      "within": {
+        "GK": 0.298,
+        "DEF": 0.084,
+        "MID": 0.091,
+        "FWD": 0.362
+      },
+      "within_weighted": 0.19
+    },
+    "k2_paper_rho_projection_vs_base": 0.69,
+    "k1_2223_to_2324_naive_current_score": {
+      "n": 342,
+      "rho": 0.353,
+      "ci95": [
+        0.251,
+        0.45
+      ],
+      "within": {
+        "GK": -0.068,
+        "DEF": 0.317,
+        "MID": 0.226,
+        "FWD": 0.527
+      },
+      "within_weighted": 0.33
+    },
+    "AR1_implied_k2_from_k1_new_transition": 0.108
+  },
+  "min_threshold_1000": {
+    "k1_2324_to_2425_naive_current_score": {
+      "n": 211,
+      "rho": 0.458,
+      "ci95": [
+        0.336,
+        0.558
+      ],
+      "within": {
+        "GK": -0.029,
+        "DEF": 0.449,
+        "MID": 0.319,
+        "FWD": 0.612
+      },
+      "within_weighted": 0.423
+    },
+    "k1_2324_to_2425_model_projection": {
+      "n": 211,
+      "rho": 0.424,
+      "ci95": [
+        0.297,
+        0.537
+      ],
+      "within": {
+        "GK": -0.01,
+        "DEF": 0.423,
+        "MID": 0.301,
+        "FWD": 0.614
+      },
+      "within_weighted": 0.411
+    },
+    "k1_paper_rho_projection_vs_base": 0.937,
+    "k2_2223_to_2425_naive_current_score": {
+      "n": 170,
+      "rho": 0.308,
+      "ci95": [
+        0.153,
+        0.447
+      ],
+      "within": {
+        "GK": 0.28,
+        "DEF": 0.153,
+        "MID": 0.247,
+        "FWD": 0.415
+      },
+      "within_weighted": 0.256
+    },
+    "k2_2223_to_2425_model_projection": {
+      "n": 170,
+      "rho": 0.251,
+      "ci95": [
+        0.096,
+        0.397
+      ],
+      "within": {
+        "GK": 0.022,
+        "DEF": 0.136,
+        "MID": 0.1,
+        "FWD": 0.396
+      },
+      "within_weighted": 0.185
+    },
+    "k2_paper_rho_projection_vs_base": 0.708,
+    "k1_2223_to_2324_naive_current_score": {
+      "n": 191,
+      "rho": 0.483,
+      "ci95": [
+        0.362,
+        0.589
+      ],
+      "within": {
+        "GK": 0.091,
+        "DEF": 0.4,
+        "MID": 0.352,
+        "FWD": 0.55
+      },
+      "within_weighted": 0.408
+    },
+    "AR1_implied_k2_from_k1_new_transition": 0.21
+  }
+}

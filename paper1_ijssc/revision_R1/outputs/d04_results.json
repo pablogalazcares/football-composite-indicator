@@ -1,0 +1,35 @@
+{
+  "n_fits": 50,
+  "n_pass_filter": 3,
+  "rho3_range_all_fits": [
+    0.2,
+    0.488
+  ],
+  "rho3_range_passing_fits": [
+    0.288,
+    0.423
+  ],
+  "rho2_range_all_fits": [
+    0.493,
+    0.784
+  ],
+  "beta_s_range": [
+    0.334,
+    0.502
+  ],
+  "rec_peak_GK_values": [
+    22,
+    23,
+    24,
+    28,
+    29,
+    30,
+    31,
+    32,
+    34
+  ],
+  "fun_peak_GK_range": [
+    16.0,
+    32.9
+  ]
+}

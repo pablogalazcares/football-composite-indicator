@@ -1,0 +1,16 @@
+\begin{tabular}{llcccc}
+\toprule
+Horizon & Predictor & $\rho_W$ [95\% CI] & $\Delta\rho_W$ vs current score & MAE & Top-quartile precision \\
+\midrule
+One season & Current score & 0.51 [0.39, 0.62] & -- & 7.2 & 0.44 \\
+ & AR(1) + position & 0.51 [0.39, 0.62] & 0.000 [0.000, 0.000] & 6.3 & 0.44 \\
+ & + age (pre-specified) & 0.51 [0.38, 0.62] & $-$0.004 [$-$0.021, 0.010] & 6.3 & 0.49 \\
+ & + position $\times$ age & 0.51 [0.38, 0.61] & $-$0.009 [$-$0.033, 0.013] & 6.3 & 0.47 \\
+\addlinespace
+Two seasons & Current score & 0.29 [0.11, 0.43] & -- & 8.4 & 0.35 \\
+ & AR(1) + position & 0.29 [0.11, 0.43] & 0.000 [0.000, 0.000] & 7.4 & 0.35 \\
+ & + age (pre-specified) & 0.25 [0.08, 0.41] & $-$0.033 [$-$0.098, 0.024] & 7.5 & 0.29 \\
+ & + position $\times$ age & 0.27 [0.10, 0.42] & $-$0.019 [$-$0.100, 0.053] & 7.5 & 0.32 \\
+\addlinespace
+\bottomrule
+\end{tabular}
