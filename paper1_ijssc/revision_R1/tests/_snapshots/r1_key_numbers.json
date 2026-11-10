@@ -1,0 +1,20 @@
+{
+  "persist.BC.rhoW.est": 0.5149965016023563,
+  "persist.AC.rhoW.est": 0.2855855645943218,
+  "persist.AB.rhoW.est": 0.48141192866507093,
+  "acc.BC.M2.dRhoW.est": -0.0044008491046505505,
+  "acc.AC.M2.dRhoW.est": -0.033139335777350676,
+  "unc.BC.covGauss": 0.7916666666666666,
+  "unc.BC.topGivenTop.obs": 0.5,
+  "ext.minutes.BC.rhoW": 0.08974366393824636,
+  "ext.minutes.AB.rhoW": 0.03612986042166521,
+  "ext.auc.BC.est": 0.5146531100478469,
+  "ext.mv.logmvB.est": 0.08530257225603498,
+  "submitted.rhoK1": 0.940217569694152,
+  "submitted.rhoK2": 0.7203691790720766,
+  "submitted.pairsTrueMinutes": 160,
+  "model.betaS": 0.569993955174465,
+  "model.nTrain": 150,
+  "sample.sameSet": 117,
+  "ipw.AC.rhoW": 0.3276192965960932
+}

@@ -1,0 +1,1486 @@
+{
+  "data.A.eligible": 270,
+  "data.B.eligible": 274,
+  "data.C.eligible": 321,
+  "sample.A->B.eligibleBoth": 161,
+  "sample.A->C.eligibleBoth": 147,
+  "sample.B->C.eligibleBoth": 183,
+  "sample.sameSet": 117,
+  "minutes.medianAbsErrA": 0.0,
+  "minutes.rhoTotalsA": 0.9999711494162716,
+  "minutes.rhoTotalsB": 0.9999311905604656,
+  "submitted.minutesInflationMedian": 1.2308753634724818,
+  "submitted.pairsTrueMinutes": 160,
+  "persist.AB.n": 150,
+  "persist.AB.rhoW.est": 0.48141192866507093,
+  "persist.AB.rhoW.lo": 0.3249529613193367,
+  "persist.AB.rhoW.hi": 0.6004708568786372,
+  "persist.AB.rhoW.ci": [
+    0.3249529613193367,
+    0.6004708568786372
+  ],
+  "persist.AB.rhoP.est": 0.5062073869949776,
+  "persist.AB.rhoP.lo": 0.3669089569559784,
+  "persist.AB.rhoP.hi": 0.6272797324477362,
+  "persist.AB.rhoP.ci": [
+    0.3669089569559784,
+    0.6272797324477362
+  ],
+  "persist.AB.rhoDEF.est": 0.4293394777265745,
+  "persist.AB.rhoDEF.lo": 0.20131114614829634,
+  "persist.AB.rhoDEF.hi": 0.6113302920242168,
+  "persist.AB.rhoDEF.ci": [
+    0.20131114614829634,
+    0.6113302920242168
+  ],
+  "persist.AB.rhoMID.est": 0.4129171668667466,
+  "persist.AB.rhoMID.lo": 0.11406214995123429,
+  "persist.AB.rhoMID.hi": 0.6404208389134265,
+  "persist.AB.rhoMID.ci": [
+    0.11406214995123429,
+    0.6404208389134265
+  ],
+  "persist.AB.rhoFWD.est": 0.6626363205310573,
+  "persist.AB.rhoFWD.lo": 0.4001718406752022,
+  "persist.AB.rhoFWD.hi": 0.8438550177206309,
+  "persist.AB.rhoFWD.ci": [
+    0.4001718406752022,
+    0.8438550177206309
+  ],
+  "persist.BC.n": 168,
+  "persist.BC.rhoW.est": 0.5149965016023563,
+  "persist.BC.rhoW.lo": 0.38777183196879267,
+  "persist.BC.rhoW.hi": 0.616495957290842,
+  "persist.BC.rhoW.ci": [
+    0.38777183196879267,
+    0.616495957290842
+  ],
+  "persist.BC.rhoP.est": 0.5382135138008008,
+  "persist.BC.rhoP.lo": 0.4134840713632001,
+  "persist.BC.rhoP.hi": 0.6410823425185123,
+  "persist.BC.rhoP.ci": [
+    0.4134840713632001,
+    0.6410823425185123
+  ],
+  "persist.BC.rhoDEF.est": 0.4361082289089314,
+  "persist.BC.rhoDEF.lo": 0.2190949577482013,
+  "persist.BC.rhoDEF.hi": 0.6126166386108938,
+  "persist.BC.rhoDEF.ci": [
+    0.2190949577482013,
+    0.6126166386108938
+  ],
+  "persist.BC.rhoMID.est": 0.5452915563903356,
+  "persist.BC.rhoMID.lo": 0.30953581235725425,
+  "persist.BC.rhoMID.hi": 0.7194604323236091,
+  "persist.BC.rhoMID.ci": [
+    0.30953581235725425,
+    0.7194604323236091
+  ],
+  "persist.BC.rhoFWD.est": 0.5907142857142857,
+  "persist.BC.rhoFWD.lo": 0.37264651584323283,
+  "persist.BC.rhoFWD.hi": 0.7480092489655897,
+  "persist.BC.rhoFWD.ci": [
+    0.37264651584323283,
+    0.7480092489655897
+  ],
+  "persist.AC.n": 134,
+  "persist.AC.rhoW.est": 0.2855855645943218,
+  "persist.AC.rhoW.lo": 0.10971958019067296,
+  "persist.AC.rhoW.hi": 0.4277655449972521,
+  "persist.AC.rhoW.ci": [
+    0.10971958019067296,
+    0.4277655449972521
+  ],
+  "persist.AC.rhoP.est": 0.34418134889462465,
+  "persist.AC.rhoP.lo": 0.18792344486199036,
+  "persist.AC.rhoP.hi": 0.48279068992807134,
+  "persist.AC.rhoP.ci": [
+    0.18792344486199036,
+    0.48279068992807134
+  ],
+  "persist.AC.rhoDEF.est": 0.20369104579630898,
+  "persist.AC.rhoDEF.lo": -0.060207257841757116,
+  "persist.AC.rhoDEF.hi": 0.45606479395950716,
+  "persist.AC.rhoDEF.ci": [
+    -0.060207257841757116,
+    0.45606479395950716
+  ],
+  "persist.AC.rhoMID.est": 0.24218410768562745,
+  "persist.AC.rhoMID.lo": -0.04437360926733543,
+  "persist.AC.rhoMID.hi": 0.4916589611096001,
+  "persist.AC.rhoMID.ci": [
+    -0.04437360926733543,
+    0.4916589611096001
+  ],
+  "persist.AC.rhoFWD.est": 0.5078976640711901,
+  "persist.AC.rhoFWD.lo": 0.16363209234487322,
+  "persist.AC.rhoFWD.hi": 0.751458632147638,
+  "persist.AC.rhoFWD.ci": [
+    0.16363209234487322,
+    0.751458632147638
+  ],
+  "persist.BC.same.n": 108,
+  "persist.BC.same.rhoW.est": 0.5061823910781784,
+  "persist.BC.same.rhoW.lo": 0.32841338643227885,
+  "persist.BC.same.rhoW.hi": 0.6311361683415926,
+  "persist.BC.same.rhoW.ci": [
+    0.32841338643227885,
+    0.6311361683415926
+  ],
+  "persist.BC.same.rhoP.est": 0.5791153410119371,
+  "persist.BC.same.rhoP.lo": 0.4364936961959472,
+  "persist.BC.same.rhoP.hi": 0.6881861152530792,
+  "persist.BC.same.rhoP.ci": [
+    0.4364936961959472,
+    0.6881861152530792
+  ],
+  "persist.BC.same.rhoDEF.est": 0.43702239789196307,
+  "persist.BC.same.rhoDEF.lo": 0.15122945384828684,
+  "persist.BC.same.rhoDEF.hi": 0.6464091843635998,
+  "persist.BC.same.rhoDEF.ci": [
+    0.15122945384828684,
+    0.6464091843635998
+  ],
+  "persist.BC.same.rhoMID.est": 0.5140056022408964,
+  "persist.BC.same.rhoMID.lo": 0.21531364991564428,
+  "persist.BC.same.rhoMID.hi": 0.737439404932928,
+  "persist.BC.same.rhoMID.ci": [
+    0.21531364991564428,
+    0.737439404932928
+  ],
+  "persist.BC.same.rhoFWD.est": 0.6075533661740558,
+  "persist.BC.same.rhoFWD.lo": 0.29777215583310346,
+  "persist.BC.same.rhoFWD.hi": 0.802493632126959,
+  "persist.BC.same.rhoFWD.ci": [
+    0.29777215583310346,
+    0.802493632126959
+  ],
+  "persist.AC.same.n": 108,
+  "persist.AC.same.rhoW.est": 0.26481852596650457,
+  "persist.AC.same.rhoW.lo": 0.07641886296837702,
+  "persist.AC.same.rhoW.hi": 0.44003465508580103,
+  "persist.AC.same.rhoW.ci": [
+    0.07641886296837702,
+    0.44003465508580103
+  ],
+  "persist.AC.same.rhoP.est": 0.36606743071632036,
+  "persist.AC.same.rhoP.lo": 0.19072494726934014,
+  "persist.AC.same.rhoP.hi": 0.51589501743206,
+  "persist.AC.same.rhoP.ci": [
+    0.19072494726934014,
+    0.51589501743206
+  ],
+  "persist.AC.same.rhoDEF.est": 0.2075098814229249,
+  "persist.AC.same.rhoDEF.lo": -0.09961178964793992,
+  "persist.AC.same.rhoDEF.hi": 0.4822317785727995,
+  "persist.AC.same.rhoDEF.ci": [
+    -0.09961178964793992,
+    0.4822317785727995
+  ],
+  "persist.AC.same.rhoMID.est": 0.14366998577524892,
+  "persist.AC.same.rhoMID.lo": -0.1853591350850813,
+  "persist.AC.same.rhoMID.hi": 0.43900041282124785,
+  "persist.AC.same.rhoMID.ci": [
+    -0.1853591350850813,
+    0.43900041282124785
+  ],
+  "persist.AC.same.rhoFWD.est": 0.5364102564102563,
+  "persist.AC.same.rhoFWD.lo": 0.17252382908170025,
+  "persist.AC.same.rhoFWD.hi": 0.7919127747252745,
+  "persist.AC.same.rhoFWD.ci": [
+    0.17252382908170025,
+    0.7919127747252745
+  ],
+  "persist.AB.same.n": 108,
+  "persist.AB.same.rhoW.est": 0.5089062632426476,
+  "persist.AB.same.rhoW.lo": 0.3351855685562308,
+  "persist.AB.same.rhoW.hi": 0.638567540466446,
+  "persist.AB.same.rhoW.ci": [
+    0.3351855685562308,
+    0.638567540466446
+  ],
+  "persist.AB.same.rhoP.est": 0.5408080634866196,
+  "persist.AB.same.rhoP.lo": 0.37383374984748513,
+  "persist.AB.same.rhoP.hi": 0.6719220915352494,
+  "persist.AB.same.rhoP.ci": [
+    0.37383374984748513,
+    0.6719220915352494
+  ],
+  "persist.AB.same.rhoDEF.est": 0.4739130434782608,
+  "persist.AB.same.rhoDEF.lo": 0.18594972005629215,
+  "persist.AB.same.rhoDEF.hi": 0.6919121116426161,
+  "persist.AB.same.rhoDEF.ci": [
+    0.18594972005629215,
+    0.6919121116426161
+  ],
+  "persist.AB.same.rhoMID.est": 0.4860123281175912,
+  "persist.AB.same.rhoMID.lo": 0.20458630908971712,
+  "persist.AB.same.rhoMID.hi": 0.690526776200954,
+  "persist.AB.same.rhoMID.ci": [
+    0.20458630908971712,
+    0.690526776200954
+  ],
+  "persist.AB.same.rhoFWD.est": 0.6020512820512819,
+  "persist.AB.same.rhoFWD.lo": 0.23187783092698502,
+  "persist.AB.same.rhoFWD.hi": 0.8478650137741044,
+  "persist.AB.same.rhoFWD.ci": [
+    0.23187783092698502,
+    0.8478650137741044
+  ],
+  "acc.BC.n": 168,
+  "acc.BC.M0.rhoW.est": 0.5149965016023563,
+  "acc.BC.M0.rhoW.lo": 0.38777183196879267,
+  "acc.BC.M0.rhoW.hi": 0.616495957290842,
+  "acc.BC.M0.rhoW.ci": [
+    0.38777183196879267,
+    0.616495957290842
+  ],
+  "acc.BC.M0.mae": 7.216748748806992,
+  "acc.BC.M0.topq": 0.4418604651162791,
+  "acc.BC.M0.impliedW.est": 1.0,
+  "acc.BC.M0.impliedW.lo": 0.9999999999999998,
+  "acc.BC.M0.impliedW.hi": 1.0,
+  "acc.BC.M0.impliedW.ci": [
+    0.9999999999999998,
+    1.0
+  ],
+  "acc.BC.M1.rhoW.est": 0.5149965016023563,
+  "acc.BC.M1.rhoW.lo": 0.38777183196879267,
+  "acc.BC.M1.rhoW.hi": 0.616495957290842,
+  "acc.BC.M1.rhoW.ci": [
+    0.38777183196879267,
+    0.616495957290842
+  ],
+  "acc.BC.M1.mae": 6.278650042317154,
+  "acc.BC.M1.topq": 0.4418604651162791,
+  "acc.BC.M1.impliedW.est": 1.0,
+  "acc.BC.M1.impliedW.lo": 0.9999999999999998,
+  "acc.BC.M1.impliedW.hi": 1.0,
+  "acc.BC.M1.impliedW.ci": [
+    0.9999999999999998,
+    1.0
+  ],
+  "acc.BC.M1.dRhoW.est": 0.0,
+  "acc.BC.M1.dRhoW.lo": 0.0,
+  "acc.BC.M1.dRhoW.hi": 0.0,
+  "acc.BC.M1.dRhoW.ci": [
+    0.0,
+    0.0
+  ],
+  "acc.BC.M2.rhoW.est": 0.5105956524977058,
+  "acc.BC.M2.rhoW.lo": 0.37812915617825965,
+  "acc.BC.M2.rhoW.hi": 0.6183151835425273,
+  "acc.BC.M2.rhoW.ci": [
+    0.37812915617825965,
+    0.6183151835425273
+  ],
+  "acc.BC.M2.mae": 6.312136085825366,
+  "acc.BC.M2.topq": 0.4883720930232558,
+  "acc.BC.M2.impliedW.est": 0.9955131804008052,
+  "acc.BC.M2.impliedW.lo": 0.9882120500340182,
+  "acc.BC.M2.impliedW.hi": 0.9974169863191235,
+  "acc.BC.M2.impliedW.ci": [
+    0.9882120500340182,
+    0.9974169863191235
+  ],
+  "acc.BC.M2.dRhoW.est": -0.0044008491046505505,
+  "acc.BC.M2.dRhoW.lo": -0.02080156097862947,
+  "acc.BC.M2.dRhoW.hi": 0.010433879711816238,
+  "acc.BC.M2.dRhoW.ci": [
+    -0.02080156097862947,
+    0.010433879711816238
+  ],
+  "acc.BC.M3.rhoW.est": 0.5056729445637603,
+  "acc.BC.M3.rhoW.lo": 0.3771605439955949,
+  "acc.BC.M3.rhoW.hi": 0.6083143964142915,
+  "acc.BC.M3.rhoW.ci": [
+    0.3771605439955949,
+    0.6083143964142915
+  ],
+  "acc.BC.M3.mae": 6.338322124031208,
+  "acc.BC.M3.topq": 0.46511627906976744,
+  "acc.BC.M3.impliedW.est": 0.9881707013851854,
+  "acc.BC.M3.impliedW.lo": 0.9756956225981341,
+  "acc.BC.M3.impliedW.hi": 0.9906855759660977,
+  "acc.BC.M3.impliedW.ci": [
+    0.9756956225981341,
+    0.9906855759660977
+  ],
+  "acc.BC.M3.dRhoW.est": -0.009323557038595998,
+  "acc.BC.M3.dRhoW.lo": -0.032528788355447605,
+  "acc.BC.M3.dRhoW.hi": 0.013024513810199824,
+  "acc.BC.M3.dRhoW.ci": [
+    -0.032528788355447605,
+    0.013024513810199824
+  ],
+  "acc.AC.n": 134,
+  "acc.AC.M0.rhoW.est": 0.2855855645943218,
+  "acc.AC.M0.rhoW.lo": 0.10971958019067296,
+  "acc.AC.M0.rhoW.hi": 0.4277655449972521,
+  "acc.AC.M0.rhoW.ci": [
+    0.10971958019067296,
+    0.4277655449972521
+  ],
+  "acc.AC.M0.mae": 8.409592122273647,
+  "acc.AC.M0.topq": 0.35294117647058826,
+  "acc.AC.M0.impliedW.est": 1.0,
+  "acc.AC.M0.impliedW.lo": 0.9999999999999998,
+  "acc.AC.M0.impliedW.hi": 1.0,
+  "acc.AC.M0.impliedW.ci": [
+    0.9999999999999998,
+    1.0
+  ],
+  "acc.AC.M1.rhoW.est": 0.2855855645943218,
+  "acc.AC.M1.rhoW.lo": 0.10971958019067296,
+  "acc.AC.M1.rhoW.hi": 0.4277655449972521,
+  "acc.AC.M1.rhoW.ci": [
+    0.10971958019067296,
+    0.4277655449972521
+  ],
+  "acc.AC.M1.mae": 7.425991075791016,
+  "acc.AC.M1.topq": 0.35294117647058826,
+  "acc.AC.M1.impliedW.est": 1.0,
+  "acc.AC.M1.impliedW.lo": 0.9999999999999998,
+  "acc.AC.M1.impliedW.hi": 1.0,
+  "acc.AC.M1.impliedW.ci": [
+    0.9999999999999998,
+    1.0
+  ],
+  "acc.AC.M1.dRhoW.est": 0.0,
+  "acc.AC.M1.dRhoW.lo": 0.0,
+  "acc.AC.M1.dRhoW.hi": 0.0,
+  "acc.AC.M1.dRhoW.ci": [
+    0.0,
+    0.0
+  ],
+  "acc.AC.M2.rhoW.est": 0.2524462288169711,
+  "acc.AC.M2.rhoW.lo": 0.08060353729904128,
+  "acc.AC.M2.rhoW.hi": 0.40637915751301396,
+  "acc.AC.M2.rhoW.ci": [
+    0.08060353729904128,
+    0.40637915751301396
+  ],
+  "acc.AC.M2.mae": 7.521520497889952,
+  "acc.AC.M2.topq": 0.29411764705882354,
+  "acc.AC.M2.impliedW.est": 0.9519439668403368,
+  "acc.AC.M2.impliedW.lo": 0.8951501258784144,
+  "acc.AC.M2.impliedW.hi": 0.9785743431476188,
+  "acc.AC.M2.impliedW.ci": [
+    0.8951501258784144,
+    0.9785743431476188
+  ],
+  "acc.AC.M2.dRhoW.est": -0.033139335777350676,
+  "acc.AC.M2.dRhoW.lo": -0.09824630893159655,
+  "acc.AC.M2.dRhoW.hi": 0.023857116246883654,
+  "acc.AC.M2.dRhoW.ci": [
+    -0.09824630893159655,
+    0.023857116246883654
+  ],
+  "acc.AC.M3.rhoW.est": 0.267063160388417,
+  "acc.AC.M3.rhoW.lo": 0.09512742509704021,
+  "acc.AC.M3.rhoW.hi": 0.41683207449038223,
+  "acc.AC.M3.rhoW.ci": [
+    0.09512742509704021,
+    0.41683207449038223
+  ],
+  "acc.AC.M3.mae": 7.4866175312836765,
+  "acc.AC.M3.topq": 0.3235294117647059,
+  "acc.AC.M3.impliedW.est": 0.9253639206443557,
+  "acc.AC.M3.impliedW.lo": 0.8502799307128954,
+  "acc.AC.M3.impliedW.hi": 0.9621679351760906,
+  "acc.AC.M3.impliedW.ci": [
+    0.8502799307128954,
+    0.9621679351760906
+  ],
+  "acc.AC.M3.dRhoW.est": -0.018522404205904786,
+  "acc.AC.M3.dRhoW.lo": -0.09956605213370802,
+  "acc.AC.M3.dRhoW.hi": 0.05254600310159959,
+  "acc.AC.M3.dRhoW.ci": [
+    -0.09956605213370802,
+    0.05254600310159959
+  ],
+  "model.nTrain": 150,
+  "model.betaS": 0.569993955174465,
+  "model.betaS.lo": 0.4093378468144263,
+  "model.betaS.hi": 0.7198891627367848,
+  "model.ageC": -0.02882237991739888,
+  "model.ageC.lo": -0.46748850322102375,
+  "model.ageC.hi": 0.32368253237963374,
+  "model.ageCtwo": -0.021438455757954153,
+  "model.ageCtwo.lo": -0.08703543430582217,
+  "model.ageCtwo.hi": 0.09255585923800548,
+  "unc.sigma": 8.225209492157369,
+  "unc.halfWidthGauss": 10.541030101606584,
+  "unc.BC.covGauss": 0.7916666666666666,
+  "unc.BC.covGauss.lo": 0.7321428571428571,
+  "unc.BC.covGauss.hi": 0.8571428571428571,
+  "unc.BC.covConf": 0.7678571428571429,
+  "unc.BC.brierSkill": 0.14108609375000003,
+  "unc.BC.topGivenTop.obs": 0.5,
+  "unc.BC.topGivenTop.model": 0.48781818181818176,
+  "unc.BC.topGivenBottom.obs": 0.047619047619047616,
+  "unc.AC.covGauss": 0.7835820895522388,
+  "unc.AC.covGauss.lo": 0.7164179104477612,
+  "unc.AC.covGauss.hi": 0.8507462686567164,
+  "unc.AC.covConf": 0.7611940298507462,
+  "unc.AC.brierSkill": 0.03033929064039398,
+  "unc.AC.topGivenTop.obs": 0.34210526315789475,
+  "unc.AC.topGivenTop.model": 0.3702236842105263,
+  "unc.AC.topGivenBottom.obs": 0.03125,
+  "ipw.AB.rhoW": 0.44717388002990677,
+  "ipw.AB.lo": 0.2806771515388222,
+  "ipw.AB.hi": 0.5929831273046556,
+  "ipw.BC.rhoW": 0.5041728633993142,
+  "ipw.BC.lo": 0.3575329168514346,
+  "ipw.BC.hi": 0.6106305837380946,
+  "ipw.AC.rhoW": 0.3276192965960932,
+  "ipw.AC.lo": 0.13765179172660846,
+  "ipw.AC.hi": 0.4687347447149307,
+  "ext.minutes.AB.rhoW": 0.03612986042166521,
+  "ext.minutes.AB.lo": -0.09827048518258133,
+  "ext.minutes.AB.hi": 0.17429009396758624,
+  "ext.minutes.BC.rhoW": 0.08974366393824636,
+  "ext.minutes.BC.lo": -0.050600394688559355,
+  "ext.minutes.BC.hi": 0.2206603232945612,
+  "ext.auc.AB.est": 0.4798906677079266,
+  "ext.auc.AB.lo": 0.36826648705904025,
+  "ext.auc.AB.hi": 0.5835477417877565,
+  "ext.auc.BC.est": 0.5146531100478469,
+  "ext.auc.BC.lo": 0.372748256641999,
+  "ext.auc.BC.hi": 0.6585115864527629,
+  "ext.mv.logmvB.est": 0.08530257225603498,
+  "ext.mv.logmvB.lo": -0.05068528952843288,
+  "ext.mv.logmvB.hi": 0.21647285290834414,
+  "ext.mv.dlogmv.est": -0.055825072717576064,
+  "ext.mv.dlogmv.lo": -0.19461917754362157,
+  "ext.mv.dlogmv.hi": 0.08583119609387073,
+  "submitted.rhoK1": 0.940217569694152,
+  "submitted.rhoK2": 0.7203691790720766,
+  "submitted.rhoK3": 0.4192565481408214,
+  "submitted.rhoK4": 0.2045376328386538,
+  "submitted.rhoK5": 0.08388264585562062,
+  "submitted.rhoKwithin1": 0.9598,
+  "submitted.rhoKwithin2": 0.8143,
+  "submitted.rhoKwithin3": 0.5987,
+  "submitted.rhoKwithin4": 0.3844,
+  "submitted.rhoKwithin5": 0.2163,
+  "implied.M2.k1": 0.9928559564918147,
+  "implied.M2.k2": 0.9508955330792747,
+  "implied.M2.k3": 0.8337813138929706,
+  "implied.M2.k4": 0.6496545842355501,
+  "implied.M2.k5": 0.4643496416919295,
+  "add.tmLinkRate": 0.9870828848223897,
+  "add.corr.A": 0.3843653722234901,
+  "add.corr.B": 0.48401245267003323,
+  "add.corr.C": 0.5600092509608834,
+  "add.vol.BC.rhoW.est": 0.49929719143231904,
+  "add.vol.BC.rhoW.lo": 0.36620844817691994,
+  "add.vol.BC.rhoW.hi": 0.612024170839108,
+  "add.vol.BC.rhoW.ci": [
+    0.36620844817691994,
+    0.612024170839108
+  ],
+  "add.vol.BC.rhoDEF.est": 0.3311118205762631,
+  "add.vol.BC.rhoDEF.lo": 0.09857955474508011,
+  "add.vol.BC.rhoDEF.hi": 0.5400291728180758,
+  "add.vol.BC.rhoDEF.ci": [
+    0.09857955474508011,
+    0.5400291728180758
+  ],
+  "add.vol.BC.rhoMID.est": 0.6020660804234611,
+  "add.vol.BC.rhoMID.lo": 0.36339575850863687,
+  "add.vol.BC.rhoMID.hi": 0.760725518181026,
+  "add.vol.BC.rhoMID.ci": [
+    0.36339575850863687,
+    0.760725518181026
+  ],
+  "add.vol.BC.rhoFWD.est": 0.6202040816326531,
+  "add.vol.BC.rhoFWD.lo": 0.39055718297309067,
+  "add.vol.BC.rhoFWD.hi": 0.788298192490816,
+  "add.vol.BC.rhoFWD.ci": [
+    0.39055718297309067,
+    0.788298192490816
+  ],
+  "add.vol.BC.dRhoMtwo.est": -0.03447112035208599,
+  "add.vol.BC.dRhoMtwo.lo": -0.0720655622018506,
+  "add.vol.BC.dRhoMtwo.hi": 0.0017261396556105125,
+  "add.vol.BC.dRhoMtwo.ci": [
+    -0.0720655622018506,
+    0.0017261396556105125
+  ],
+  "add.diffPersist.BC.est": -0.015699310170037284,
+  "add.diffPersist.BC.lo": -0.1702577274573642,
+  "add.diffPersist.BC.hi": 0.14393070593712562,
+  "add.diffPersist.BC.ci": [
+    -0.1702577274573642,
+    0.14393070593712562
+  ],
+  "add.vol.AC.rhoW.est": 0.49318823768225545,
+  "add.vol.AC.rhoW.lo": 0.3383682566570448,
+  "add.vol.AC.rhoW.hi": 0.6042859976962978,
+  "add.vol.AC.rhoW.ci": [
+    0.3383682566570448,
+    0.6042859976962978
+  ],
+  "add.vol.AC.rhoDEF.est": 0.4594668489405332,
+  "add.vol.AC.rhoDEF.lo": 0.23796419892528325,
+  "add.vol.AC.rhoDEF.hi": 0.6238702835836211,
+  "add.vol.AC.rhoDEF.ci": [
+    0.23796419892528325,
+    0.6238702835836211
+  ],
+  "add.vol.AC.rhoMID.est": 0.5144376899696048,
+  "add.vol.AC.rhoMID.lo": 0.261062624021119,
+  "add.vol.AC.rhoMID.hi": 0.708300577140801,
+  "add.vol.AC.rhoMID.ci": [
+    0.261062624021119,
+    0.708300577140801
+  ],
+  "add.vol.AC.rhoFWD.est": 0.5221357063403782,
+  "add.vol.AC.rhoFWD.lo": 0.21325272238297055,
+  "add.vol.AC.rhoFWD.hi": 0.762462105622759,
+  "add.vol.AC.rhoFWD.ci": [
+    0.21325272238297055,
+    0.762462105622759
+  ],
+  "add.vol.AC.dRhoMtwo.est": -0.08252293370018637,
+  "add.vol.AC.dRhoMtwo.lo": -0.16700575403712062,
+  "add.vol.AC.dRhoMtwo.hi": 0.003988764586010661,
+  "add.vol.AC.dRhoMtwo.ci": [
+    -0.16700575403712062,
+    0.003988764586010661
+  ],
+  "add.diffPersist.AC.est": 0.20760267308793368,
+  "add.diffPersist.AC.lo": 0.022238771990374336,
+  "add.diffPersist.AC.hi": 0.3930365391143861,
+  "add.diffPersist.AC.ci": [
+    0.022238771990374336,
+    0.3930365391143861
+  ],
+  "add.minutes.vol.AB.est": 0.05549304748580219,
+  "add.minutes.vol.AB.lo": -0.08362385714454285,
+  "add.minutes.vol.AB.hi": 0.1881909320959741,
+  "add.minutes.vol.AB.ci": [
+    -0.08362385714454285,
+    0.1881909320959741
+  ],
+  "add.minutes.diff.AB.est": 0.019363187064136977,
+  "add.minutes.diff.AB.lo": -0.14341601711199725,
+  "add.minutes.diff.AB.hi": 0.16905547400830606,
+  "add.minutes.diff.AB.ci": [
+    -0.14341601711199725,
+    0.16905547400830606
+  ],
+  "add.aucVol.AB": 0.5173760249902382,
+  "add.minutes.vol.BC.est": 0.018318328906625745,
+  "add.minutes.vol.BC.lo": -0.11982198505514684,
+  "add.minutes.vol.BC.hi": 0.16114095998536906,
+  "add.minutes.vol.BC.ci": [
+    -0.11982198505514684,
+    0.16114095998536906
+  ],
+  "add.minutes.diff.BC.est": -0.07142533503162062,
+  "add.minutes.diff.BC.lo": -0.2072328554650499,
+  "add.minutes.diff.BC.hi": 0.07752161018326778,
+  "add.minutes.diff.BC.ci": [
+    -0.2072328554650499,
+    0.07752161018326778
+  ],
+  "add.aucVol.BC": 0.4775717703349282,
+  "add.mv.AB.n": 246,
+  "add.mv.AB.efflevelnext.est": 0.038988422701598684,
+  "add.mv.AB.efflevelnext.lo": -0.08958025938903094,
+  "add.mv.AB.efflevelnext.hi": 0.1607910119927573,
+  "add.mv.AB.efflevelnext.ci": [
+    -0.08958025938903094,
+    0.1607910119927573
+  ],
+  "add.mv.AB.vollevelnext.est": 0.22894068582523397,
+  "add.mv.AB.vollevelnext.lo": 0.10902711835302231,
+  "add.mv.AB.vollevelnext.hi": 0.34641853123368715,
+  "add.mv.AB.vollevelnext.ci": [
+    0.10902711835302231,
+    0.34641853123368715
+  ],
+  "add.mv.AB.effchange.est": -0.07493611076918566,
+  "add.mv.AB.effchange.lo": -0.20004804575801158,
+  "add.mv.AB.effchange.hi": 0.052179290501872456,
+  "add.mv.AB.effchange.ci": [
+    -0.20004804575801158,
+    0.052179290501872456
+  ],
+  "add.mv.AB.volchange.est": -0.021391843053610953,
+  "add.mv.AB.volchange.lo": -0.14393374501075,
+  "add.mv.AB.volchange.hi": 0.10312683758264563,
+  "add.mv.AB.volchange.ci": [
+    -0.14393374501075,
+    0.10312683758264563
+  ],
+  "add.mv.AB.efflevelnow.est": 0.0959587372089286,
+  "add.mv.AB.efflevelnow.lo": -0.0314371307633209,
+  "add.mv.AB.efflevelnow.hi": 0.21619261491511546,
+  "add.mv.AB.efflevelnow.ci": [
+    -0.0314371307633209,
+    0.21619261491511546
+  ],
+  "add.mv.AB.vollevelnow.est": 0.28361929699979305,
+  "add.mv.AB.vollevelnow.lo": 0.16493596287240953,
+  "add.mv.AB.vollevelnow.hi": 0.3985402314932217,
+  "add.mv.AB.vollevelnow.ci": [
+    0.16493596287240953,
+    0.3985402314932217
+  ],
+  "add.mv.AB.difflevelnext.est": 0.18995226312363528,
+  "add.mv.AB.difflevelnext.lo": 0.06778904274036071,
+  "add.mv.AB.difflevelnext.hi": 0.32703252561718243,
+  "add.mv.AB.difflevelnext.ci": [
+    0.06778904274036071,
+    0.32703252561718243
+  ],
+  "add.mv.AB.diffchange.est": 0.0535442677155747,
+  "add.mv.AB.diffchange.lo": -0.0698148267176857,
+  "add.mv.AB.diffchange.hi": 0.18957625653804686,
+  "add.mv.AB.diffchange.ci": [
+    -0.0698148267176857,
+    0.18957625653804686
+  ],
+  "add.mv.BC.n": 248,
+  "add.mv.BC.efflevelnext.est": 0.04034437979577001,
+  "add.mv.BC.efflevelnext.lo": -0.08111429640378781,
+  "add.mv.BC.efflevelnext.hi": 0.15966680375809694,
+  "add.mv.BC.efflevelnext.ci": [
+    -0.08111429640378781,
+    0.15966680375809694
+  ],
+  "add.mv.BC.vollevelnext.est": 0.24591832392326438,
+  "add.mv.BC.vollevelnext.lo": 0.1274847446634186,
+  "add.mv.BC.vollevelnext.hi": 0.3662517810731996,
+  "add.mv.BC.vollevelnext.ci": [
+    0.1274847446634186,
+    0.3662517810731996
+  ],
+  "add.mv.BC.effchange.est": 0.1024733492867894,
+  "add.mv.BC.effchange.lo": -0.034590525856210155,
+  "add.mv.BC.effchange.hi": 0.2340882863123553,
+  "add.mv.BC.effchange.ci": [
+    -0.034590525856210155,
+    0.2340882863123553
+  ],
+  "add.mv.BC.volchange.est": -0.005670229558686509,
+  "add.mv.BC.volchange.lo": -0.14061707410108537,
+  "add.mv.BC.volchange.hi": 0.13081388885831086,
+  "add.mv.BC.volchange.ci": [
+    -0.14061707410108537,
+    0.13081388885831086
+  ],
+  "add.mv.BC.efflevelnow.est": -0.02728770906756249,
+  "add.mv.BC.efflevelnow.lo": -0.14915654281595733,
+  "add.mv.BC.efflevelnow.hi": 0.09722665733300317,
+  "add.mv.BC.efflevelnow.ci": [
+    -0.14915654281595733,
+    0.09722665733300317
+  ],
+  "add.mv.BC.vollevelnow.est": 0.26256625860384036,
+  "add.mv.BC.vollevelnow.lo": 0.14656605664665406,
+  "add.mv.BC.vollevelnow.hi": 0.3786602284365942,
+  "add.mv.BC.vollevelnow.ci": [
+    0.14656605664665406,
+    0.3786602284365942
+  ],
+  "add.mv.BC.difflevelnext.est": 0.20557394412749436,
+  "add.mv.BC.difflevelnext.lo": 0.09316721477870697,
+  "add.mv.BC.difflevelnext.hi": 0.32211929244498916,
+  "add.mv.BC.difflevelnext.ci": [
+    0.09316721477870697,
+    0.32211929244498916
+  ],
+  "add.mv.BC.diffchange.est": -0.10814357884547592,
+  "add.mv.BC.diffchange.lo": -0.23491614977046577,
+  "add.mv.BC.diffchange.hi": 0.02489510372135075,
+  "add.mv.BC.diffchange.ci": [
+    -0.23491614977046577,
+    0.02489510372135075
+  ],
+  "add.mv.CD.n": 296,
+  "add.mv.CD.efflevelnext.est": 0.19007617303844518,
+  "add.mv.CD.efflevelnext.lo": 0.07986602957985342,
+  "add.mv.CD.efflevelnext.hi": 0.2871503605918941,
+  "add.mv.CD.efflevelnext.ci": [
+    0.07986602957985342,
+    0.2871503605918941
+  ],
+  "add.mv.CD.vollevelnext.est": 0.30061411644096714,
+  "add.mv.CD.vollevelnext.lo": 0.19180208007102567,
+  "add.mv.CD.vollevelnext.hi": 0.39856524284928313,
+  "add.mv.CD.vollevelnext.ci": [
+    0.19180208007102567,
+    0.39856524284928313
+  ],
+  "add.mv.CD.effchange.est": 0.1017391255435716,
+  "add.mv.CD.effchange.lo": -0.015644032586906366,
+  "add.mv.CD.effchange.hi": 0.20734837569047598,
+  "add.mv.CD.effchange.ci": [
+    -0.015644032586906366,
+    0.20734837569047598
+  ],
+  "add.mv.CD.volchange.est": 0.14874781964215963,
+  "add.mv.CD.volchange.lo": 0.03223816832683115,
+  "add.mv.CD.volchange.hi": 0.253213076476701,
+  "add.mv.CD.volchange.ci": [
+    0.03223816832683115,
+    0.253213076476701
+  ],
+  "add.mv.CD.efflevelnow.est": 0.15808139032182572,
+  "add.mv.CD.efflevelnow.lo": 0.044354180382191445,
+  "add.mv.CD.efflevelnow.hi": 0.26477662615204206,
+  "add.mv.CD.efflevelnow.ci": [
+    0.044354180382191445,
+    0.26477662615204206
+  ],
+  "add.mv.CD.vollevelnow.est": 0.2656061075669002,
+  "add.mv.CD.vollevelnow.lo": 0.15518760952494573,
+  "add.mv.CD.vollevelnow.hi": 0.37252122320785785,
+  "add.mv.CD.vollevelnow.ci": [
+    0.15518760952494573,
+    0.37252122320785785
+  ],
+  "add.mv.CD.difflevelnext.est": 0.11053794340252196,
+  "add.mv.CD.difflevelnext.lo": 0.005833553249589439,
+  "add.mv.CD.difflevelnext.hi": 0.21286652488286512,
+  "add.mv.CD.difflevelnext.ci": [
+    0.005833553249589439,
+    0.21286652488286512
+  ],
+  "add.mv.CD.diffchange.est": 0.04700869409858803,
+  "add.mv.CD.diffchange.lo": -0.05438227133145529,
+  "add.mv.CD.diffchange.hi": 0.1511760695621075,
+  "add.mv.CD.diffchange.ci": [
+    -0.05438227133145529,
+    0.1511760695621075
+  ],
+  "minutes.nPlayerMatchesA": 8653,
+  "minutes.nPlayerMatchesB": 8689,
+  "pos.changed.AB": 7,
+  "pos.eligibleBoth.AB": 161,
+  "pos.changed.BC": 8,
+  "pos.eligibleBoth.BC": 183,
+  "tm.linked": 917,
+  "tm.total": 929,
+  "sens.k1.min": 0.3640609730169941,
+  "sens.k1.max": 0.5503327840990179,
+  "sens.k1.dmax": -0.000153361945121111,
+  "sens.k1.dmin": -0.04585954879378851,
+  "sens.k2.min": 0.18394389848365533,
+  "sens.k2.max": 0.3879594764210149,
+  "sens.k2.dmax": 0.049246906939214574,
+  "sens.k2.dmin": -0.08703915455784367,
+  "sens.nDSigNeg": 2,
+  "sens.nDSigPos": 0,
+  "sens.nVariants": 11,
+  "sens.equalWeights.k1": 0.3640609730169941,
+  "sens.legacyAB": 0.49522726988565324,
+  "att.retention.AB.young": 0.676,
+  "att.retention.AB.old": 0.478,
+  "att.AB.absent.age30": 0.30952380952380953,
+  "att.AB.eligible.age30": 0.18,
+  "gk.eff.AB.n": 11,
+  "gk.eff.AB.est": 0.10909090909090911,
+  "gk.eff.AB.lo": -0.774674213505331,
+  "gk.eff.AB.hi": 0.7037651395471296,
+  "gk.eff.AB.ci": [
+    -0.774674213505331,
+    0.7037651395471296
+  ],
+  "gk.eff.BC.n": 15,
+  "gk.eff.BC.est": 0.06785714285714285,
+  "gk.eff.BC.lo": -0.5349117174959871,
+  "gk.eff.BC.hi": 0.6277992766726928,
+  "gk.eff.BC.ci": [
+    -0.5349117174959871,
+    0.6277992766726928
+  ],
+  "gk.eff.AC.n": 13,
+  "gk.eff.AC.est": 0.2912087912087912,
+  "gk.eff.AC.lo": -0.39841320858033946,
+  "gk.eff.AC.hi": 0.7871297122200834,
+  "gk.eff.AC.ci": [
+    -0.39841320858033946,
+    0.7871297122200834
+  ],
+  "gk.vol.AB.n": 11,
+  "gk.vol.AB.est": 0.41818181818181827,
+  "gk.vol.AB.lo": -0.33653846153846145,
+  "gk.vol.AB.hi": 0.9000609756097556,
+  "gk.vol.AB.ci": [
+    -0.33653846153846145,
+    0.9000609756097556
+  ],
+  "gk.vol.BC.n": 15,
+  "gk.vol.BC.est": 0.11785714285714284,
+  "gk.vol.BC.lo": -0.34426684881602915,
+  "gk.vol.BC.hi": 0.5696260703648548,
+  "gk.vol.BC.ci": [
+    -0.34426684881602915,
+    0.5696260703648548
+  ],
+  "gk.vol.AC.n": 13,
+  "gk.vol.AC.est": 0.17032967032967034,
+  "gk.vol.AC.lo": -0.41819563176360136,
+  "gk.vol.AC.hi": 0.6471430979268494,
+  "gk.vol.AC.ci": [
+    -0.41819563176360136,
+    0.6471430979268494
+  ],
+  "up.Pass.A": 0.155,
+  "up.Pass.B": 0.163,
+  "up.Pass.C": 0.183,
+  "up.Carry.A": 0.322,
+  "up.Carry.B": 0.334,
+  "up.Carry.C": 0.367,
+  "up.Shot.A": 0.355,
+  "up.Shot.B": 0.299,
+  "up.Shot.C": 0.357,
+  "sub.agePeak.GK": 18.6,
+  "sub.recPeak.GK": 24,
+  "sub.recPeakThirty.GK": 25,
+  "sub.agePeak.DEF": 28.8,
+  "sub.recPeak.DEF": 31,
+  "sub.recPeakThirty.DEF": 31,
+  "sub.agePeak.MID": 22.7,
+  "sub.recPeak.MID": 24,
+  "sub.recPeakThirty.MID": 26,
+  "sub.agePeak.FWD": 21.7,
+  "sub.recPeak.FWD": 24,
+  "sub.recPeakThirty.FWD": 26,
+  "sub.betaRidge": 0.4755,
+  "sub.betaUnpen": 0.4759,
+  "sub.betaOLS": 0.491,
+  "sub.olsRho.k1": 0.8994,
+  "sub.olsRho.k2": 0.6602,
+  "sub.olsRho.k3": 0.3776,
+  "sub.naive": 0.4872,
+  "sub.oofOperative": 0.4613,
+  "sub.nestedOuter": 0.4303,
+  "sub.nestedInner": 0.4593,
+  "sub.mddAssumed": 0.0457,
+  "sub.mddEmpirical": 0.0185,
+  "sub.mddBoot": 0.0252,
+  "sub.rTwoThreeEmp": 0.9921,
+  "sub.rhoThreeMin": 0.2,
+  "sub.rhoThreeMax": 0.488,
+  "sub.gkPeakMin": 22,
+  "sub.gkPeakMax": 34,
+  "sub.nPassFilter": 3,
+  "sub.nFits": 50,
+  "sub.oofFixed": 0.4536,
+  "sub.oofFoldwise": 0.4143,
+  "sub.yFixed": 0.4794,
+  "sub.yFoldwise": 0.4397,
+  "sub.yEqual": 0.327,
+  "sub.psrCode.est": 0.433,
+  "sub.psrCode.lo": 0.307,
+  "sub.psrCode.hi": 0.542,
+  "sub.psrCode.ci": [
+    0.307,
+    0.542
+  ],
+  "sub.psrEqTwo.est": 0.649,
+  "sub.psrEqTwo.lo": 0.541,
+  "sub.psrEqTwo.hi": 0.736,
+  "sub.psrEqTwo.ci": [
+    0.541,
+    0.736
+  ],
+  "sub.psrPassDEF": 0.522,
+  "sub.psrPassMID": 0.525,
+  "sub.psrCodeVsEq": 0.824,
+  "sub.linkExact": 759,
+  "sub.linkNames": 760,
+  "sub.ottoEvents": 2,
+  "sub.ottoMinutes": 94.0,
+  "sub.romeuMinutes": 75.0,
+  "sub.universeLtThousand": 313,
+  "sub.universeBaseA": 202,
+  "sub.posChanged": 30,
+  "sub.posBoth": 333,
+  "foden.nFwdB": 67,
+  "foden.rankEffB": 48.0,
+  "foden.rankVolB": 25.0,
+  "rob.covTwoFull": 90,
+  "rob.covOneFull": 200,
+  "rob.minGtTenA": 0.0016179359759620942,
+  "rob.minMaxErrA": 73.02148333333334,
+  "rob.minGtTenB": 0.004143169524686385,
+  "rob.minMaxErrB": 99.27956666666668,
+  "rob.prelimKOne": 0.458,
+  "rob.prelimKTwo": 0.308,
+  "rob.romeuMinutesRone": 77.40058333333333,
+  "rob.scaleEffSdC": 9.125321107240966,
+  "rob.scaleEffMinC": 24.444796040021814,
+  "rob.scaleEffMaxC": 74.99545817134558,
+  "rob.scaleVolSdC": 28.914703206454593,
+  "rob.halfWidthSd": 1.15514073178666,
+  "rob.medPctLo": 14,
+  "rob.medPctHi": 90,
+  "rob.maeSd.BC.M0": 0.7908487453751609,
+  "rob.maeSd.BC.M2": 0.6917165995196235,
+  "rob.maeSd.AC.M0": 0.9215667069075097,
+  "rob.maeSd.AC.M2": 0.8242472138236984,
+  "rob.maeDiff.eff.BC.est": -0.9046126629816262,
+  "rob.maeDiff.eff.BC.lo": -1.4771275263316574,
+  "rob.maeDiff.eff.BC.hi": -0.3649684209369377,
+  "rob.maeDiff.eff.BC.ci": [
+    -1.4771275263316574,
+    -0.3649684209369377
+  ],
+  "rob.maeDiff.eff.AC.est": -0.888071624383695,
+  "rob.maeDiff.eff.AC.lo": -1.775996312589921,
+  "rob.maeDiff.eff.AC.hi": -0.03370031176277626,
+  "rob.maeDiff.eff.AC.ci": [
+    -1.775996312589921,
+    -0.03370031176277626
+  ],
+  "rob.maeDiff.vol.BC.est": -0.3594170002455179,
+  "rob.maeDiff.vol.BC.lo": -2.2618231929983934,
+  "rob.maeDiff.vol.BC.hi": 1.6288822067627733,
+  "rob.maeDiff.vol.BC.ci": [
+    -2.2618231929983934,
+    1.6288822067627733
+  ],
+  "rob.maeDiff.vol.AC.est": 0.5268342944513194,
+  "rob.maeDiff.vol.AC.lo": -2.9129723578585884,
+  "rob.maeDiff.vol.AC.hi": 3.85161506639965,
+  "rob.maeDiff.vol.AC.ci": [
+    -2.9129723578585884,
+    3.85161506639965
+  ],
+  "rob.corr.A.est": 0.3843653722234901,
+  "rob.corr.A.lo": 0.2760610233381183,
+  "rob.corr.A.hi": 0.48123182260870767,
+  "rob.corr.A.ci": [
+    0.2760610233381183,
+    0.48123182260870767
+  ],
+  "rob.corr.B.est": 0.48401245267003323,
+  "rob.corr.B.lo": 0.383299401696801,
+  "rob.corr.B.hi": 0.568728782415674,
+  "rob.corr.B.ci": [
+    0.383299401696801,
+    0.568728782415674
+  ],
+  "rob.corr.C.est": 0.5600092509608834,
+  "rob.corr.C.lo": 0.47129878294931027,
+  "rob.corr.C.hi": 0.6379250527422649,
+  "rob.corr.C.ci": [
+    0.47129878294931027,
+    0.6379250527422649
+  ],
+  "rob.topq.eff.BC.M0.est": 0.4418604651162791,
+  "rob.topq.eff.BC.M0.lo": 0.3409090909090909,
+  "rob.topq.eff.BC.M0.hi": 0.627906976744186,
+  "rob.topq.eff.BC.M0.ci": [
+    0.3409090909090909,
+    0.627906976744186
+  ],
+  "rob.topq.eff.BC.M2.est": 0.4883720930232558,
+  "rob.topq.eff.BC.M2.lo": 0.3409090909090909,
+  "rob.topq.eff.BC.M2.hi": 0.6363636363636364,
+  "rob.topq.eff.BC.M2.ci": [
+    0.3409090909090909,
+    0.6363636363636364
+  ],
+  "rob.topq.eff.BC.M3.est": 0.46511627906976744,
+  "rob.topq.eff.BC.M3.lo": 0.3409090909090909,
+  "rob.topq.eff.BC.M3.hi": 0.627906976744186,
+  "rob.topq.eff.BC.M3.ci": [
+    0.3409090909090909,
+    0.627906976744186
+  ],
+  "rob.dM3.eff.BC.est": -0.009323557038595998,
+  "rob.dM3.eff.BC.lo": -0.032528788355447605,
+  "rob.dM3.eff.BC.hi": 0.013024513810199824,
+  "rob.dM3.eff.BC.ci": [
+    -0.032528788355447605,
+    0.013024513810199824
+  ],
+  "rob.topq.eff.AC.M0.est": 0.35294117647058826,
+  "rob.topq.eff.AC.M0.lo": 0.21041021671826624,
+  "rob.topq.eff.AC.M0.hi": 0.5294117647058824,
+  "rob.topq.eff.AC.M0.ci": [
+    0.21041021671826624,
+    0.5294117647058824
+  ],
+  "rob.topq.eff.AC.M2.est": 0.29411764705882354,
+  "rob.topq.eff.AC.M2.lo": 0.16666666666666666,
+  "rob.topq.eff.AC.M2.hi": 0.4722222222222222,
+  "rob.topq.eff.AC.M2.ci": [
+    0.16666666666666666,
+    0.4722222222222222
+  ],
+  "rob.topq.eff.AC.M3.est": 0.3235294117647059,
+  "rob.topq.eff.AC.M3.lo": 0.19444444444444445,
+  "rob.topq.eff.AC.M3.hi": 0.5135135135135135,
+  "rob.topq.eff.AC.M3.ci": [
+    0.19444444444444445,
+    0.5135135135135135
+  ],
+  "rob.dM3.eff.AC.est": -0.018522404205904786,
+  "rob.dM3.eff.AC.lo": -0.09956605213370802,
+  "rob.dM3.eff.AC.hi": 0.05254600310159959,
+  "rob.dM3.eff.AC.ci": [
+    -0.09956605213370802,
+    0.05254600310159959
+  ],
+  "rob.topq.vol.BC.M0.est": 0.5581395348837209,
+  "rob.topq.vol.BC.M0.lo": 0.4222222222222222,
+  "rob.topq.vol.BC.M0.hi": 0.7045454545454546,
+  "rob.topq.vol.BC.M0.ci": [
+    0.4222222222222222,
+    0.7045454545454546
+  ],
+  "rob.mae.vol.BC.M0": 22.09109816658001,
+  "rob.topq.vol.BC.M2.est": 0.5813953488372093,
+  "rob.topq.vol.BC.M2.lo": 0.4222222222222222,
+  "rob.topq.vol.BC.M2.hi": 0.6976744186046512,
+  "rob.topq.vol.BC.M2.ci": [
+    0.4222222222222222,
+    0.6976744186046512
+  ],
+  "rob.mae.vol.BC.M2": 21.731681166334493,
+  "rob.topq.vol.AC.M0.est": 0.5,
+  "rob.topq.vol.AC.M0.lo": 0.3235294117647059,
+  "rob.topq.vol.AC.M0.hi": 0.6470588235294118,
+  "rob.topq.vol.AC.M0.ci": [
+    0.3235294117647059,
+    0.6470588235294118
+  ],
+  "rob.mae.vol.AC.M0": 24.10175643726946,
+  "rob.topq.vol.AC.M2.est": 0.4117647058823529,
+  "rob.topq.vol.AC.M2.lo": 0.2777777777777778,
+  "rob.topq.vol.AC.M2.hi": 0.5882352941176471,
+  "rob.topq.vol.AC.M2.ci": [
+    0.2777777777777778,
+    0.5882352941176471
+  ],
+  "rob.mae.vol.AC.M2": 24.62859073172078,
+  "rob.covConf.BC": 0.7678571428571429,
+  "rob.covConfLo.BC": 0.7083333333333334,
+  "rob.covConfHi.BC": 0.8333333333333334,
+  "rob.covGauss.BC.DEF": 0.7611940298507462,
+  "rob.covGauss.BC.MID": 0.9038461538461539,
+  "rob.covGauss.BC.FWD": 0.7142857142857143,
+  "rob.covConf.AC": 0.7611940298507462,
+  "rob.covConfLo.AC": 0.6865671641791045,
+  "rob.covConfHi.AC": 0.8283582089552238,
+  "rob.covGauss.AC.DEF": 0.7678571428571429,
+  "rob.covGauss.AC.MID": 0.8541666666666666,
+  "rob.covGauss.AC.FWD": 0.7,
+  "rob.calibTopBinN": 6,
+  "rob.impliedEvalKOne": 0.9955131804008052,
+  "rob.impliedEvalKTwo": 0.9519439668403368,
+  "rob.aucAbsent.AB": 26,
+  "rob.minPartialAge.AB.est": 0.04745531007316545,
+  "rob.minPartialAge.AB.lo": -0.09866567439225743,
+  "rob.minPartialAge.AB.hi": 0.18475933069824113,
+  "rob.minPartialAge.AB.ci": [
+    -0.09866567439225743,
+    0.18475933069824113
+  ],
+  "rob.aucAbsent.BC": 16,
+  "rob.minPartialAge.BC.est": 0.11268106821944965,
+  "rob.minPartialAge.BC.lo": -0.028208956871721702,
+  "rob.minPartialAge.BC.hi": 0.24711158089247878,
+  "rob.minPartialAge.BC.ci": [
+    -0.028208956871721702,
+    0.24711158089247878
+  ],
+  "rob.stay.BC.nStay": 154,
+  "rob.stay.BC.nMove": 14,
+  "rob.stay.BC.eff.stayers.est": 0.5003615068965027,
+  "rob.stay.BC.eff.stayers.lo": 0.3553488263355353,
+  "rob.stay.BC.eff.stayers.hi": 0.6124796566181806,
+  "rob.stay.BC.eff.stayers.ci": [
+    0.3553488263355353,
+    0.6124796566181806
+  ],
+  "rob.stay.BC.eff.movers.est": 0.15,
+  "rob.stay.BC.eff.movers.lo": -0.8333333333333333,
+  "rob.stay.BC.eff.movers.hi": 0.9375,
+  "rob.stay.BC.eff.movers.ci": [
+    -0.8333333333333333,
+    0.9375
+  ],
+  "rob.stay.BC.vol.stayers.est": 0.4838806199152539,
+  "rob.stay.BC.vol.stayers.lo": 0.3412672994125224,
+  "rob.stay.BC.vol.stayers.hi": 0.6040218956680613,
+  "rob.stay.BC.vol.stayers.ci": [
+    0.3412672994125224,
+    0.6040218956680613
+  ],
+  "rob.stay.BC.vol.movers.est": 0.55,
+  "rob.stay.BC.vol.movers.lo": -0.35855263157894723,
+  "rob.stay.BC.vol.movers.hi": 1.0,
+  "rob.stay.BC.vol.movers.ci": [
+    -0.35855263157894723,
+    1.0
+  ],
+  "rob.partial.BC.eff_pos.est": 0.556050858394658,
+  "rob.partial.BC.eff_pos.lo": 0.4408409098162103,
+  "rob.partial.BC.eff_pos.hi": 0.6580460328289497,
+  "rob.partial.BC.eff_pos.ci": [
+    0.4408409098162103,
+    0.6580460328289497
+  ],
+  "rob.partial.BC.eff_club.est": 0.5325075987174089,
+  "rob.partial.BC.eff_club.lo": 0.3934738534785385,
+  "rob.partial.BC.eff_club.hi": 0.648415469503979,
+  "rob.partial.BC.eff_club.ci": [
+    0.3934738534785385,
+    0.648415469503979
+  ],
+  "rob.partial.BC.vol_pos.est": 0.4951836326535859,
+  "rob.partial.BC.vol_pos.lo": 0.36932590425026607,
+  "rob.partial.BC.vol_pos.hi": 0.6093917366685142,
+  "rob.partial.BC.vol_pos.ci": [
+    0.36932590425026607,
+    0.6093917366685142
+  ],
+  "rob.partial.BC.vol_club.est": 0.48159062785090273,
+  "rob.partial.BC.vol_club.lo": 0.3294297121635607,
+  "rob.partial.BC.vol_club.hi": 0.6157595319991416,
+  "rob.partial.BC.vol_club.ci": [
+    0.3294297121635607,
+    0.6157595319991416
+  ],
+  "rob.partial.BC.diff_pos.est": -0.06086722574107206,
+  "rob.partial.BC.diff_pos.lo": -0.19675539924259763,
+  "rob.partial.BC.diff_pos.hi": 0.08096443623616725,
+  "rob.partial.BC.diff_pos.ci": [
+    -0.19675539924259763,
+    0.08096443623616725
+  ],
+  "rob.partial.BC.diff_club.est": -0.050916970866506206,
+  "rob.partial.BC.diff_club.lo": -0.2199482543912575,
+  "rob.partial.BC.diff_club.hi": 0.11735835510854692,
+  "rob.partial.BC.diff_club.ci": [
+    -0.2199482543912575,
+    0.11735835510854692
+  ],
+  "rob.stay.AC.nStay": 99,
+  "rob.stay.AC.nMove": 35,
+  "rob.stay.AC.eff.stayers.est": 0.2052081094634286,
+  "rob.stay.AC.eff.stayers.lo": -0.006161993134117475,
+  "rob.stay.AC.eff.stayers.hi": 0.39304375409253034,
+  "rob.stay.AC.eff.stayers.ci": [
+    -0.006161993134117475,
+    0.39304375409253034
+  ],
+  "rob.stay.AC.eff.movers.est": 0.4362970362970363,
+  "rob.stay.AC.eff.movers.lo": 0.056059306532537025,
+  "rob.stay.AC.eff.movers.hi": 0.6964556782282274,
+  "rob.stay.AC.eff.movers.ci": [
+    0.056059306532537025,
+    0.6964556782282274
+  ],
+  "rob.stay.AC.vol.stayers.est": 0.47593053124968016,
+  "rob.stay.AC.vol.stayers.lo": 0.2946503519191378,
+  "rob.stay.AC.vol.stayers.hi": 0.6140096560000384,
+  "rob.stay.AC.vol.stayers.ci": [
+    0.2946503519191378,
+    0.6140096560000384
+  ],
+  "rob.stay.AC.vol.movers.est": 0.6041758241758242,
+  "rob.stay.AC.vol.movers.lo": 0.29875264253226935,
+  "rob.stay.AC.vol.movers.hi": 0.751718259247007,
+  "rob.stay.AC.vol.movers.ci": [
+    0.29875264253226935,
+    0.751718259247007
+  ],
+  "rob.partial.AC.eff_pos.est": 0.34174302061981693,
+  "rob.partial.AC.eff_pos.lo": 0.1762400278122957,
+  "rob.partial.AC.eff_pos.hi": 0.4867590931970214,
+  "rob.partial.AC.eff_pos.ci": [
+    0.1762400278122957,
+    0.4867590931970214
+  ],
+  "rob.partial.AC.eff_club.est": 0.3360187571656825,
+  "rob.partial.AC.eff_club.lo": 0.06421570187895062,
+  "rob.partial.AC.eff_club.hi": 0.49502829568808787,
+  "rob.partial.AC.eff_club.ci": [
+    0.06421570187895062,
+    0.49502829568808787
+  ],
+  "rob.partial.AC.vol_pos.est": 0.4921538725564785,
+  "rob.partial.AC.vol_pos.lo": 0.35750937647056613,
+  "rob.partial.AC.vol_pos.hi": 0.601929490154418,
+  "rob.partial.AC.vol_pos.ci": [
+    0.35750937647056613,
+    0.601929490154418
+  ],
+  "rob.partial.AC.vol_club.est": 0.49215479098551,
+  "rob.partial.AC.vol_club.lo": 0.27191000249427916,
+  "rob.partial.AC.vol_club.hi": 0.644218993163052,
+  "rob.partial.AC.vol_club.ci": [
+    0.27191000249427916,
+    0.644218993163052
+  ],
+  "rob.partial.AC.diff_pos.est": 0.1504108519366616,
+  "rob.partial.AC.diff_pos.lo": -0.015227639433054338,
+  "rob.partial.AC.diff_pos.hi": 0.3245020256104962,
+  "rob.partial.AC.diff_pos.ci": [
+    -0.015227639433054338,
+    0.3245020256104962
+  ],
+  "rob.partial.AC.diff_club.est": 0.1561360338198275,
+  "rob.partial.AC.diff_club.lo": -0.04457132487673497,
+  "rob.partial.AC.diff_club.hi": 0.42236514465858205,
+  "rob.partial.AC.diff_club.ci": [
+    -0.04457132487673497,
+    0.42236514465858205
+  ],
+  "rob.mvclub.AB.eff.level.next.club.est": 0.1118974121946353,
+  "rob.mvclub.AB.eff.level.next.club.lo": -0.015861097554247815,
+  "rob.mvclub.AB.eff.level.next.club.hi": 0.2395347846940976,
+  "rob.mvclub.AB.eff.level.next.club.ci": [
+    -0.015861097554247815,
+    0.2395347846940976
+  ],
+  "rob.mvclub.AB.vol.level.next.club.est": 0.16655126159839395,
+  "rob.mvclub.AB.vol.level.next.club.lo": 0.046886585698233195,
+  "rob.mvclub.AB.vol.level.next.club.hi": 0.286094318286736,
+  "rob.mvclub.AB.vol.level.next.club.ci": [
+    0.046886585698233195,
+    0.286094318286736
+  ],
+  "rob.mvclub.AB.diff.level.next.club.est": 0.054653849403758656,
+  "rob.mvclub.AB.diff.level.next.club.lo": -0.07708428871461863,
+  "rob.mvclub.AB.diff.level.next.club.hi": 0.19450594706501947,
+  "rob.mvclub.AB.diff.level.next.club.ci": [
+    -0.07708428871461863,
+    0.19450594706501947
+  ],
+  "rob.mvclub.AB.eff.level.now.club.est": 0.19618435763478387,
+  "rob.mvclub.AB.eff.level.now.club.lo": 0.07088350031688252,
+  "rob.mvclub.AB.eff.level.now.club.hi": 0.31485998154975003,
+  "rob.mvclub.AB.eff.level.now.club.ci": [
+    0.07088350031688252,
+    0.31485998154975003
+  ],
+  "rob.mvclub.AB.vol.level.now.club.est": 0.20336269747894178,
+  "rob.mvclub.AB.vol.level.now.club.lo": 0.08310545911789621,
+  "rob.mvclub.AB.vol.level.now.club.hi": 0.3253157379546787,
+  "rob.mvclub.AB.vol.level.now.club.ci": [
+    0.08310545911789621,
+    0.3253157379546787
+  ],
+  "rob.mvclub.AB.vol.change.club.est": 0.03378710656207623,
+  "rob.mvclub.AB.vol.change.club.lo": -0.11882320864901558,
+  "rob.mvclub.AB.vol.change.club.hi": 0.16606753460726456,
+  "rob.mvclub.AB.vol.change.club.ci": [
+    -0.11882320864901558,
+    0.16606753460726456
+  ],
+  "rob.mvclub.AB.eff.change.club.est": -0.08058970739309308,
+  "rob.mvclub.AB.eff.change.club.lo": -0.21881476735128816,
+  "rob.mvclub.AB.eff.change.club.hi": 0.05209123170927482,
+  "rob.mvclub.AB.eff.change.club.ci": [
+    -0.21881476735128816,
+    0.05209123170927482
+  ],
+  "rob.mvclub.BC.eff.level.next.club.est": 0.1464368906029033,
+  "rob.mvclub.BC.eff.level.next.club.lo": 0.028010883684981874,
+  "rob.mvclub.BC.eff.level.next.club.hi": 0.2669546956683207,
+  "rob.mvclub.BC.eff.level.next.club.ci": [
+    0.028010883684981874,
+    0.2669546956683207
+  ],
+  "rob.mvclub.BC.vol.level.next.club.est": 0.14771291366864514,
+  "rob.mvclub.BC.vol.level.next.club.lo": 0.023154275715805347,
+  "rob.mvclub.BC.vol.level.next.club.hi": 0.2704636040028372,
+  "rob.mvclub.BC.vol.level.next.club.ci": [
+    0.023154275715805347,
+    0.2704636040028372
+  ],
+  "rob.mvclub.BC.diff.level.next.club.est": 0.0012760230657418437,
+  "rob.mvclub.BC.diff.level.next.club.lo": -0.11851994082978978,
+  "rob.mvclub.BC.diff.level.next.club.hi": 0.11318395242694486,
+  "rob.mvclub.BC.diff.level.next.club.ci": [
+    -0.11851994082978978,
+    0.11318395242694486
+  ],
+  "rob.mvclub.BC.eff.level.now.club.est": 0.09713388707467606,
+  "rob.mvclub.BC.eff.level.now.club.lo": -0.031729864470076564,
+  "rob.mvclub.BC.eff.level.now.club.hi": 0.23391318141432624,
+  "rob.mvclub.BC.eff.level.now.club.ci": [
+    -0.031729864470076564,
+    0.23391318141432624
+  ],
+  "rob.mvclub.BC.vol.level.now.club.est": 0.15915219736985609,
+  "rob.mvclub.BC.vol.level.now.club.lo": 0.04011740170621171,
+  "rob.mvclub.BC.vol.level.now.club.hi": 0.28224151390766744,
+  "rob.mvclub.BC.vol.level.now.club.ci": [
+    0.04011740170621171,
+    0.28224151390766744
+  ],
+  "rob.mvclub.BC.vol.change.club.est": 0.03157029146707432,
+  "rob.mvclub.BC.vol.change.club.lo": -0.10744868262832516,
+  "rob.mvclub.BC.vol.change.club.hi": 0.16287706374227287,
+  "rob.mvclub.BC.vol.change.club.ci": [
+    -0.10744868262832516,
+    0.16287706374227287
+  ],
+  "rob.mvclub.BC.eff.change.club.est": 0.06877517703634407,
+  "rob.mvclub.BC.eff.change.club.lo": -0.0681541349917628,
+  "rob.mvclub.BC.eff.change.club.hi": 0.20235335129933876,
+  "rob.mvclub.BC.eff.change.club.ci": [
+    -0.0681541349917628,
+    0.20235335129933876
+  ],
+  "rob.mvclub.CD.eff.level.next.club.est": 0.19504553623694953,
+  "rob.mvclub.CD.eff.level.next.club.lo": 0.0764578854710733,
+  "rob.mvclub.CD.eff.level.next.club.hi": 0.3002856811560641,
+  "rob.mvclub.CD.eff.level.next.club.ci": [
+    0.0764578854710733,
+    0.3002856811560641
+  ],
+  "rob.mvclub.CD.vol.level.next.club.est": 0.22424000910241831,
+  "rob.mvclub.CD.vol.level.next.club.lo": 0.09963610335798113,
+  "rob.mvclub.CD.vol.level.next.club.hi": 0.3265206534068438,
+  "rob.mvclub.CD.vol.level.next.club.ci": [
+    0.09963610335798113,
+    0.3265206534068438
+  ],
+  "rob.mvclub.CD.diff.level.next.club.est": 0.02919447286546878,
+  "rob.mvclub.CD.diff.level.next.club.lo": -0.07813379250078557,
+  "rob.mvclub.CD.diff.level.next.club.hi": 0.12624956220776698,
+  "rob.mvclub.CD.diff.level.next.club.ci": [
+    -0.07813379250078557,
+    0.12624956220776698
+  ],
+  "rob.mvclub.CD.eff.level.now.club.est": 0.21335769666168142,
+  "rob.mvclub.CD.eff.level.now.club.lo": 0.0955605950097324,
+  "rob.mvclub.CD.eff.level.now.club.hi": 0.3214727288462555,
+  "rob.mvclub.CD.eff.level.now.club.ci": [
+    0.0955605950097324,
+    0.3214727288462555
+  ],
+  "rob.mvclub.CD.vol.level.now.club.est": 0.2244817717754385,
+  "rob.mvclub.CD.vol.level.now.club.lo": 0.09904893058008116,
+  "rob.mvclub.CD.vol.level.now.club.hi": 0.3282805785731258,
+  "rob.mvclub.CD.vol.level.now.club.ci": [
+    0.09904893058008116,
+    0.3282805785731258
+  ],
+  "rob.mvclub.CD.vol.change.club.est": 0.09434289873541622,
+  "rob.mvclub.CD.vol.change.club.lo": -0.028873055977393692,
+  "rob.mvclub.CD.vol.change.club.hi": 0.1998548532889587,
+  "rob.mvclub.CD.vol.change.club.ci": [
+    -0.028873055977393692,
+    0.1998548532889587
+  ],
+  "rob.mvclub.CD.eff.change.club.est": 0.04613154628390648,
+  "rob.mvclub.CD.eff.change.club.lo": -0.07298030522888355,
+  "rob.mvclub.CD.eff.change.club.hi": 0.15632228140043417,
+  "rob.mvclub.CD.eff.change.club.ci": [
+    -0.07298030522888355,
+    0.15632228140043417
+  ],
+  "rob.tq.eff.BC.n": 43,
+  "rob.tq.eff.BC.obs.est": 0.4418604651162791,
+  "rob.tq.eff.BC.obs.lo": 0.3043330974292391,
+  "rob.tq.eff.BC.obs.hi": 0.5889238565723254,
+  "rob.tq.eff.BC.obs.ci": [
+    0.3043330974292391,
+    0.5889238565723254
+  ],
+  "rob.tq.eff.BC.model": 0.48717441860465116,
+  "rob.tq.vol.BC.n": 43,
+  "rob.tq.vol.BC.obs.est": 0.5581395348837209,
+  "rob.tq.vol.BC.obs.lo": 0.4110761434276745,
+  "rob.tq.vol.BC.obs.hi": 0.6956669025707608,
+  "rob.tq.vol.BC.obs.ci": [
+    0.4110761434276745,
+    0.6956669025707608
+  ],
+  "rob.tq.eff.AC.n": 34,
+  "rob.tq.eff.AC.obs.est": 0.35294117647058826,
+  "rob.tq.eff.AC.obs.lo": 0.2148792050658079,
+  "rob.tq.eff.AC.obs.hi": 0.5208603701083743,
+  "rob.tq.eff.AC.obs.ci": [
+    0.2148792050658079,
+    0.5208603701083743
+  ],
+  "rob.tq.eff.AC.model": 0.3627941176470588,
+  "rob.tq.vol.AC.n": 34,
+  "rob.tq.vol.AC.obs.est": 0.5,
+  "rob.tq.vol.AC.obs.lo": 0.34069325532779604,
+  "rob.tq.vol.AC.obs.hi": 0.659306744672204,
+  "rob.tq.vol.AC.obs.ci": [
+    0.34069325532779604,
+    0.659306744672204
+  ],
+  "rob.ipw.eff.BC.est": -0.004890137378953163,
+  "rob.ipw.eff.BC.lo": -0.023288226967394483,
+  "rob.ipw.eff.BC.hi": 0.010580369921423395,
+  "rob.ipw.eff.BC.ci": [
+    -0.023288226967394483,
+    0.010580369921423395
+  ],
+  "rob.ipw.eff.AC.est": -0.07420438502735233,
+  "rob.ipw.eff.AC.lo": -0.16716071861914916,
+  "rob.ipw.eff.AC.hi": 0.018243338189956167,
+  "rob.ipw.eff.AC.ci": [
+    -0.16716071861914916,
+    0.018243338189956167
+  ],
+  "rob.ipw.vol.BC.est": -0.03623799106582648,
+  "rob.ipw.vol.BC.lo": -0.07596820583107823,
+  "rob.ipw.vol.BC.hi": 0.001372563186405881,
+  "rob.ipw.vol.BC.ci": [
+    -0.07596820583107823,
+    0.001372563186405881
+  ],
+  "rob.ipw.vol.AC.est": -0.08608016191219459,
+  "rob.ipw.vol.AC.lo": -0.1857063714029212,
+  "rob.ipw.vol.AC.hi": 0.003956567288018463,
+  "rob.ipw.vol.AC.ci": [
+    -0.1857063714029212,
+    0.003956567288018463
+  ],
+  "rob.joint.eff.BC.est": -0.0044008491046505505,
+  "rob.joint.eff.BC.lo": -0.06615748428609236,
+  "rob.joint.eff.BC.hi": 0.03516244075625931,
+  "rob.joint.eff.BC.ci": [
+    -0.06615748428609236,
+    0.03516244075625931
+  ],
+  "rob.joint.eff.AC.est": -0.033139335777350676,
+  "rob.joint.eff.AC.lo": -0.1726874384116437,
+  "rob.joint.eff.AC.hi": 0.046969543958649426,
+  "rob.joint.eff.AC.ci": [
+    -0.1726874384116437,
+    0.046969543958649426
+  ],
+  "rob.joint.vol.BC.est": -0.03447112035208599,
+  "rob.joint.vol.BC.lo": -0.1251116598612282,
+  "rob.joint.vol.BC.hi": 0.015182050040091889,
+  "rob.joint.vol.BC.ci": [
+    -0.1251116598612282,
+    0.015182050040091889
+  ],
+  "rob.joint.vol.AC.est": -0.08252293370018637,
+  "rob.joint.vol.AC.lo": -0.3519255943372821,
+  "rob.joint.vol.AC.hi": 0.014861933760054196,
+  "rob.joint.vol.AC.ci": [
+    -0.3519255943372821,
+    0.014861933760054196
+  ],
+  "rob.jointMaxHi": 0.046969543958649426,
+  "rob.ageOldCut": 30,
+  "rob.age30.absent.lo": 0.19071102783099478,
+  "rob.age30.absent.hi": 0.460259940579257,
+  "rob.age30.absent.n": 42,
+  "rob.age30.eligible.lo": 0.12675767772156168,
+  "rob.age30.eligible.hi": 0.24922327891982352,
+  "rob.age30.eligible.n": 150
+}

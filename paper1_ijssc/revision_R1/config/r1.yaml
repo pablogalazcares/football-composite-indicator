@@ -1,0 +1,67 @@
+# Configuración única del pipeline R1 (SPEC_R1 §5). Rutas relativas a la raíz del repo, salvo las que empiezan con ~.
+version: 1
+seed: 20261108
+
+paths:
+  raw_events: data/raw/statsbomb_json/events_and_frames/data/events
+  raw_matches: data/raw/statsbomb_json/events_and_frames/data/matches/2
+  raw_lineups: data/raw/statsbomb_json/events_and_frames/data/lineups
+  players_master: data/master/players_master.parquet
+  market_value: data/master/market_value.parquet
+  submitted_pipeline: outputs/pipeline
+  submitted_paper1_smf: outputs/paper1_smf
+  tm_sqlite: ../whoscored_data/whoscored-scraper/data/whoscored.sqlite      # Adenda 1 (HC3-5)
+  tm_history: ../whoscored_data/analisis/datos_externos/tm_valor_historial/tm_valor_historial.parquet
+  p01_module: scripts/pipeline/P01_canonical_positions.py
+  p03_module: scripts/pipeline/P03_score_computation.py
+  cache: ~/.cache/paper1_ijssc_r1            # D-17: eventos fuera de Dropbox y del repo
+  outputs: paper1_ijssc/revision_R1/outputs/r1
+  results: paper1_ijssc/revision_R1/results
+
+# Temporadas en orden cronológico. Para agregar 2025/26 basta una entrada D (REQ-A15).
+seasons:
+  - {label: A, season_id: 235, name: "2022/2023", jan1: "2023-01-01"}
+  - {label: B, season_id: 281, name: "2023/2024", jan1: "2024-01-01"}
+  - {label: C, season_id: 317, name: "2024/2025", jan1: "2025-01-01"}
+
+design:
+  training_transition: [A, B]        # única fuente de parámetros estimados (REQ-C2, §5.4)
+  max_k: 2                           # horizontes evaluados; con D disponible subir a 3
+
+exposure:                            # D-04
+  main_min_minutes: 1000
+  sensitivity_min_minutes: [500, 750]
+  sensitivity_share_club_minutes: 0.30
+
+positions:                           # D-06
+  primary: season_modal
+  sensitivity: canonical_p01
+  outfield: [DEF, MID, FWD]
+
+indicator:                           # D-07
+  weights: [p03_ar1, equal]
+  primary_weights: p03_ar1
+  macro_sensitivity: {w_for: 0.5, w_against: 0.5}
+  shot_shrinkage_k: 10
+
+models:                              # D-08
+  age_center: 26.0
+  list: [M0, M1, M2, M3]
+  exploratory: [M3]
+
+metrics:                             # D-09, D-10, D-11
+  bootstrap_B: 2000
+  interval_level: 0.80
+  top_quantile: 0.75
+  n_sims_rank: 2000
+
+market_value:                        # Adenda 1 §2
+  tm_seasons: [2022, 2023, 2024, 2025]
+  season_end: {A: "2023-06-30", B: "2024-06-30", C: "2025-06-30", D: "2026-06-30"}
+  tm_season_of: {A: 2022, B: 2023, C: 2024, D: 2025}
+  name_min_jaccard: 0.25
+
+validation:                          # REQ-D2
+  minutes_median_abs_err_max: 2.0
+  minutes_season_total_rho_min: 0.99
+  minutes_flag_discrepancy: 10.0

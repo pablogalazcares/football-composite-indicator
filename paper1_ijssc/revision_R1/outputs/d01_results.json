@@ -1,0 +1,221 @@
+{
+  "matches_per_season": {
+    "2022/2023": 290,
+    "2023/2024": 290
+  },
+  "clubs_by_covered_matches": {
+    "2022/2023": {
+      "20": 10,
+      "38": 10
+    },
+    "2023/2024": {
+      "20": 10,
+      "38": 10
+    }
+  },
+  "linkage": {
+    "event_names": 760,
+    "exact": 759,
+    "jaccard": 0,
+    "unresolved": 1,
+    "unresolved_events": 51,
+    "events_total": 1168714
+  },
+  "player_ids_with_multiple_event_names": 0,
+  "p03_duplicate_player_season": 0,
+  "minutes_partial_clubs": {
+    "n_player_seasons_at_20_match_clubs": 535,
+    "max_minutes_played_PSF": 2224.0,
+    "max_n_matches_PSF": 25.0,
+    "share_ge_1000_at_20_clubs": 0.5121495327102804,
+    "share_ge_1000_at_38_clubs": 0.7486437613019892
+  },
+  "team_mismatch_events_vs_mv": 9,
+  "training_pairs_by_club_coverage_t0": {
+    "38.0": 142,
+    "20.0": 69
+  },
+  "player_seasons_by_club_coverage": {
+    "38.0": 553,
+    "20.0": 535
+  },
+  "profile_players": [
+    {
+      "player_name": "Mohamed Salah",
+      "season_base": "2023/2024",
+      "set_label": "B",
+      "score_h0": 65.3,
+      "n_matches_ev": 32,
+      "n_matches_psf": 32.0,
+      "n_events": 2303,
+      "minutes_played": 2967.0,
+      "label_fig5_reproduced": "M. Salah"
+    },
+    {
+      "player_name": "Virgil van Dijk",
+      "season_base": "2023/2024",
+      "set_label": "B",
+      "score_h0": 60.0,
+      "n_matches_ev": 36,
+      "n_matches_psf": 36.0,
+      "n_events": 5177,
+      "minutes_played": 3394.0,
+      "label_fig5_reproduced": "V. Dijk"
+    },
+    {
+      "player_name": "David Raya Martin",
+      "season_base": "2023/2024",
+      "set_label": "B",
+      "score_h0": 67.2,
+      "n_matches_ev": 32,
+      "n_matches_psf": 32.0,
+      "n_events": 1893,
+      "minutes_played": 3039.0,
+      "label_fig5_reproduced": "D. Martin"
+    },
+    {
+      "player_name": "Phil Foden",
+      "season_base": "2023/2024",
+      "set_label": "B",
+      "score_h0": 48.2,
+      "n_matches_ev": 35,
+      "n_matches_psf": 35.0,
+      "n_events": 3727,
+      "minutes_played": 3131.0,
+      "label_fig5_reproduced": "P. Foden"
+    },
+    {
+      "player_name": "Jonathan Castro Otto",
+      "season_base": "2023/2024",
+      "set_label": "B",
+      "score_h0": 94.3,
+      "n_matches_ev": 1,
+      "n_matches_psf": 1.0,
+      "n_events": 2,
+      "minutes_played": 94.0,
+      "label_fig5_reproduced": "J. Otto"
+    },
+    {
+      "player_name": "Martin Ødegaard",
+      "season_base": "2023/2024",
+      "set_label": "B",
+      "score_h0": 53.7,
+      "n_matches_ev": 35,
+      "n_matches_psf": 35.0,
+      "n_events": 4128,
+      "minutes_played": 3254.0,
+      "label_fig5_reproduced": "M. Ødegaard"
+    },
+    {
+      "player_name": "Ryan Gravenberch",
+      "season_base": "2023/2024",
+      "set_label": "B",
+      "score_h0": 48.3,
+      "n_matches_ev": 26,
+      "n_matches_psf": 26.0,
+      "n_events": 1170,
+      "minutes_played": 2179.0,
+      "label_fig5_reproduced": "R. Gravenberch"
+    },
+    {
+      "player_name": "Bart Verbruggen",
+      "season_base": "2023/2024",
+      "set_label": "B",
+      "score_h0": 48.4,
+      "n_matches_ev": 21,
+      "n_matches_psf": 21.0,
+      "n_events": 1575,
+      "minutes_played": 2008.0,
+      "label_fig5_reproduced": "B. Verbruggen"
+    },
+    {
+      "player_name": "Ethan Chidiebere Nwaneri",
+      "season_base": "2023/2024",
+      "set_label": "B",
+      "score_h0": 44.0,
+      "n_matches_ev": 1,
+      "n_matches_psf": NaN,
+      "n_events": 37,
+      "minutes_played": NaN,
+      "label_fig5_reproduced": "E. Nwaneri"
+    },
+    {
+      "player_name": "Oriol Romeu Vidal",
+      "season_base": "2022/2023",
+      "set_label": "E",
+      "score_h0": 79.5,
+      "n_matches_ev": 1,
+      "n_matches_psf": 1.0,
+      "n_events": 62,
+      "minutes_played": 75.0,
+      "label_fig5_reproduced": "O. Vidal"
+    },
+    {
+      "player_name": "Joseph Hodge",
+      "season_base": "2022/2023",
+      "set_label": "E",
+      "score_h0": 47.8,
+      "n_matches_ev": 4,
+      "n_matches_psf": NaN,
+      "n_events": 131,
+      "minutes_played": NaN,
+      "label_fig5_reproduced": "J. Hodge"
+    }
+  ],
+  "age_match_rate_by_reference_date": {
+    "2022/2023|season_start_08-01": 0.06306306306306306,
+    "2022/2023|jan_01": 0.496996996996997,
+    "2022/2023|season_end_06-30": 0.9954954954954955,
+    "2023/2024|season_start_08-01": 0.0773405698778833,
+    "2023/2024|jan_01": 0.49525101763907736,
+    "2023/2024|season_end_06-30": 0.9972862957937585
+  },
+  "age_is_integer": true,
+  "position_group_change_between_seasons": {
+    "players_in_both_seasons": 333,
+    "changed_group": 30,
+    "changed_group_in_training_211": 8
+  },
+  "season_group_differs_from_canonical": 81,
+  "survivorship_2223_ge1000": [
+    {
+      "status": "absent_2324",
+      "n": 82,
+      "age_mean": 27.671,
+      "age_ge30": 0.378,
+      "score_OBV_mean": 50.255
+    },
+    {
+      "status": "in_EPL_lt1000",
+      "n": 58,
+      "age_mean": 26.379,
+      "age_ge30": 0.224,
+      "score_OBV_mean": 53.012
+    },
+    {
+      "status": "in_training",
+      "n": 211,
+      "age_mean": 26.569,
+      "age_ge30": 0.242,
+      "score_OBV_mean": 51.098
+    }
+  ],
+  "survivorship_by_age_band": {
+    "(0, 23]": "0.579",
+    "(23, 26]": "0.645",
+    "(26, 29]": "0.643",
+    "(29, 32]": "0.578",
+    "(32, 45]": "0.452"
+  },
+  "projection_universe_base_season": {
+    "2023/2024": 557,
+    "2022/2023": 202
+  },
+  "projection_universe_minutes": {
+    "lt_90": 7,
+    "lt_450": 149,
+    "lt_1000": 313,
+    "ge_1000": 419,
+    "missing": 27
+  }
+}

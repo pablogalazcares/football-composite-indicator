@@ -1,0 +1,108 @@
+{
+  "raw_columns": [
+    "player_id",
+    "season_name",
+    "event_type",
+    "is_success"
+  ],
+  "1_code_vs_eq2": {
+    "n": 951,
+    "spearman_scorePSR_code_vs_pooled_percentile": 0.824,
+    "has_psr_1": 981,
+    "pooled_n_ge_10": 954,
+    "has_psr_but_pooled_n_lt_10": 30,
+    "pooled_n_ge_10_but_no_has_psr": 3
+  },
+  "2_persistence": {
+    "code_scorePSR|training_211": {
+      "n": 211,
+      "rho": 0.433,
+      "ci95": [
+        0.307,
+        0.542
+      ]
+    },
+    "code_scorePSR|all_in_both": {
+      "n": 314,
+      "rho": 0.409,
+      "ci95": [
+        0.31,
+        0.509
+      ]
+    },
+    "eq2_pooled_percentile|training_211": {
+      "n": 211,
+      "rho": 0.649,
+      "ci95": [
+        0.541,
+        0.736
+      ]
+    },
+    "eq2_pooled_percentile|all_in_both": {
+      "n": 301,
+      "rho": 0.528,
+      "ci95": [
+        0.433,
+        0.616
+      ]
+    },
+    "OBV_component|training_211": {
+      "n": 211,
+      "rho": 0.483,
+      "ci95": [
+        0.366,
+        0.59
+      ]
+    }
+  },
+  "3_event_mix": {
+    "psr_pooled_vs_share_Pass_all": 0.296,
+    "psr_pooled_vs_share_Pass_DEF": 0.522,
+    "psr_pooled_vs_share_Pass_MID": 0.525,
+    "psr_pooled_vs_share_Pass_FWD": 0.17,
+    "score_PSR_vs_share_Pass_all": 0.164,
+    "score_PSR_vs_share_Pass_DEF": 0.371,
+    "score_PSR_vs_share_Pass_MID": 0.286,
+    "score_PSR_vs_share_Pass_FWD": -0.032,
+    "DEF_centre_backs_vs_full_backs": {
+      "n_cb": 187,
+      "n_fb": 189,
+      "median_psr_pooled_cb": 0.686,
+      "median_psr_pooled_fb": 0.633,
+      "median_scorePSR_cb": 57.1,
+      "median_scorePSR_fb": 44.2,
+      "median_share_Pass_cb": 0.763,
+      "median_share_Pass_fb": 0.658
+    },
+    "mean_event_mix_by_group": {
+      "DEF": {
+        "share_Dribble": 0.075,
+        "share_Duel": 0.201,
+        "share_Pass": 0.697,
+        "share_Shot": 0.027
+      },
+      "FWD": {
+        "share_Dribble": 0.217,
+        "share_Duel": 0.12,
+        "share_Pass": 0.594,
+        "share_Shot": 0.07
+      },
+      "GK": {
+        "share_Dribble": 0.004,
+        "share_Duel": 0.002,
+        "share_Pass": 0.994,
+        "share_Shot": 0.0
+      },
+      "MID": {
+        "share_Dribble": 0.112,
+        "share_Duel": 0.175,
+        "share_Pass": 0.682,
+        "share_Shot": 0.031
+      }
+    }
+  },
+  "4_obv_psr_spearman": {
+    "code_scorePSR": 0.104,
+    "pooled_psr": 0.08
+  }
+}

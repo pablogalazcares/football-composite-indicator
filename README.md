@@ -1,11 +1,70 @@
-# Reproducibility Package — Football Composite Performance Indicator
+# Reproducibility Package — On-Ball Value Rankings One and Two Seasons Ahead
 
-**Paper**: Galaz-Cares, P. & Sauré, D. (under review). *What a projected performance indicator can and cannot tell a club: ranking horizons for on-ball value and pressure in the Premier League*.
+**Paper (revised version, under review)**: Galaz-Cares, P. & Sauré, D. *Ranking Premier League players one and two
+seasons ahead with on-ball value: observed persistence, forecast accuracy and uncertainty*. International Journal of
+Sports Science & Coaching, manuscript SPO-26-1593 (revision 1).
 
 **DOI (data + code)**: [10.5281/zenodo.20357643](https://doi.org/10.5281/zenodo.20357643)
-This is the *concept* DOI; it always resolves to the latest archived version. The version underlying the submitted manuscript is **v1.3.0** (operative blend weight α = 0.06).
+This is the *concept* DOI; it always resolves to the latest archived version. The version underlying the **revised**
+manuscript is **v2.0.0**. Versions v1.0.0–v1.3.0 correspond to the originally submitted version (composite OBV + PSR
+indicator), which the revision replaces; they are kept below for the record.
 
 ---
+
+## v2.0.0: revision R1
+
+The revision replaces the model-implied "ranking horizon" with **observed** rank persistence and out-of-time forecast
+accuracy, using a third season (2024/25). Everything estimated from data is fixed on 2022/23 → 2023/24 and evaluated
+on 2023/24 → 2024/25 (one season ahead) and 2022/23 → 2024/25 (two seasons ahead). The pressure component is dropped.
+
+### Contents
+
+```
+paper1_ijssc/revision_R1/
+  pipeline/            r01–r19 stages and run_all.py (single command, raw events → every number, table and figure)
+  config/r1.yaml       seasons, paths, design constants (seed 20261108)
+  tests/               60 tests (unit, data, anti-leakage, number snapshot, manuscript linters)
+  PREREGISTRO*.md      time-stamped analysis plan and its two addenda (in Spanish), committed before each analysis
+  outputs/d0*_results.json   read-only diagnostics of the submitted version (Supplementary S8)
+  results/             numbers.tex / paper_numbers.json (every number in the paper), tables, figures, audit notes
+scripts/pipeline/      P01 and P03 of the submitted pipeline (constants read, not modified, by the R1 pipeline)
+data/derived/r1/       released derived data (see below)
+```
+
+### Released derived data (`data/derived/r1/`, CC BY 4.0)
+
+Only players above the exposure threshold (≥ 1,000 minutes in covered matches) are included.
+
+- `player_season_r1.csv` — one row per eligible player-season, 2022/23–2024/25: `season`, `player_id` (StatsBomb),
+  `display_name`, `position_group` (modal position in the season), `age_on_1_january` (1 decimal), `main_club`,
+  `minutes_covered`, `matches_played`, `club_matches_covered`, `share_club_minutes`, `per_action_efficiency`
+  (pre-specified summary, 0–100) and `contribution_per_90` (exploratory summary, within-group percentile).
+- `panel_r1_forecasts_2024_25.csv` — outfield players eligible in 2024/25 with model M2 forecasts one and two seasons
+  ahead (`pred_k1`, `pred_k2`), 80% normal and conformal intervals and the probability of being in the top quartile
+  of the positional group next season.
+
+### Not included
+
+- Raw StatsBomb event data (research-use agreement with Hudl StatsBomb; independent access required).
+- Dates of birth and Transfermarkt market values (used for age and for the market-value analyses; not
+  redistributed).
+
+### Reproducing
+
+1. Place the StatsBomb event, match and line-up JSON files where `config/r1.yaml › paths` expects them. Stages
+   `r03`, `r04`, `r05b` and `r13a` also read artefacts of the submitted version (`outputs/pipeline/`, produced by the
+   v1.x pipeline described below, and its player-season feature table) to check consistency with it and to document
+   its errors (Supplementary S8); run the v1.x pipeline first. The analyses of the revised paper do not use its
+   results.
+2. Provide a players table with dates of birth (`paths.players_master`) and, for the market-value analyses,
+   Transfermarkt squads and valuation histories (`paths.tm_sqlite`, `paths.tm_history`).
+3. Run `python paper1_ijssc/revision_R1/pipeline/run_all.py`. The software versions used are in
+   `results/environment.txt`. A clean run from the raw files reproduced all 70 outputs exactly (about 10 minutes).
+4. `pytest paper1_ijssc/revision_R1/tests` checks the outputs against the released numbers.
+
+---
+
+## v1.x: originally submitted version (superseded)
 
 ## What this repository contains
 

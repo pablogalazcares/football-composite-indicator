@@ -1,0 +1,964 @@
+% Generado por pipeline/r13_report.py. No editar a mano.
+
+\newcommand{\RDataAEligible}{270}  % data.A.eligible
+\newcommand{\RDataBEligible}{274}  % data.B.eligible
+\newcommand{\RDataCEligible}{321}  % data.C.eligible
+\newcommand{\RSampleABEligibleBoth}{161}  % sample.A->B.eligibleBoth
+\newcommand{\RSampleACEligibleBoth}{147}  % sample.A->C.eligibleBoth
+\newcommand{\RSampleBCEligibleBoth}{183}  % sample.B->C.eligibleBoth
+\newcommand{\RSampleSameSet}{117}  % sample.sameSet
+\newcommand{\RMinutesMedianAbsErrA}{0.00}  % minutes.medianAbsErrA
+\newcommand{\RMinutesRhoTotalsA}{1.000}  % minutes.rhoTotalsA
+\newcommand{\RMinutesRhoTotalsB}{1.000}  % minutes.rhoTotalsB
+\newcommand{\RSubmittedMinutesInflationMedian}{1.23}  % submitted.minutesInflationMedian
+\newcommand{\RSubmittedPairsTrueMinutes}{160}  % submitted.pairsTrueMinutes
+\newcommand{\RPersistABN}{150}  % persist.AB.n
+\newcommand{\RPersistABRhoWEst}{0.48}  % persist.AB.rhoW.est
+\newcommand{\RPersistABRhoWLo}{0.32}  % persist.AB.rhoW.lo
+\newcommand{\RPersistABRhoWHi}{0.60}  % persist.AB.rhoW.hi
+\newcommand{\RPersistABRhoWCi}{0.32 to 0.60}  % persist.AB.rhoW.ci
+\newcommand{\RPersistABRhoPEst}{0.51}  % persist.AB.rhoP.est
+\newcommand{\RPersistABRhoPLo}{0.37}  % persist.AB.rhoP.lo
+\newcommand{\RPersistABRhoPHi}{0.63}  % persist.AB.rhoP.hi
+\newcommand{\RPersistABRhoPCi}{0.37 to 0.63}  % persist.AB.rhoP.ci
+\newcommand{\RPersistABRhoDEFEst}{0.43}  % persist.AB.rhoDEF.est
+\newcommand{\RPersistABRhoDEFLo}{0.20}  % persist.AB.rhoDEF.lo
+\newcommand{\RPersistABRhoDEFHi}{0.61}  % persist.AB.rhoDEF.hi
+\newcommand{\RPersistABRhoDEFCi}{0.20 to 0.61}  % persist.AB.rhoDEF.ci
+\newcommand{\RPersistABRhoMIDEst}{0.41}  % persist.AB.rhoMID.est
+\newcommand{\RPersistABRhoMIDLo}{0.11}  % persist.AB.rhoMID.lo
+\newcommand{\RPersistABRhoMIDHi}{0.64}  % persist.AB.rhoMID.hi
+\newcommand{\RPersistABRhoMIDCi}{0.11 to 0.64}  % persist.AB.rhoMID.ci
+\newcommand{\RPersistABRhoFWDEst}{0.66}  % persist.AB.rhoFWD.est
+\newcommand{\RPersistABRhoFWDLo}{0.40}  % persist.AB.rhoFWD.lo
+\newcommand{\RPersistABRhoFWDHi}{0.84}  % persist.AB.rhoFWD.hi
+\newcommand{\RPersistABRhoFWDCi}{0.40 to 0.84}  % persist.AB.rhoFWD.ci
+\newcommand{\RPersistBCN}{168}  % persist.BC.n
+\newcommand{\RPersistBCRhoWEst}{0.51}  % persist.BC.rhoW.est
+\newcommand{\RPersistBCRhoWLo}{0.39}  % persist.BC.rhoW.lo
+\newcommand{\RPersistBCRhoWHi}{0.62}  % persist.BC.rhoW.hi
+\newcommand{\RPersistBCRhoWCi}{0.39 to 0.62}  % persist.BC.rhoW.ci
+\newcommand{\RPersistBCRhoPEst}{0.54}  % persist.BC.rhoP.est
+\newcommand{\RPersistBCRhoPLo}{0.41}  % persist.BC.rhoP.lo
+\newcommand{\RPersistBCRhoPHi}{0.64}  % persist.BC.rhoP.hi
+\newcommand{\RPersistBCRhoPCi}{0.41 to 0.64}  % persist.BC.rhoP.ci
+\newcommand{\RPersistBCRhoDEFEst}{0.44}  % persist.BC.rhoDEF.est
+\newcommand{\RPersistBCRhoDEFLo}{0.22}  % persist.BC.rhoDEF.lo
+\newcommand{\RPersistBCRhoDEFHi}{0.61}  % persist.BC.rhoDEF.hi
+\newcommand{\RPersistBCRhoDEFCi}{0.22 to 0.61}  % persist.BC.rhoDEF.ci
+\newcommand{\RPersistBCRhoMIDEst}{0.55}  % persist.BC.rhoMID.est
+\newcommand{\RPersistBCRhoMIDLo}{0.31}  % persist.BC.rhoMID.lo
+\newcommand{\RPersistBCRhoMIDHi}{0.72}  % persist.BC.rhoMID.hi
+\newcommand{\RPersistBCRhoMIDCi}{0.31 to 0.72}  % persist.BC.rhoMID.ci
+\newcommand{\RPersistBCRhoFWDEst}{0.59}  % persist.BC.rhoFWD.est
+\newcommand{\RPersistBCRhoFWDLo}{0.37}  % persist.BC.rhoFWD.lo
+\newcommand{\RPersistBCRhoFWDHi}{0.75}  % persist.BC.rhoFWD.hi
+\newcommand{\RPersistBCRhoFWDCi}{0.37 to 0.75}  % persist.BC.rhoFWD.ci
+\newcommand{\RPersistACN}{134}  % persist.AC.n
+\newcommand{\RPersistACRhoWEst}{0.29}  % persist.AC.rhoW.est
+\newcommand{\RPersistACRhoWLo}{0.11}  % persist.AC.rhoW.lo
+\newcommand{\RPersistACRhoWHi}{0.43}  % persist.AC.rhoW.hi
+\newcommand{\RPersistACRhoWCi}{0.11 to 0.43}  % persist.AC.rhoW.ci
+\newcommand{\RPersistACRhoPEst}{0.34}  % persist.AC.rhoP.est
+\newcommand{\RPersistACRhoPLo}{0.19}  % persist.AC.rhoP.lo
+\newcommand{\RPersistACRhoPHi}{0.48}  % persist.AC.rhoP.hi
+\newcommand{\RPersistACRhoPCi}{0.19 to 0.48}  % persist.AC.rhoP.ci
+\newcommand{\RPersistACRhoDEFEst}{0.20}  % persist.AC.rhoDEF.est
+\newcommand{\RPersistACRhoDEFLo}{$-$0.06}  % persist.AC.rhoDEF.lo
+\newcommand{\RPersistACRhoDEFHi}{0.46}  % persist.AC.rhoDEF.hi
+\newcommand{\RPersistACRhoDEFCi}{$-$0.06 to 0.46}  % persist.AC.rhoDEF.ci
+\newcommand{\RPersistACRhoMIDEst}{0.24}  % persist.AC.rhoMID.est
+\newcommand{\RPersistACRhoMIDLo}{$-$0.04}  % persist.AC.rhoMID.lo
+\newcommand{\RPersistACRhoMIDHi}{0.49}  % persist.AC.rhoMID.hi
+\newcommand{\RPersistACRhoMIDCi}{$-$0.04 to 0.49}  % persist.AC.rhoMID.ci
+\newcommand{\RPersistACRhoFWDEst}{0.51}  % persist.AC.rhoFWD.est
+\newcommand{\RPersistACRhoFWDLo}{0.16}  % persist.AC.rhoFWD.lo
+\newcommand{\RPersistACRhoFWDHi}{0.75}  % persist.AC.rhoFWD.hi
+\newcommand{\RPersistACRhoFWDCi}{0.16 to 0.75}  % persist.AC.rhoFWD.ci
+\newcommand{\RPersistBCSameN}{108}  % persist.BC.same.n
+\newcommand{\RPersistBCSameRhoWEst}{0.51}  % persist.BC.same.rhoW.est
+\newcommand{\RPersistBCSameRhoWLo}{0.33}  % persist.BC.same.rhoW.lo
+\newcommand{\RPersistBCSameRhoWHi}{0.63}  % persist.BC.same.rhoW.hi
+\newcommand{\RPersistBCSameRhoWCi}{0.33 to 0.63}  % persist.BC.same.rhoW.ci
+\newcommand{\RPersistBCSameRhoPEst}{0.58}  % persist.BC.same.rhoP.est
+\newcommand{\RPersistBCSameRhoPLo}{0.44}  % persist.BC.same.rhoP.lo
+\newcommand{\RPersistBCSameRhoPHi}{0.69}  % persist.BC.same.rhoP.hi
+\newcommand{\RPersistBCSameRhoPCi}{0.44 to 0.69}  % persist.BC.same.rhoP.ci
+\newcommand{\RPersistBCSameRhoDEFEst}{0.44}  % persist.BC.same.rhoDEF.est
+\newcommand{\RPersistBCSameRhoDEFLo}{0.15}  % persist.BC.same.rhoDEF.lo
+\newcommand{\RPersistBCSameRhoDEFHi}{0.65}  % persist.BC.same.rhoDEF.hi
+\newcommand{\RPersistBCSameRhoDEFCi}{0.15 to 0.65}  % persist.BC.same.rhoDEF.ci
+\newcommand{\RPersistBCSameRhoMIDEst}{0.51}  % persist.BC.same.rhoMID.est
+\newcommand{\RPersistBCSameRhoMIDLo}{0.22}  % persist.BC.same.rhoMID.lo
+\newcommand{\RPersistBCSameRhoMIDHi}{0.74}  % persist.BC.same.rhoMID.hi
+\newcommand{\RPersistBCSameRhoMIDCi}{0.22 to 0.74}  % persist.BC.same.rhoMID.ci
+\newcommand{\RPersistBCSameRhoFWDEst}{0.61}  % persist.BC.same.rhoFWD.est
+\newcommand{\RPersistBCSameRhoFWDLo}{0.30}  % persist.BC.same.rhoFWD.lo
+\newcommand{\RPersistBCSameRhoFWDHi}{0.80}  % persist.BC.same.rhoFWD.hi
+\newcommand{\RPersistBCSameRhoFWDCi}{0.30 to 0.80}  % persist.BC.same.rhoFWD.ci
+\newcommand{\RPersistACSameN}{108}  % persist.AC.same.n
+\newcommand{\RPersistACSameRhoWEst}{0.26}  % persist.AC.same.rhoW.est
+\newcommand{\RPersistACSameRhoWLo}{0.08}  % persist.AC.same.rhoW.lo
+\newcommand{\RPersistACSameRhoWHi}{0.44}  % persist.AC.same.rhoW.hi
+\newcommand{\RPersistACSameRhoWCi}{0.08 to 0.44}  % persist.AC.same.rhoW.ci
+\newcommand{\RPersistACSameRhoPEst}{0.37}  % persist.AC.same.rhoP.est
+\newcommand{\RPersistACSameRhoPLo}{0.19}  % persist.AC.same.rhoP.lo
+\newcommand{\RPersistACSameRhoPHi}{0.52}  % persist.AC.same.rhoP.hi
+\newcommand{\RPersistACSameRhoPCi}{0.19 to 0.52}  % persist.AC.same.rhoP.ci
+\newcommand{\RPersistACSameRhoDEFEst}{0.21}  % persist.AC.same.rhoDEF.est
+\newcommand{\RPersistACSameRhoDEFLo}{$-$0.10}  % persist.AC.same.rhoDEF.lo
+\newcommand{\RPersistACSameRhoDEFHi}{0.48}  % persist.AC.same.rhoDEF.hi
+\newcommand{\RPersistACSameRhoDEFCi}{$-$0.10 to 0.48}  % persist.AC.same.rhoDEF.ci
+\newcommand{\RPersistACSameRhoMIDEst}{0.14}  % persist.AC.same.rhoMID.est
+\newcommand{\RPersistACSameRhoMIDLo}{$-$0.19}  % persist.AC.same.rhoMID.lo
+\newcommand{\RPersistACSameRhoMIDHi}{0.44}  % persist.AC.same.rhoMID.hi
+\newcommand{\RPersistACSameRhoMIDCi}{$-$0.19 to 0.44}  % persist.AC.same.rhoMID.ci
+\newcommand{\RPersistACSameRhoFWDEst}{0.54}  % persist.AC.same.rhoFWD.est
+\newcommand{\RPersistACSameRhoFWDLo}{0.17}  % persist.AC.same.rhoFWD.lo
+\newcommand{\RPersistACSameRhoFWDHi}{0.79}  % persist.AC.same.rhoFWD.hi
+\newcommand{\RPersistACSameRhoFWDCi}{0.17 to 0.79}  % persist.AC.same.rhoFWD.ci
+\newcommand{\RPersistABSameN}{108}  % persist.AB.same.n
+\newcommand{\RPersistABSameRhoWEst}{0.51}  % persist.AB.same.rhoW.est
+\newcommand{\RPersistABSameRhoWLo}{0.34}  % persist.AB.same.rhoW.lo
+\newcommand{\RPersistABSameRhoWHi}{0.64}  % persist.AB.same.rhoW.hi
+\newcommand{\RPersistABSameRhoWCi}{0.34 to 0.64}  % persist.AB.same.rhoW.ci
+\newcommand{\RPersistABSameRhoPEst}{0.54}  % persist.AB.same.rhoP.est
+\newcommand{\RPersistABSameRhoPLo}{0.37}  % persist.AB.same.rhoP.lo
+\newcommand{\RPersistABSameRhoPHi}{0.67}  % persist.AB.same.rhoP.hi
+\newcommand{\RPersistABSameRhoPCi}{0.37 to 0.67}  % persist.AB.same.rhoP.ci
+\newcommand{\RPersistABSameRhoDEFEst}{0.47}  % persist.AB.same.rhoDEF.est
+\newcommand{\RPersistABSameRhoDEFLo}{0.19}  % persist.AB.same.rhoDEF.lo
+\newcommand{\RPersistABSameRhoDEFHi}{0.69}  % persist.AB.same.rhoDEF.hi
+\newcommand{\RPersistABSameRhoDEFCi}{0.19 to 0.69}  % persist.AB.same.rhoDEF.ci
+\newcommand{\RPersistABSameRhoMIDEst}{0.49}  % persist.AB.same.rhoMID.est
+\newcommand{\RPersistABSameRhoMIDLo}{0.20}  % persist.AB.same.rhoMID.lo
+\newcommand{\RPersistABSameRhoMIDHi}{0.69}  % persist.AB.same.rhoMID.hi
+\newcommand{\RPersistABSameRhoMIDCi}{0.20 to 0.69}  % persist.AB.same.rhoMID.ci
+\newcommand{\RPersistABSameRhoFWDEst}{0.60}  % persist.AB.same.rhoFWD.est
+\newcommand{\RPersistABSameRhoFWDLo}{0.23}  % persist.AB.same.rhoFWD.lo
+\newcommand{\RPersistABSameRhoFWDHi}{0.85}  % persist.AB.same.rhoFWD.hi
+\newcommand{\RPersistABSameRhoFWDCi}{0.23 to 0.85}  % persist.AB.same.rhoFWD.ci
+\newcommand{\RAccBCN}{168}  % acc.BC.n
+\newcommand{\RAccBCMZeroRhoWEst}{0.51}  % acc.BC.M0.rhoW.est
+\newcommand{\RAccBCMZeroRhoWLo}{0.39}  % acc.BC.M0.rhoW.lo
+\newcommand{\RAccBCMZeroRhoWHi}{0.62}  % acc.BC.M0.rhoW.hi
+\newcommand{\RAccBCMZeroRhoWCi}{0.39 to 0.62}  % acc.BC.M0.rhoW.ci
+\newcommand{\RAccBCMZeroMae}{7.2}  % acc.BC.M0.mae
+\newcommand{\RAccBCMZeroTopq}{0.44}  % acc.BC.M0.topq
+\newcommand{\RAccBCMZeroImpliedWEst}{1.00}  % acc.BC.M0.impliedW.est
+\newcommand{\RAccBCMZeroImpliedWLo}{1.00}  % acc.BC.M0.impliedW.lo
+\newcommand{\RAccBCMZeroImpliedWHi}{1.00}  % acc.BC.M0.impliedW.hi
+\newcommand{\RAccBCMZeroImpliedWCi}{1.00 to 1.00}  % acc.BC.M0.impliedW.ci
+\newcommand{\RAccBCMOneRhoWEst}{0.51}  % acc.BC.M1.rhoW.est
+\newcommand{\RAccBCMOneRhoWLo}{0.39}  % acc.BC.M1.rhoW.lo
+\newcommand{\RAccBCMOneRhoWHi}{0.62}  % acc.BC.M1.rhoW.hi
+\newcommand{\RAccBCMOneRhoWCi}{0.39 to 0.62}  % acc.BC.M1.rhoW.ci
+\newcommand{\RAccBCMOneMae}{6.3}  % acc.BC.M1.mae
+\newcommand{\RAccBCMOneTopq}{0.44}  % acc.BC.M1.topq
+\newcommand{\RAccBCMOneImpliedWEst}{1.00}  % acc.BC.M1.impliedW.est
+\newcommand{\RAccBCMOneImpliedWLo}{1.00}  % acc.BC.M1.impliedW.lo
+\newcommand{\RAccBCMOneImpliedWHi}{1.00}  % acc.BC.M1.impliedW.hi
+\newcommand{\RAccBCMOneImpliedWCi}{1.00 to 1.00}  % acc.BC.M1.impliedW.ci
+\newcommand{\RAccBCMOneDRhoWEst}{0.00}  % acc.BC.M1.dRhoW.est
+\newcommand{\RAccBCMOneDRhoWLo}{0.00}  % acc.BC.M1.dRhoW.lo
+\newcommand{\RAccBCMOneDRhoWHi}{0.00}  % acc.BC.M1.dRhoW.hi
+\newcommand{\RAccBCMOneDRhoWCi}{0.00 to 0.00}  % acc.BC.M1.dRhoW.ci
+\newcommand{\RAccBCMTwoRhoWEst}{0.51}  % acc.BC.M2.rhoW.est
+\newcommand{\RAccBCMTwoRhoWLo}{0.38}  % acc.BC.M2.rhoW.lo
+\newcommand{\RAccBCMTwoRhoWHi}{0.62}  % acc.BC.M2.rhoW.hi
+\newcommand{\RAccBCMTwoRhoWCi}{0.38 to 0.62}  % acc.BC.M2.rhoW.ci
+\newcommand{\RAccBCMTwoMae}{6.3}  % acc.BC.M2.mae
+\newcommand{\RAccBCMTwoTopq}{0.49}  % acc.BC.M2.topq
+\newcommand{\RAccBCMTwoImpliedWEst}{1.00}  % acc.BC.M2.impliedW.est
+\newcommand{\RAccBCMTwoImpliedWLo}{0.99}  % acc.BC.M2.impliedW.lo
+\newcommand{\RAccBCMTwoImpliedWHi}{1.00}  % acc.BC.M2.impliedW.hi
+\newcommand{\RAccBCMTwoImpliedWCi}{0.99 to 1.00}  % acc.BC.M2.impliedW.ci
+\newcommand{\RAccBCMTwoDRhoWEst}{$-$0.004}  % acc.BC.M2.dRhoW.est
+\newcommand{\RAccBCMTwoDRhoWLo}{$-$0.021}  % acc.BC.M2.dRhoW.lo
+\newcommand{\RAccBCMTwoDRhoWHi}{0.010}  % acc.BC.M2.dRhoW.hi
+\newcommand{\RAccBCMTwoDRhoWCi}{$-$0.021 to 0.010}  % acc.BC.M2.dRhoW.ci
+\newcommand{\RAccBCMThreeRhoWEst}{0.51}  % acc.BC.M3.rhoW.est
+\newcommand{\RAccBCMThreeRhoWLo}{0.38}  % acc.BC.M3.rhoW.lo
+\newcommand{\RAccBCMThreeRhoWHi}{0.61}  % acc.BC.M3.rhoW.hi
+\newcommand{\RAccBCMThreeRhoWCi}{0.38 to 0.61}  % acc.BC.M3.rhoW.ci
+\newcommand{\RAccBCMThreeMae}{6.3}  % acc.BC.M3.mae
+\newcommand{\RAccBCMThreeTopq}{0.47}  % acc.BC.M3.topq
+\newcommand{\RAccBCMThreeImpliedWEst}{0.99}  % acc.BC.M3.impliedW.est
+\newcommand{\RAccBCMThreeImpliedWLo}{0.98}  % acc.BC.M3.impliedW.lo
+\newcommand{\RAccBCMThreeImpliedWHi}{0.99}  % acc.BC.M3.impliedW.hi
+\newcommand{\RAccBCMThreeImpliedWCi}{0.98 to 0.99}  % acc.BC.M3.impliedW.ci
+\newcommand{\RAccBCMThreeDRhoWEst}{$-$0.009}  % acc.BC.M3.dRhoW.est
+\newcommand{\RAccBCMThreeDRhoWLo}{$-$0.033}  % acc.BC.M3.dRhoW.lo
+\newcommand{\RAccBCMThreeDRhoWHi}{0.013}  % acc.BC.M3.dRhoW.hi
+\newcommand{\RAccBCMThreeDRhoWCi}{$-$0.033 to 0.013}  % acc.BC.M3.dRhoW.ci
+\newcommand{\RAccACN}{134}  % acc.AC.n
+\newcommand{\RAccACMZeroRhoWEst}{0.29}  % acc.AC.M0.rhoW.est
+\newcommand{\RAccACMZeroRhoWLo}{0.11}  % acc.AC.M0.rhoW.lo
+\newcommand{\RAccACMZeroRhoWHi}{0.43}  % acc.AC.M0.rhoW.hi
+\newcommand{\RAccACMZeroRhoWCi}{0.11 to 0.43}  % acc.AC.M0.rhoW.ci
+\newcommand{\RAccACMZeroMae}{8.4}  % acc.AC.M0.mae
+\newcommand{\RAccACMZeroTopq}{0.35}  % acc.AC.M0.topq
+\newcommand{\RAccACMZeroImpliedWEst}{1.00}  % acc.AC.M0.impliedW.est
+\newcommand{\RAccACMZeroImpliedWLo}{1.00}  % acc.AC.M0.impliedW.lo
+\newcommand{\RAccACMZeroImpliedWHi}{1.00}  % acc.AC.M0.impliedW.hi
+\newcommand{\RAccACMZeroImpliedWCi}{1.00 to 1.00}  % acc.AC.M0.impliedW.ci
+\newcommand{\RAccACMOneRhoWEst}{0.29}  % acc.AC.M1.rhoW.est
+\newcommand{\RAccACMOneRhoWLo}{0.11}  % acc.AC.M1.rhoW.lo
+\newcommand{\RAccACMOneRhoWHi}{0.43}  % acc.AC.M1.rhoW.hi
+\newcommand{\RAccACMOneRhoWCi}{0.11 to 0.43}  % acc.AC.M1.rhoW.ci
+\newcommand{\RAccACMOneMae}{7.4}  % acc.AC.M1.mae
+\newcommand{\RAccACMOneTopq}{0.35}  % acc.AC.M1.topq
+\newcommand{\RAccACMOneImpliedWEst}{1.00}  % acc.AC.M1.impliedW.est
+\newcommand{\RAccACMOneImpliedWLo}{1.00}  % acc.AC.M1.impliedW.lo
+\newcommand{\RAccACMOneImpliedWHi}{1.00}  % acc.AC.M1.impliedW.hi
+\newcommand{\RAccACMOneImpliedWCi}{1.00 to 1.00}  % acc.AC.M1.impliedW.ci
+\newcommand{\RAccACMOneDRhoWEst}{0.00}  % acc.AC.M1.dRhoW.est
+\newcommand{\RAccACMOneDRhoWLo}{0.00}  % acc.AC.M1.dRhoW.lo
+\newcommand{\RAccACMOneDRhoWHi}{0.00}  % acc.AC.M1.dRhoW.hi
+\newcommand{\RAccACMOneDRhoWCi}{0.00 to 0.00}  % acc.AC.M1.dRhoW.ci
+\newcommand{\RAccACMTwoRhoWEst}{0.25}  % acc.AC.M2.rhoW.est
+\newcommand{\RAccACMTwoRhoWLo}{0.08}  % acc.AC.M2.rhoW.lo
+\newcommand{\RAccACMTwoRhoWHi}{0.41}  % acc.AC.M2.rhoW.hi
+\newcommand{\RAccACMTwoRhoWCi}{0.08 to 0.41}  % acc.AC.M2.rhoW.ci
+\newcommand{\RAccACMTwoMae}{7.5}  % acc.AC.M2.mae
+\newcommand{\RAccACMTwoTopq}{0.29}  % acc.AC.M2.topq
+\newcommand{\RAccACMTwoImpliedWEst}{0.95}  % acc.AC.M2.impliedW.est
+\newcommand{\RAccACMTwoImpliedWLo}{0.90}  % acc.AC.M2.impliedW.lo
+\newcommand{\RAccACMTwoImpliedWHi}{0.98}  % acc.AC.M2.impliedW.hi
+\newcommand{\RAccACMTwoImpliedWCi}{0.90 to 0.98}  % acc.AC.M2.impliedW.ci
+\newcommand{\RAccACMTwoDRhoWEst}{$-$0.033}  % acc.AC.M2.dRhoW.est
+\newcommand{\RAccACMTwoDRhoWLo}{$-$0.098}  % acc.AC.M2.dRhoW.lo
+\newcommand{\RAccACMTwoDRhoWHi}{0.024}  % acc.AC.M2.dRhoW.hi
+\newcommand{\RAccACMTwoDRhoWCi}{$-$0.098 to 0.024}  % acc.AC.M2.dRhoW.ci
+\newcommand{\RAccACMThreeRhoWEst}{0.27}  % acc.AC.M3.rhoW.est
+\newcommand{\RAccACMThreeRhoWLo}{0.10}  % acc.AC.M3.rhoW.lo
+\newcommand{\RAccACMThreeRhoWHi}{0.42}  % acc.AC.M3.rhoW.hi
+\newcommand{\RAccACMThreeRhoWCi}{0.10 to 0.42}  % acc.AC.M3.rhoW.ci
+\newcommand{\RAccACMThreeMae}{7.5}  % acc.AC.M3.mae
+\newcommand{\RAccACMThreeTopq}{0.32}  % acc.AC.M3.topq
+\newcommand{\RAccACMThreeImpliedWEst}{0.93}  % acc.AC.M3.impliedW.est
+\newcommand{\RAccACMThreeImpliedWLo}{0.85}  % acc.AC.M3.impliedW.lo
+\newcommand{\RAccACMThreeImpliedWHi}{0.96}  % acc.AC.M3.impliedW.hi
+\newcommand{\RAccACMThreeImpliedWCi}{0.85 to 0.96}  % acc.AC.M3.impliedW.ci
+\newcommand{\RAccACMThreeDRhoWEst}{$-$0.019}  % acc.AC.M3.dRhoW.est
+\newcommand{\RAccACMThreeDRhoWLo}{$-$0.100}  % acc.AC.M3.dRhoW.lo
+\newcommand{\RAccACMThreeDRhoWHi}{0.053}  % acc.AC.M3.dRhoW.hi
+\newcommand{\RAccACMThreeDRhoWCi}{$-$0.100 to 0.053}  % acc.AC.M3.dRhoW.ci
+\newcommand{\RModelNTrain}{150}  % model.nTrain
+\newcommand{\RModelBetaS}{0.57}  % model.betaS
+\newcommand{\RModelBetaSLo}{0.41}  % model.betaS.lo
+\newcommand{\RModelBetaSHi}{0.72}  % model.betaS.hi
+\newcommand{\RModelAgeC}{$-$0.029}  % model.ageC
+\newcommand{\RModelAgeCLo}{$-$0.467}  % model.ageC.lo
+\newcommand{\RModelAgeCHi}{0.324}  % model.ageC.hi
+\newcommand{\RModelAgeCtwo}{$-$0.021}  % model.ageCtwo
+\newcommand{\RModelAgeCtwoLo}{$-$0.087}  % model.ageCtwo.lo
+\newcommand{\RModelAgeCtwoHi}{0.093}  % model.ageCtwo.hi
+\newcommand{\RUncSigma}{8.2}  % unc.sigma
+\newcommand{\RUncHalfWidthGauss}{10.5}  % unc.halfWidthGauss
+\newcommand{\RUncBCCovGauss}{79\%}  % unc.BC.covGauss
+\newcommand{\RUncBCCovGaussLo}{73\%}  % unc.BC.covGauss.lo
+\newcommand{\RUncBCCovGaussHi}{86\%}  % unc.BC.covGauss.hi
+\newcommand{\RUncBCCovConf}{77\%}  % unc.BC.covConf
+\newcommand{\RUncBCBrierSkill}{0.14}  % unc.BC.brierSkill
+\newcommand{\RUncBCTopGivenTopObs}{0.50}  % unc.BC.topGivenTop.obs
+\newcommand{\RUncBCTopGivenTopModel}{0.49}  % unc.BC.topGivenTop.model
+\newcommand{\RUncBCTopGivenBottomObs}{0.05}  % unc.BC.topGivenBottom.obs
+\newcommand{\RUncACCovGauss}{78\%}  % unc.AC.covGauss
+\newcommand{\RUncACCovGaussLo}{72\%}  % unc.AC.covGauss.lo
+\newcommand{\RUncACCovGaussHi}{85\%}  % unc.AC.covGauss.hi
+\newcommand{\RUncACCovConf}{76\%}  % unc.AC.covConf
+\newcommand{\RUncACBrierSkill}{0.03}  % unc.AC.brierSkill
+\newcommand{\RUncACTopGivenTopObs}{0.34}  % unc.AC.topGivenTop.obs
+\newcommand{\RUncACTopGivenTopModel}{0.37}  % unc.AC.topGivenTop.model
+\newcommand{\RUncACTopGivenBottomObs}{0.03}  % unc.AC.topGivenBottom.obs
+\newcommand{\RIpwABRhoW}{0.45}  % ipw.AB.rhoW
+\newcommand{\RIpwABLo}{0.28}  % ipw.AB.lo
+\newcommand{\RIpwABHi}{0.59}  % ipw.AB.hi
+\newcommand{\RIpwBCRhoW}{0.50}  % ipw.BC.rhoW
+\newcommand{\RIpwBCLo}{0.36}  % ipw.BC.lo
+\newcommand{\RIpwBCHi}{0.61}  % ipw.BC.hi
+\newcommand{\RIpwACRhoW}{0.33}  % ipw.AC.rhoW
+\newcommand{\RIpwACLo}{0.14}  % ipw.AC.lo
+\newcommand{\RIpwACHi}{0.47}  % ipw.AC.hi
+\newcommand{\RExtMinutesABRhoW}{0.04}  % ext.minutes.AB.rhoW
+\newcommand{\RExtMinutesABLo}{$-$0.10}  % ext.minutes.AB.lo
+\newcommand{\RExtMinutesABHi}{0.17}  % ext.minutes.AB.hi
+\newcommand{\RExtMinutesBCRhoW}{0.09}  % ext.minutes.BC.rhoW
+\newcommand{\RExtMinutesBCLo}{$-$0.05}  % ext.minutes.BC.lo
+\newcommand{\RExtMinutesBCHi}{0.22}  % ext.minutes.BC.hi
+\newcommand{\RExtAucABEst}{0.48}  % ext.auc.AB.est
+\newcommand{\RExtAucABLo}{0.37}  % ext.auc.AB.lo
+\newcommand{\RExtAucABHi}{0.58}  % ext.auc.AB.hi
+\newcommand{\RExtAucBCEst}{0.51}  % ext.auc.BC.est
+\newcommand{\RExtAucBCLo}{0.37}  % ext.auc.BC.lo
+\newcommand{\RExtAucBCHi}{0.66}  % ext.auc.BC.hi
+\newcommand{\RExtMvLogmvBEst}{0.09}  % ext.mv.logmvB.est
+\newcommand{\RExtMvLogmvBLo}{$-$0.05}  % ext.mv.logmvB.lo
+\newcommand{\RExtMvLogmvBHi}{0.22}  % ext.mv.logmvB.hi
+\newcommand{\RExtMvDlogmvEst}{$-$0.06}  % ext.mv.dlogmv.est
+\newcommand{\RExtMvDlogmvLo}{$-$0.19}  % ext.mv.dlogmv.lo
+\newcommand{\RExtMvDlogmvHi}{0.09}  % ext.mv.dlogmv.hi
+\newcommand{\RSubmittedRhoKOne}{0.94}  % submitted.rhoK1
+\newcommand{\RSubmittedRhoKTwo}{0.72}  % submitted.rhoK2
+\newcommand{\RSubmittedRhoKThree}{0.42}  % submitted.rhoK3
+\newcommand{\RSubmittedRhoKFour}{0.20}  % submitted.rhoK4
+\newcommand{\RSubmittedRhoKFive}{0.08}  % submitted.rhoK5
+\newcommand{\RSubmittedRhoKwithinOne}{0.96}  % submitted.rhoKwithin1
+\newcommand{\RSubmittedRhoKwithinTwo}{0.81}  % submitted.rhoKwithin2
+\newcommand{\RSubmittedRhoKwithinThree}{0.60}  % submitted.rhoKwithin3
+\newcommand{\RSubmittedRhoKwithinFour}{0.38}  % submitted.rhoKwithin4
+\newcommand{\RSubmittedRhoKwithinFive}{0.22}  % submitted.rhoKwithin5
+\newcommand{\RImpliedMTwoKOne}{0.993}  % implied.M2.k1
+\newcommand{\RImpliedMTwoKTwo}{0.951}  % implied.M2.k2
+\newcommand{\RImpliedMTwoKThree}{0.834}  % implied.M2.k3
+\newcommand{\RImpliedMTwoKFour}{0.650}  % implied.M2.k4
+\newcommand{\RImpliedMTwoKFive}{0.464}  % implied.M2.k5
+\newcommand{\RAddTmLinkRate}{99\%}  % add.tmLinkRate
+\newcommand{\RAddCorrA}{0.38}  % add.corr.A
+\newcommand{\RAddCorrB}{0.48}  % add.corr.B
+\newcommand{\RAddCorrC}{0.56}  % add.corr.C
+\newcommand{\RAddVolBCRhoWEst}{0.50}  % add.vol.BC.rhoW.est
+\newcommand{\RAddVolBCRhoWLo}{0.37}  % add.vol.BC.rhoW.lo
+\newcommand{\RAddVolBCRhoWHi}{0.61}  % add.vol.BC.rhoW.hi
+\newcommand{\RAddVolBCRhoWCi}{0.37 to 0.61}  % add.vol.BC.rhoW.ci
+\newcommand{\RAddVolBCRhoDEFEst}{0.33}  % add.vol.BC.rhoDEF.est
+\newcommand{\RAddVolBCRhoDEFLo}{0.10}  % add.vol.BC.rhoDEF.lo
+\newcommand{\RAddVolBCRhoDEFHi}{0.54}  % add.vol.BC.rhoDEF.hi
+\newcommand{\RAddVolBCRhoDEFCi}{0.10 to 0.54}  % add.vol.BC.rhoDEF.ci
+\newcommand{\RAddVolBCRhoMIDEst}{0.60}  % add.vol.BC.rhoMID.est
+\newcommand{\RAddVolBCRhoMIDLo}{0.36}  % add.vol.BC.rhoMID.lo
+\newcommand{\RAddVolBCRhoMIDHi}{0.76}  % add.vol.BC.rhoMID.hi
+\newcommand{\RAddVolBCRhoMIDCi}{0.36 to 0.76}  % add.vol.BC.rhoMID.ci
+\newcommand{\RAddVolBCRhoFWDEst}{0.62}  % add.vol.BC.rhoFWD.est
+\newcommand{\RAddVolBCRhoFWDLo}{0.39}  % add.vol.BC.rhoFWD.lo
+\newcommand{\RAddVolBCRhoFWDHi}{0.79}  % add.vol.BC.rhoFWD.hi
+\newcommand{\RAddVolBCRhoFWDCi}{0.39 to 0.79}  % add.vol.BC.rhoFWD.ci
+\newcommand{\RAddVolBCDRhoMtwoEst}{$-$0.034}  % add.vol.BC.dRhoMtwo.est
+\newcommand{\RAddVolBCDRhoMtwoLo}{$-$0.072}  % add.vol.BC.dRhoMtwo.lo
+\newcommand{\RAddVolBCDRhoMtwoHi}{0.002}  % add.vol.BC.dRhoMtwo.hi
+\newcommand{\RAddVolBCDRhoMtwoCi}{$-$0.072 to 0.002}  % add.vol.BC.dRhoMtwo.ci
+\newcommand{\RAddDiffPersistBCEst}{$-$0.02}  % add.diffPersist.BC.est
+\newcommand{\RAddDiffPersistBCLo}{$-$0.17}  % add.diffPersist.BC.lo
+\newcommand{\RAddDiffPersistBCHi}{0.14}  % add.diffPersist.BC.hi
+\newcommand{\RAddDiffPersistBCCi}{$-$0.17 to 0.14}  % add.diffPersist.BC.ci
+\newcommand{\RAddVolACRhoWEst}{0.49}  % add.vol.AC.rhoW.est
+\newcommand{\RAddVolACRhoWLo}{0.34}  % add.vol.AC.rhoW.lo
+\newcommand{\RAddVolACRhoWHi}{0.60}  % add.vol.AC.rhoW.hi
+\newcommand{\RAddVolACRhoWCi}{0.34 to 0.60}  % add.vol.AC.rhoW.ci
+\newcommand{\RAddVolACRhoDEFEst}{0.46}  % add.vol.AC.rhoDEF.est
+\newcommand{\RAddVolACRhoDEFLo}{0.24}  % add.vol.AC.rhoDEF.lo
+\newcommand{\RAddVolACRhoDEFHi}{0.62}  % add.vol.AC.rhoDEF.hi
+\newcommand{\RAddVolACRhoDEFCi}{0.24 to 0.62}  % add.vol.AC.rhoDEF.ci
+\newcommand{\RAddVolACRhoMIDEst}{0.51}  % add.vol.AC.rhoMID.est
+\newcommand{\RAddVolACRhoMIDLo}{0.26}  % add.vol.AC.rhoMID.lo
+\newcommand{\RAddVolACRhoMIDHi}{0.71}  % add.vol.AC.rhoMID.hi
+\newcommand{\RAddVolACRhoMIDCi}{0.26 to 0.71}  % add.vol.AC.rhoMID.ci
+\newcommand{\RAddVolACRhoFWDEst}{0.52}  % add.vol.AC.rhoFWD.est
+\newcommand{\RAddVolACRhoFWDLo}{0.21}  % add.vol.AC.rhoFWD.lo
+\newcommand{\RAddVolACRhoFWDHi}{0.76}  % add.vol.AC.rhoFWD.hi
+\newcommand{\RAddVolACRhoFWDCi}{0.21 to 0.76}  % add.vol.AC.rhoFWD.ci
+\newcommand{\RAddVolACDRhoMtwoEst}{$-$0.083}  % add.vol.AC.dRhoMtwo.est
+\newcommand{\RAddVolACDRhoMtwoLo}{$-$0.167}  % add.vol.AC.dRhoMtwo.lo
+\newcommand{\RAddVolACDRhoMtwoHi}{0.004}  % add.vol.AC.dRhoMtwo.hi
+\newcommand{\RAddVolACDRhoMtwoCi}{$-$0.167 to 0.004}  % add.vol.AC.dRhoMtwo.ci
+\newcommand{\RAddDiffPersistACEst}{0.21}  % add.diffPersist.AC.est
+\newcommand{\RAddDiffPersistACLo}{0.02}  % add.diffPersist.AC.lo
+\newcommand{\RAddDiffPersistACHi}{0.39}  % add.diffPersist.AC.hi
+\newcommand{\RAddDiffPersistACCi}{0.02 to 0.39}  % add.diffPersist.AC.ci
+\newcommand{\RAddMinutesVolABEst}{0.06}  % add.minutes.vol.AB.est
+\newcommand{\RAddMinutesVolABLo}{$-$0.08}  % add.minutes.vol.AB.lo
+\newcommand{\RAddMinutesVolABHi}{0.19}  % add.minutes.vol.AB.hi
+\newcommand{\RAddMinutesVolABCi}{$-$0.08 to 0.19}  % add.minutes.vol.AB.ci
+\newcommand{\RAddMinutesDiffABEst}{0.02}  % add.minutes.diff.AB.est
+\newcommand{\RAddMinutesDiffABLo}{$-$0.14}  % add.minutes.diff.AB.lo
+\newcommand{\RAddMinutesDiffABHi}{0.17}  % add.minutes.diff.AB.hi
+\newcommand{\RAddMinutesDiffABCi}{$-$0.14 to 0.17}  % add.minutes.diff.AB.ci
+\newcommand{\RAddAucVolAB}{0.52}  % add.aucVol.AB
+\newcommand{\RAddMinutesVolBCEst}{0.02}  % add.minutes.vol.BC.est
+\newcommand{\RAddMinutesVolBCLo}{$-$0.12}  % add.minutes.vol.BC.lo
+\newcommand{\RAddMinutesVolBCHi}{0.16}  % add.minutes.vol.BC.hi
+\newcommand{\RAddMinutesVolBCCi}{$-$0.12 to 0.16}  % add.minutes.vol.BC.ci
+\newcommand{\RAddMinutesDiffBCEst}{$-$0.07}  % add.minutes.diff.BC.est
+\newcommand{\RAddMinutesDiffBCLo}{$-$0.21}  % add.minutes.diff.BC.lo
+\newcommand{\RAddMinutesDiffBCHi}{0.08}  % add.minutes.diff.BC.hi
+\newcommand{\RAddMinutesDiffBCCi}{$-$0.21 to 0.08}  % add.minutes.diff.BC.ci
+\newcommand{\RAddAucVolBC}{0.48}  % add.aucVol.BC
+\newcommand{\RAddMvABN}{246}  % add.mv.AB.n
+\newcommand{\RAddMvABEfflevelnextEst}{0.04}  % add.mv.AB.efflevelnext.est
+\newcommand{\RAddMvABEfflevelnextLo}{$-$0.09}  % add.mv.AB.efflevelnext.lo
+\newcommand{\RAddMvABEfflevelnextHi}{0.16}  % add.mv.AB.efflevelnext.hi
+\newcommand{\RAddMvABEfflevelnextCi}{$-$0.09 to 0.16}  % add.mv.AB.efflevelnext.ci
+\newcommand{\RAddMvABVollevelnextEst}{0.23}  % add.mv.AB.vollevelnext.est
+\newcommand{\RAddMvABVollevelnextLo}{0.11}  % add.mv.AB.vollevelnext.lo
+\newcommand{\RAddMvABVollevelnextHi}{0.35}  % add.mv.AB.vollevelnext.hi
+\newcommand{\RAddMvABVollevelnextCi}{0.11 to 0.35}  % add.mv.AB.vollevelnext.ci
+\newcommand{\RAddMvABEffchangeEst}{$-$0.07}  % add.mv.AB.effchange.est
+\newcommand{\RAddMvABEffchangeLo}{$-$0.20}  % add.mv.AB.effchange.lo
+\newcommand{\RAddMvABEffchangeHi}{0.05}  % add.mv.AB.effchange.hi
+\newcommand{\RAddMvABEffchangeCi}{$-$0.20 to 0.05}  % add.mv.AB.effchange.ci
+\newcommand{\RAddMvABVolchangeEst}{$-$0.02}  % add.mv.AB.volchange.est
+\newcommand{\RAddMvABVolchangeLo}{$-$0.14}  % add.mv.AB.volchange.lo
+\newcommand{\RAddMvABVolchangeHi}{0.10}  % add.mv.AB.volchange.hi
+\newcommand{\RAddMvABVolchangeCi}{$-$0.14 to 0.10}  % add.mv.AB.volchange.ci
+\newcommand{\RAddMvABEfflevelnowEst}{0.10}  % add.mv.AB.efflevelnow.est
+\newcommand{\RAddMvABEfflevelnowLo}{$-$0.03}  % add.mv.AB.efflevelnow.lo
+\newcommand{\RAddMvABEfflevelnowHi}{0.22}  % add.mv.AB.efflevelnow.hi
+\newcommand{\RAddMvABEfflevelnowCi}{$-$0.03 to 0.22}  % add.mv.AB.efflevelnow.ci
+\newcommand{\RAddMvABVollevelnowEst}{0.28}  % add.mv.AB.vollevelnow.est
+\newcommand{\RAddMvABVollevelnowLo}{0.16}  % add.mv.AB.vollevelnow.lo
+\newcommand{\RAddMvABVollevelnowHi}{0.40}  % add.mv.AB.vollevelnow.hi
+\newcommand{\RAddMvABVollevelnowCi}{0.16 to 0.40}  % add.mv.AB.vollevelnow.ci
+\newcommand{\RAddMvABDifflevelnextEst}{0.19}  % add.mv.AB.difflevelnext.est
+\newcommand{\RAddMvABDifflevelnextLo}{0.07}  % add.mv.AB.difflevelnext.lo
+\newcommand{\RAddMvABDifflevelnextHi}{0.33}  % add.mv.AB.difflevelnext.hi
+\newcommand{\RAddMvABDifflevelnextCi}{0.07 to 0.33}  % add.mv.AB.difflevelnext.ci
+\newcommand{\RAddMvABDiffchangeEst}{0.05}  % add.mv.AB.diffchange.est
+\newcommand{\RAddMvABDiffchangeLo}{$-$0.07}  % add.mv.AB.diffchange.lo
+\newcommand{\RAddMvABDiffchangeHi}{0.19}  % add.mv.AB.diffchange.hi
+\newcommand{\RAddMvABDiffchangeCi}{$-$0.07 to 0.19}  % add.mv.AB.diffchange.ci
+\newcommand{\RAddMvBCN}{248}  % add.mv.BC.n
+\newcommand{\RAddMvBCEfflevelnextEst}{0.04}  % add.mv.BC.efflevelnext.est
+\newcommand{\RAddMvBCEfflevelnextLo}{$-$0.08}  % add.mv.BC.efflevelnext.lo
+\newcommand{\RAddMvBCEfflevelnextHi}{0.16}  % add.mv.BC.efflevelnext.hi
+\newcommand{\RAddMvBCEfflevelnextCi}{$-$0.08 to 0.16}  % add.mv.BC.efflevelnext.ci
+\newcommand{\RAddMvBCVollevelnextEst}{0.25}  % add.mv.BC.vollevelnext.est
+\newcommand{\RAddMvBCVollevelnextLo}{0.13}  % add.mv.BC.vollevelnext.lo
+\newcommand{\RAddMvBCVollevelnextHi}{0.37}  % add.mv.BC.vollevelnext.hi
+\newcommand{\RAddMvBCVollevelnextCi}{0.13 to 0.37}  % add.mv.BC.vollevelnext.ci
+\newcommand{\RAddMvBCEffchangeEst}{0.10}  % add.mv.BC.effchange.est
+\newcommand{\RAddMvBCEffchangeLo}{$-$0.03}  % add.mv.BC.effchange.lo
+\newcommand{\RAddMvBCEffchangeHi}{0.23}  % add.mv.BC.effchange.hi
+\newcommand{\RAddMvBCEffchangeCi}{$-$0.03 to 0.23}  % add.mv.BC.effchange.ci
+\newcommand{\RAddMvBCVolchangeEst}{$-$0.01}  % add.mv.BC.volchange.est
+\newcommand{\RAddMvBCVolchangeLo}{$-$0.14}  % add.mv.BC.volchange.lo
+\newcommand{\RAddMvBCVolchangeHi}{0.13}  % add.mv.BC.volchange.hi
+\newcommand{\RAddMvBCVolchangeCi}{$-$0.14 to 0.13}  % add.mv.BC.volchange.ci
+\newcommand{\RAddMvBCEfflevelnowEst}{$-$0.03}  % add.mv.BC.efflevelnow.est
+\newcommand{\RAddMvBCEfflevelnowLo}{$-$0.15}  % add.mv.BC.efflevelnow.lo
+\newcommand{\RAddMvBCEfflevelnowHi}{0.10}  % add.mv.BC.efflevelnow.hi
+\newcommand{\RAddMvBCEfflevelnowCi}{$-$0.15 to 0.10}  % add.mv.BC.efflevelnow.ci
+\newcommand{\RAddMvBCVollevelnowEst}{0.26}  % add.mv.BC.vollevelnow.est
+\newcommand{\RAddMvBCVollevelnowLo}{0.15}  % add.mv.BC.vollevelnow.lo
+\newcommand{\RAddMvBCVollevelnowHi}{0.38}  % add.mv.BC.vollevelnow.hi
+\newcommand{\RAddMvBCVollevelnowCi}{0.15 to 0.38}  % add.mv.BC.vollevelnow.ci
+\newcommand{\RAddMvBCDifflevelnextEst}{0.21}  % add.mv.BC.difflevelnext.est
+\newcommand{\RAddMvBCDifflevelnextLo}{0.09}  % add.mv.BC.difflevelnext.lo
+\newcommand{\RAddMvBCDifflevelnextHi}{0.32}  % add.mv.BC.difflevelnext.hi
+\newcommand{\RAddMvBCDifflevelnextCi}{0.09 to 0.32}  % add.mv.BC.difflevelnext.ci
+\newcommand{\RAddMvBCDiffchangeEst}{$-$0.11}  % add.mv.BC.diffchange.est
+\newcommand{\RAddMvBCDiffchangeLo}{$-$0.23}  % add.mv.BC.diffchange.lo
+\newcommand{\RAddMvBCDiffchangeHi}{0.02}  % add.mv.BC.diffchange.hi
+\newcommand{\RAddMvBCDiffchangeCi}{$-$0.23 to 0.02}  % add.mv.BC.diffchange.ci
+\newcommand{\RAddMvCDN}{296}  % add.mv.CD.n
+\newcommand{\RAddMvCDEfflevelnextEst}{0.19}  % add.mv.CD.efflevelnext.est
+\newcommand{\RAddMvCDEfflevelnextLo}{0.08}  % add.mv.CD.efflevelnext.lo
+\newcommand{\RAddMvCDEfflevelnextHi}{0.29}  % add.mv.CD.efflevelnext.hi
+\newcommand{\RAddMvCDEfflevelnextCi}{0.08 to 0.29}  % add.mv.CD.efflevelnext.ci
+\newcommand{\RAddMvCDVollevelnextEst}{0.30}  % add.mv.CD.vollevelnext.est
+\newcommand{\RAddMvCDVollevelnextLo}{0.19}  % add.mv.CD.vollevelnext.lo
+\newcommand{\RAddMvCDVollevelnextHi}{0.40}  % add.mv.CD.vollevelnext.hi
+\newcommand{\RAddMvCDVollevelnextCi}{0.19 to 0.40}  % add.mv.CD.vollevelnext.ci
+\newcommand{\RAddMvCDEffchangeEst}{0.10}  % add.mv.CD.effchange.est
+\newcommand{\RAddMvCDEffchangeLo}{$-$0.02}  % add.mv.CD.effchange.lo
+\newcommand{\RAddMvCDEffchangeHi}{0.21}  % add.mv.CD.effchange.hi
+\newcommand{\RAddMvCDEffchangeCi}{$-$0.02 to 0.21}  % add.mv.CD.effchange.ci
+\newcommand{\RAddMvCDVolchangeEst}{0.15}  % add.mv.CD.volchange.est
+\newcommand{\RAddMvCDVolchangeLo}{0.03}  % add.mv.CD.volchange.lo
+\newcommand{\RAddMvCDVolchangeHi}{0.25}  % add.mv.CD.volchange.hi
+\newcommand{\RAddMvCDVolchangeCi}{0.03 to 0.25}  % add.mv.CD.volchange.ci
+\newcommand{\RAddMvCDEfflevelnowEst}{0.16}  % add.mv.CD.efflevelnow.est
+\newcommand{\RAddMvCDEfflevelnowLo}{0.04}  % add.mv.CD.efflevelnow.lo
+\newcommand{\RAddMvCDEfflevelnowHi}{0.26}  % add.mv.CD.efflevelnow.hi
+\newcommand{\RAddMvCDEfflevelnowCi}{0.04 to 0.26}  % add.mv.CD.efflevelnow.ci
+\newcommand{\RAddMvCDVollevelnowEst}{0.27}  % add.mv.CD.vollevelnow.est
+\newcommand{\RAddMvCDVollevelnowLo}{0.16}  % add.mv.CD.vollevelnow.lo
+\newcommand{\RAddMvCDVollevelnowHi}{0.37}  % add.mv.CD.vollevelnow.hi
+\newcommand{\RAddMvCDVollevelnowCi}{0.16 to 0.37}  % add.mv.CD.vollevelnow.ci
+\newcommand{\RAddMvCDDifflevelnextEst}{0.11}  % add.mv.CD.difflevelnext.est
+\newcommand{\RAddMvCDDifflevelnextLo}{0.01}  % add.mv.CD.difflevelnext.lo
+\newcommand{\RAddMvCDDifflevelnextHi}{0.21}  % add.mv.CD.difflevelnext.hi
+\newcommand{\RAddMvCDDifflevelnextCi}{0.01 to 0.21}  % add.mv.CD.difflevelnext.ci
+\newcommand{\RAddMvCDDiffchangeEst}{0.05}  % add.mv.CD.diffchange.est
+\newcommand{\RAddMvCDDiffchangeLo}{$-$0.05}  % add.mv.CD.diffchange.lo
+\newcommand{\RAddMvCDDiffchangeHi}{0.15}  % add.mv.CD.diffchange.hi
+\newcommand{\RAddMvCDDiffchangeCi}{$-$0.05 to 0.15}  % add.mv.CD.diffchange.ci
+\newcommand{\RMinutesNPlayerMatchesA}{8,653}  % minutes.nPlayerMatchesA
+\newcommand{\RMinutesNPlayerMatchesB}{8,689}  % minutes.nPlayerMatchesB
+\newcommand{\RPosChangedAB}{7}  % pos.changed.AB
+\newcommand{\RPosEligibleBothAB}{161}  % pos.eligibleBoth.AB
+\newcommand{\RPosChangedBC}{8}  % pos.changed.BC
+\newcommand{\RPosEligibleBothBC}{183}  % pos.eligibleBoth.BC
+\newcommand{\RTmLinked}{917}  % tm.linked
+\newcommand{\RTmTotal}{929}  % tm.total
+\newcommand{\RSensKOneMin}{0.36}  % sens.k1.min
+\newcommand{\RSensKOneMax}{0.55}  % sens.k1.max
+\newcommand{\RSensKOneDmax}{$-$0.000}  % sens.k1.dmax
+\newcommand{\RSensKOneDmin}{$-$0.046}  % sens.k1.dmin
+\newcommand{\RSensKTwoMin}{0.18}  % sens.k2.min
+\newcommand{\RSensKTwoMax}{0.39}  % sens.k2.max
+\newcommand{\RSensKTwoDmax}{0.049}  % sens.k2.dmax
+\newcommand{\RSensKTwoDmin}{$-$0.087}  % sens.k2.dmin
+\newcommand{\RSensNDSigNeg}{2}  % sens.nDSigNeg
+\newcommand{\RSensNDSigPos}{0}  % sens.nDSigPos
+\newcommand{\RSensNVariants}{11}  % sens.nVariants
+\newcommand{\RSensEqualWeightsKOne}{0.36}  % sens.equalWeights.k1
+\newcommand{\RSensLegacyAB}{0.50}  % sens.legacyAB
+\newcommand{\RAttRetentionABYoung}{68\%}  % att.retention.AB.young
+\newcommand{\RAttRetentionABOld}{48\%}  % att.retention.AB.old
+\newcommand{\RAttABAbsentAgeThreeZero}{31\%}  % att.AB.absent.age30
+\newcommand{\RAttABEligibleAgeThreeZero}{18\%}  % att.AB.eligible.age30
+\newcommand{\RGkEffABN}{11}  % gk.eff.AB.n
+\newcommand{\RGkEffABEst}{0.11}  % gk.eff.AB.est
+\newcommand{\RGkEffABLo}{$-$0.77}  % gk.eff.AB.lo
+\newcommand{\RGkEffABHi}{0.70}  % gk.eff.AB.hi
+\newcommand{\RGkEffABCi}{$-$0.77 to 0.70}  % gk.eff.AB.ci
+\newcommand{\RGkEffBCN}{15}  % gk.eff.BC.n
+\newcommand{\RGkEffBCEst}{0.07}  % gk.eff.BC.est
+\newcommand{\RGkEffBCLo}{$-$0.53}  % gk.eff.BC.lo
+\newcommand{\RGkEffBCHi}{0.63}  % gk.eff.BC.hi
+\newcommand{\RGkEffBCCi}{$-$0.53 to 0.63}  % gk.eff.BC.ci
+\newcommand{\RGkEffACN}{13}  % gk.eff.AC.n
+\newcommand{\RGkEffACEst}{0.29}  % gk.eff.AC.est
+\newcommand{\RGkEffACLo}{$-$0.40}  % gk.eff.AC.lo
+\newcommand{\RGkEffACHi}{0.79}  % gk.eff.AC.hi
+\newcommand{\RGkEffACCi}{$-$0.40 to 0.79}  % gk.eff.AC.ci
+\newcommand{\RGkVolABN}{11}  % gk.vol.AB.n
+\newcommand{\RGkVolABEst}{0.42}  % gk.vol.AB.est
+\newcommand{\RGkVolABLo}{$-$0.34}  % gk.vol.AB.lo
+\newcommand{\RGkVolABHi}{0.90}  % gk.vol.AB.hi
+\newcommand{\RGkVolABCi}{$-$0.34 to 0.90}  % gk.vol.AB.ci
+\newcommand{\RGkVolBCN}{15}  % gk.vol.BC.n
+\newcommand{\RGkVolBCEst}{0.12}  % gk.vol.BC.est
+\newcommand{\RGkVolBCLo}{$-$0.34}  % gk.vol.BC.lo
+\newcommand{\RGkVolBCHi}{0.57}  % gk.vol.BC.hi
+\newcommand{\RGkVolBCCi}{$-$0.34 to 0.57}  % gk.vol.BC.ci
+\newcommand{\RGkVolACN}{13}  % gk.vol.AC.n
+\newcommand{\RGkVolACEst}{0.17}  % gk.vol.AC.est
+\newcommand{\RGkVolACLo}{$-$0.42}  % gk.vol.AC.lo
+\newcommand{\RGkVolACHi}{0.65}  % gk.vol.AC.hi
+\newcommand{\RGkVolACCi}{$-$0.42 to 0.65}  % gk.vol.AC.ci
+\newcommand{\RUpPassA}{16\%}  % up.Pass.A
+\newcommand{\RUpPassB}{16\%}  % up.Pass.B
+\newcommand{\RUpPassC}{18\%}  % up.Pass.C
+\newcommand{\RUpCarryA}{32\%}  % up.Carry.A
+\newcommand{\RUpCarryB}{33\%}  % up.Carry.B
+\newcommand{\RUpCarryC}{37\%}  % up.Carry.C
+\newcommand{\RUpShotA}{36\%}  % up.Shot.A
+\newcommand{\RUpShotB}{30\%}  % up.Shot.B
+\newcommand{\RUpShotC}{36\%}  % up.Shot.C
+\newcommand{\RSubAgePeakGK}{18.6}  % sub.agePeak.GK
+\newcommand{\RSubRecPeakGK}{24}  % sub.recPeak.GK
+\newcommand{\RSubRecPeakThirtyGK}{25}  % sub.recPeakThirty.GK
+\newcommand{\RSubAgePeakDEF}{28.8}  % sub.agePeak.DEF
+\newcommand{\RSubRecPeakDEF}{31}  % sub.recPeak.DEF
+\newcommand{\RSubRecPeakThirtyDEF}{31}  % sub.recPeakThirty.DEF
+\newcommand{\RSubAgePeakMID}{22.7}  % sub.agePeak.MID
+\newcommand{\RSubRecPeakMID}{24}  % sub.recPeak.MID
+\newcommand{\RSubRecPeakThirtyMID}{26}  % sub.recPeakThirty.MID
+\newcommand{\RSubAgePeakFWD}{21.7}  % sub.agePeak.FWD
+\newcommand{\RSubRecPeakFWD}{24}  % sub.recPeak.FWD
+\newcommand{\RSubRecPeakThirtyFWD}{26}  % sub.recPeakThirty.FWD
+\newcommand{\RSubBetaRidge}{0.475}  % sub.betaRidge
+\newcommand{\RSubBetaUnpen}{0.476}  % sub.betaUnpen
+\newcommand{\RSubBetaOLS}{0.491}  % sub.betaOLS
+\newcommand{\RSubOlsRhoKOne}{0.90}  % sub.olsRho.k1
+\newcommand{\RSubOlsRhoKTwo}{0.66}  % sub.olsRho.k2
+\newcommand{\RSubOlsRhoKThree}{0.38}  % sub.olsRho.k3
+\newcommand{\RSubNaive}{0.487}  % sub.naive
+\newcommand{\RSubOofOperative}{0.461}  % sub.oofOperative
+\newcommand{\RSubNestedOuter}{0.43}  % sub.nestedOuter
+\newcommand{\RSubNestedInner}{0.46}  % sub.nestedInner
+\newcommand{\RSubMddAssumed}{0.046}  % sub.mddAssumed
+\newcommand{\RSubMddEmpirical}{0.018}  % sub.mddEmpirical
+\newcommand{\RSubMddBoot}{0.025}  % sub.mddBoot
+\newcommand{\RSubRTwoThreeEmp}{0.992}  % sub.rTwoThreeEmp
+\newcommand{\RSubRhoThreeMin}{0.20}  % sub.rhoThreeMin
+\newcommand{\RSubRhoThreeMax}{0.49}  % sub.rhoThreeMax
+\newcommand{\RSubGkPeakMin}{22}  % sub.gkPeakMin
+\newcommand{\RSubGkPeakMax}{34}  % sub.gkPeakMax
+\newcommand{\RSubNPassFilter}{3}  % sub.nPassFilter
+\newcommand{\RSubNFits}{50}  % sub.nFits
+\newcommand{\RSubOofFixed}{0.45}  % sub.oofFixed
+\newcommand{\RSubOofFoldwise}{0.41}  % sub.oofFoldwise
+\newcommand{\RSubYFixed}{0.48}  % sub.yFixed
+\newcommand{\RSubYFoldwise}{0.44}  % sub.yFoldwise
+\newcommand{\RSubYEqual}{0.33}  % sub.yEqual
+\newcommand{\RSubPsrCodeEst}{0.43}  % sub.psrCode.est
+\newcommand{\RSubPsrCodeLo}{0.31}  % sub.psrCode.lo
+\newcommand{\RSubPsrCodeHi}{0.54}  % sub.psrCode.hi
+\newcommand{\RSubPsrCodeCi}{0.31 to 0.54}  % sub.psrCode.ci
+\newcommand{\RSubPsrEqTwoEst}{0.65}  % sub.psrEqTwo.est
+\newcommand{\RSubPsrEqTwoLo}{0.54}  % sub.psrEqTwo.lo
+\newcommand{\RSubPsrEqTwoHi}{0.74}  % sub.psrEqTwo.hi
+\newcommand{\RSubPsrEqTwoCi}{0.54 to 0.74}  % sub.psrEqTwo.ci
+\newcommand{\RSubPsrPassDEF}{0.52}  % sub.psrPassDEF
+\newcommand{\RSubPsrPassMID}{0.53}  % sub.psrPassMID
+\newcommand{\RSubPsrCodeVsEq}{0.82}  % sub.psrCodeVsEq
+\newcommand{\RSubLinkExact}{759}  % sub.linkExact
+\newcommand{\RSubLinkNames}{760}  % sub.linkNames
+\newcommand{\RSubOttoEvents}{2}  % sub.ottoEvents
+\newcommand{\RSubOttoMinutes}{94}  % sub.ottoMinutes
+\newcommand{\RSubRomeuMinutes}{75}  % sub.romeuMinutes
+\newcommand{\RSubUniverseLtThousand}{313}  % sub.universeLtThousand
+\newcommand{\RSubUniverseBaseA}{202}  % sub.universeBaseA
+\newcommand{\RSubPosChanged}{30}  % sub.posChanged
+\newcommand{\RSubPosBoth}{333}  % sub.posBoth
+\newcommand{\RFodenNFwdB}{67}  % foden.nFwdB
+\newcommand{\RFodenRankEffB}{48}  % foden.rankEffB
+\newcommand{\RFodenRankVolB}{25}  % foden.rankVolB
+\newcommand{\RRobCovTwoFull}{90}  % rob.covTwoFull
+\newcommand{\RRobCovOneFull}{200}  % rob.covOneFull
+\newcommand{\RRobMinGtTenA}{0.2\%}  % rob.minGtTenA
+\newcommand{\RRobMinMaxErrA}{73}  % rob.minMaxErrA
+\newcommand{\RRobMinGtTenB}{0.4\%}  % rob.minGtTenB
+\newcommand{\RRobMinMaxErrB}{99}  % rob.minMaxErrB
+\newcommand{\RRobPrelimKOne}{0.46}  % rob.prelimKOne
+\newcommand{\RRobPrelimKTwo}{0.31}  % rob.prelimKTwo
+\newcommand{\RRobRomeuMinutesRone}{77}  % rob.romeuMinutesRone
+\newcommand{\RRobScaleEffSdC}{9.1}  % rob.scaleEffSdC
+\newcommand{\RRobScaleEffMinC}{24}  % rob.scaleEffMinC
+\newcommand{\RRobScaleEffMaxC}{75}  % rob.scaleEffMaxC
+\newcommand{\RRobScaleVolSdC}{28.9}  % rob.scaleVolSdC
+\newcommand{\RRobHalfWidthSd}{1.16}  % rob.halfWidthSd
+\newcommand{\RRobMedPctLo}{14th}  % rob.medPctLo
+\newcommand{\RRobMedPctHi}{90th}  % rob.medPctHi
+\newcommand{\RRobMaeSdBCMZero}{0.79}  % rob.maeSd.BC.M0
+\newcommand{\RRobMaeSdBCMTwo}{0.69}  % rob.maeSd.BC.M2
+\newcommand{\RRobMaeSdACMZero}{0.92}  % rob.maeSd.AC.M0
+\newcommand{\RRobMaeSdACMTwo}{0.82}  % rob.maeSd.AC.M2
+\newcommand{\RRobMaeDiffEffBCEst}{$-$0.9}  % rob.maeDiff.eff.BC.est
+\newcommand{\RRobMaeDiffEffBCLo}{$-$1.5}  % rob.maeDiff.eff.BC.lo
+\newcommand{\RRobMaeDiffEffBCHi}{$-$0.4}  % rob.maeDiff.eff.BC.hi
+\newcommand{\RRobMaeDiffEffBCCi}{$-$1.5 to $-$0.4}  % rob.maeDiff.eff.BC.ci
+\newcommand{\RRobMaeDiffEffACEst}{$-$0.9}  % rob.maeDiff.eff.AC.est
+\newcommand{\RRobMaeDiffEffACLo}{$-$1.8}  % rob.maeDiff.eff.AC.lo
+\newcommand{\RRobMaeDiffEffACHi}{$-$0.0}  % rob.maeDiff.eff.AC.hi
+\newcommand{\RRobMaeDiffEffACCi}{$-$1.8 to $-$0.0}  % rob.maeDiff.eff.AC.ci
+\newcommand{\RRobMaeDiffVolBCEst}{$-$0.4}  % rob.maeDiff.vol.BC.est
+\newcommand{\RRobMaeDiffVolBCLo}{$-$2.3}  % rob.maeDiff.vol.BC.lo
+\newcommand{\RRobMaeDiffVolBCHi}{1.6}  % rob.maeDiff.vol.BC.hi
+\newcommand{\RRobMaeDiffVolBCCi}{$-$2.3 to 1.6}  % rob.maeDiff.vol.BC.ci
+\newcommand{\RRobMaeDiffVolACEst}{0.5}  % rob.maeDiff.vol.AC.est
+\newcommand{\RRobMaeDiffVolACLo}{$-$2.9}  % rob.maeDiff.vol.AC.lo
+\newcommand{\RRobMaeDiffVolACHi}{3.9}  % rob.maeDiff.vol.AC.hi
+\newcommand{\RRobMaeDiffVolACCi}{$-$2.9 to 3.9}  % rob.maeDiff.vol.AC.ci
+\newcommand{\RRobCorrAEst}{0.38}  % rob.corr.A.est
+\newcommand{\RRobCorrALo}{0.28}  % rob.corr.A.lo
+\newcommand{\RRobCorrAHi}{0.48}  % rob.corr.A.hi
+\newcommand{\RRobCorrACi}{0.28 to 0.48}  % rob.corr.A.ci
+\newcommand{\RRobCorrBEst}{0.48}  % rob.corr.B.est
+\newcommand{\RRobCorrBLo}{0.38}  % rob.corr.B.lo
+\newcommand{\RRobCorrBHi}{0.57}  % rob.corr.B.hi
+\newcommand{\RRobCorrBCi}{0.38 to 0.57}  % rob.corr.B.ci
+\newcommand{\RRobCorrCEst}{0.56}  % rob.corr.C.est
+\newcommand{\RRobCorrCLo}{0.47}  % rob.corr.C.lo
+\newcommand{\RRobCorrCHi}{0.64}  % rob.corr.C.hi
+\newcommand{\RRobCorrCCi}{0.47 to 0.64}  % rob.corr.C.ci
+\newcommand{\RRobTopqEffBCMZeroEst}{0.44}  % rob.topq.eff.BC.M0.est
+\newcommand{\RRobTopqEffBCMZeroLo}{0.34}  % rob.topq.eff.BC.M0.lo
+\newcommand{\RRobTopqEffBCMZeroHi}{0.63}  % rob.topq.eff.BC.M0.hi
+\newcommand{\RRobTopqEffBCMZeroCi}{0.34 to 0.63}  % rob.topq.eff.BC.M0.ci
+\newcommand{\RRobTopqEffBCMTwoEst}{0.49}  % rob.topq.eff.BC.M2.est
+\newcommand{\RRobTopqEffBCMTwoLo}{0.34}  % rob.topq.eff.BC.M2.lo
+\newcommand{\RRobTopqEffBCMTwoHi}{0.64}  % rob.topq.eff.BC.M2.hi
+\newcommand{\RRobTopqEffBCMTwoCi}{0.34 to 0.64}  % rob.topq.eff.BC.M2.ci
+\newcommand{\RRobTopqEffBCMThreeEst}{0.47}  % rob.topq.eff.BC.M3.est
+\newcommand{\RRobTopqEffBCMThreeLo}{0.34}  % rob.topq.eff.BC.M3.lo
+\newcommand{\RRobTopqEffBCMThreeHi}{0.63}  % rob.topq.eff.BC.M3.hi
+\newcommand{\RRobTopqEffBCMThreeCi}{0.34 to 0.63}  % rob.topq.eff.BC.M3.ci
+\newcommand{\RRobDMThreeEffBCEst}{$-$0.009}  % rob.dM3.eff.BC.est
+\newcommand{\RRobDMThreeEffBCLo}{$-$0.033}  % rob.dM3.eff.BC.lo
+\newcommand{\RRobDMThreeEffBCHi}{0.013}  % rob.dM3.eff.BC.hi
+\newcommand{\RRobDMThreeEffBCCi}{$-$0.033 to 0.013}  % rob.dM3.eff.BC.ci
+\newcommand{\RRobTopqEffACMZeroEst}{0.35}  % rob.topq.eff.AC.M0.est
+\newcommand{\RRobTopqEffACMZeroLo}{0.21}  % rob.topq.eff.AC.M0.lo
+\newcommand{\RRobTopqEffACMZeroHi}{0.53}  % rob.topq.eff.AC.M0.hi
+\newcommand{\RRobTopqEffACMZeroCi}{0.21 to 0.53}  % rob.topq.eff.AC.M0.ci
+\newcommand{\RRobTopqEffACMTwoEst}{0.29}  % rob.topq.eff.AC.M2.est
+\newcommand{\RRobTopqEffACMTwoLo}{0.17}  % rob.topq.eff.AC.M2.lo
+\newcommand{\RRobTopqEffACMTwoHi}{0.47}  % rob.topq.eff.AC.M2.hi
+\newcommand{\RRobTopqEffACMTwoCi}{0.17 to 0.47}  % rob.topq.eff.AC.M2.ci
+\newcommand{\RRobTopqEffACMThreeEst}{0.32}  % rob.topq.eff.AC.M3.est
+\newcommand{\RRobTopqEffACMThreeLo}{0.19}  % rob.topq.eff.AC.M3.lo
+\newcommand{\RRobTopqEffACMThreeHi}{0.51}  % rob.topq.eff.AC.M3.hi
+\newcommand{\RRobTopqEffACMThreeCi}{0.19 to 0.51}  % rob.topq.eff.AC.M3.ci
+\newcommand{\RRobDMThreeEffACEst}{$-$0.019}  % rob.dM3.eff.AC.est
+\newcommand{\RRobDMThreeEffACLo}{$-$0.100}  % rob.dM3.eff.AC.lo
+\newcommand{\RRobDMThreeEffACHi}{0.053}  % rob.dM3.eff.AC.hi
+\newcommand{\RRobDMThreeEffACCi}{$-$0.100 to 0.053}  % rob.dM3.eff.AC.ci
+\newcommand{\RRobTopqVolBCMZeroEst}{0.56}  % rob.topq.vol.BC.M0.est
+\newcommand{\RRobTopqVolBCMZeroLo}{0.42}  % rob.topq.vol.BC.M0.lo
+\newcommand{\RRobTopqVolBCMZeroHi}{0.70}  % rob.topq.vol.BC.M0.hi
+\newcommand{\RRobTopqVolBCMZeroCi}{0.42 to 0.70}  % rob.topq.vol.BC.M0.ci
+\newcommand{\RRobMaeVolBCMZero}{22.1}  % rob.mae.vol.BC.M0
+\newcommand{\RRobTopqVolBCMTwoEst}{0.58}  % rob.topq.vol.BC.M2.est
+\newcommand{\RRobTopqVolBCMTwoLo}{0.42}  % rob.topq.vol.BC.M2.lo
+\newcommand{\RRobTopqVolBCMTwoHi}{0.70}  % rob.topq.vol.BC.M2.hi
+\newcommand{\RRobTopqVolBCMTwoCi}{0.42 to 0.70}  % rob.topq.vol.BC.M2.ci
+\newcommand{\RRobMaeVolBCMTwo}{21.7}  % rob.mae.vol.BC.M2
+\newcommand{\RRobTopqVolACMZeroEst}{0.50}  % rob.topq.vol.AC.M0.est
+\newcommand{\RRobTopqVolACMZeroLo}{0.32}  % rob.topq.vol.AC.M0.lo
+\newcommand{\RRobTopqVolACMZeroHi}{0.65}  % rob.topq.vol.AC.M0.hi
+\newcommand{\RRobTopqVolACMZeroCi}{0.32 to 0.65}  % rob.topq.vol.AC.M0.ci
+\newcommand{\RRobMaeVolACMZero}{24.1}  % rob.mae.vol.AC.M0
+\newcommand{\RRobTopqVolACMTwoEst}{0.41}  % rob.topq.vol.AC.M2.est
+\newcommand{\RRobTopqVolACMTwoLo}{0.28}  % rob.topq.vol.AC.M2.lo
+\newcommand{\RRobTopqVolACMTwoHi}{0.59}  % rob.topq.vol.AC.M2.hi
+\newcommand{\RRobTopqVolACMTwoCi}{0.28 to 0.59}  % rob.topq.vol.AC.M2.ci
+\newcommand{\RRobMaeVolACMTwo}{24.6}  % rob.mae.vol.AC.M2
+\newcommand{\RRobCovConfBC}{77\%}  % rob.covConf.BC
+\newcommand{\RRobCovConfLoBC}{71\%}  % rob.covConfLo.BC
+\newcommand{\RRobCovConfHiBC}{83\%}  % rob.covConfHi.BC
+\newcommand{\RRobCovGaussBCDEF}{76\%}  % rob.covGauss.BC.DEF
+\newcommand{\RRobCovGaussBCMID}{90\%}  % rob.covGauss.BC.MID
+\newcommand{\RRobCovGaussBCFWD}{71\%}  % rob.covGauss.BC.FWD
+\newcommand{\RRobCovConfAC}{76\%}  % rob.covConf.AC
+\newcommand{\RRobCovConfLoAC}{69\%}  % rob.covConfLo.AC
+\newcommand{\RRobCovConfHiAC}{83\%}  % rob.covConfHi.AC
+\newcommand{\RRobCovGaussACDEF}{77\%}  % rob.covGauss.AC.DEF
+\newcommand{\RRobCovGaussACMID}{85\%}  % rob.covGauss.AC.MID
+\newcommand{\RRobCovGaussACFWD}{70\%}  % rob.covGauss.AC.FWD
+\newcommand{\RRobCalibTopBinN}{6}  % rob.calibTopBinN
+\newcommand{\RRobImpliedEvalKOne}{0.996}  % rob.impliedEvalKOne
+\newcommand{\RRobImpliedEvalKTwo}{0.952}  % rob.impliedEvalKTwo
+\newcommand{\RRobAucAbsentAB}{26}  % rob.aucAbsent.AB
+\newcommand{\RRobMinPartialAgeABEst}{0.05}  % rob.minPartialAge.AB.est
+\newcommand{\RRobMinPartialAgeABLo}{$-$0.10}  % rob.minPartialAge.AB.lo
+\newcommand{\RRobMinPartialAgeABHi}{0.18}  % rob.minPartialAge.AB.hi
+\newcommand{\RRobMinPartialAgeABCi}{$-$0.10 to 0.18}  % rob.minPartialAge.AB.ci
+\newcommand{\RRobAucAbsentBC}{16}  % rob.aucAbsent.BC
+\newcommand{\RRobMinPartialAgeBCEst}{0.11}  % rob.minPartialAge.BC.est
+\newcommand{\RRobMinPartialAgeBCLo}{$-$0.03}  % rob.minPartialAge.BC.lo
+\newcommand{\RRobMinPartialAgeBCHi}{0.25}  % rob.minPartialAge.BC.hi
+\newcommand{\RRobMinPartialAgeBCCi}{$-$0.03 to 0.25}  % rob.minPartialAge.BC.ci
+\newcommand{\RRobStayBCNStay}{154}  % rob.stay.BC.nStay
+\newcommand{\RRobStayBCNMove}{14}  % rob.stay.BC.nMove
+\newcommand{\RRobStayBCEffStayersEst}{0.50}  % rob.stay.BC.eff.stayers.est
+\newcommand{\RRobStayBCEffStayersLo}{0.36}  % rob.stay.BC.eff.stayers.lo
+\newcommand{\RRobStayBCEffStayersHi}{0.61}  % rob.stay.BC.eff.stayers.hi
+\newcommand{\RRobStayBCEffStayersCi}{0.36 to 0.61}  % rob.stay.BC.eff.stayers.ci
+\newcommand{\RRobStayBCEffMoversEst}{0.15}  % rob.stay.BC.eff.movers.est
+\newcommand{\RRobStayBCEffMoversLo}{$-$0.83}  % rob.stay.BC.eff.movers.lo
+\newcommand{\RRobStayBCEffMoversHi}{0.94}  % rob.stay.BC.eff.movers.hi
+\newcommand{\RRobStayBCEffMoversCi}{$-$0.83 to 0.94}  % rob.stay.BC.eff.movers.ci
+\newcommand{\RRobStayBCVolStayersEst}{0.48}  % rob.stay.BC.vol.stayers.est
+\newcommand{\RRobStayBCVolStayersLo}{0.34}  % rob.stay.BC.vol.stayers.lo
+\newcommand{\RRobStayBCVolStayersHi}{0.60}  % rob.stay.BC.vol.stayers.hi
+\newcommand{\RRobStayBCVolStayersCi}{0.34 to 0.60}  % rob.stay.BC.vol.stayers.ci
+\newcommand{\RRobStayBCVolMoversEst}{0.55}  % rob.stay.BC.vol.movers.est
+\newcommand{\RRobStayBCVolMoversLo}{$-$0.36}  % rob.stay.BC.vol.movers.lo
+\newcommand{\RRobStayBCVolMoversHi}{1.00}  % rob.stay.BC.vol.movers.hi
+\newcommand{\RRobStayBCVolMoversCi}{$-$0.36 to 1.00}  % rob.stay.BC.vol.movers.ci
+\newcommand{\RRobPartialBCEffPosEst}{0.56}  % rob.partial.BC.eff_pos.est
+\newcommand{\RRobPartialBCEffPosLo}{0.44}  % rob.partial.BC.eff_pos.lo
+\newcommand{\RRobPartialBCEffPosHi}{0.66}  % rob.partial.BC.eff_pos.hi
+\newcommand{\RRobPartialBCEffPosCi}{0.44 to 0.66}  % rob.partial.BC.eff_pos.ci
+\newcommand{\RRobPartialBCEffClubEst}{0.53}  % rob.partial.BC.eff_club.est
+\newcommand{\RRobPartialBCEffClubLo}{0.39}  % rob.partial.BC.eff_club.lo
+\newcommand{\RRobPartialBCEffClubHi}{0.65}  % rob.partial.BC.eff_club.hi
+\newcommand{\RRobPartialBCEffClubCi}{0.39 to 0.65}  % rob.partial.BC.eff_club.ci
+\newcommand{\RRobPartialBCVolPosEst}{0.50}  % rob.partial.BC.vol_pos.est
+\newcommand{\RRobPartialBCVolPosLo}{0.37}  % rob.partial.BC.vol_pos.lo
+\newcommand{\RRobPartialBCVolPosHi}{0.61}  % rob.partial.BC.vol_pos.hi
+\newcommand{\RRobPartialBCVolPosCi}{0.37 to 0.61}  % rob.partial.BC.vol_pos.ci
+\newcommand{\RRobPartialBCVolClubEst}{0.48}  % rob.partial.BC.vol_club.est
+\newcommand{\RRobPartialBCVolClubLo}{0.33}  % rob.partial.BC.vol_club.lo
+\newcommand{\RRobPartialBCVolClubHi}{0.62}  % rob.partial.BC.vol_club.hi
+\newcommand{\RRobPartialBCVolClubCi}{0.33 to 0.62}  % rob.partial.BC.vol_club.ci
+\newcommand{\RRobPartialBCDiffPosEst}{$-$0.06}  % rob.partial.BC.diff_pos.est
+\newcommand{\RRobPartialBCDiffPosLo}{$-$0.20}  % rob.partial.BC.diff_pos.lo
+\newcommand{\RRobPartialBCDiffPosHi}{0.08}  % rob.partial.BC.diff_pos.hi
+\newcommand{\RRobPartialBCDiffPosCi}{$-$0.20 to 0.08}  % rob.partial.BC.diff_pos.ci
+\newcommand{\RRobPartialBCDiffClubEst}{$-$0.05}  % rob.partial.BC.diff_club.est
+\newcommand{\RRobPartialBCDiffClubLo}{$-$0.22}  % rob.partial.BC.diff_club.lo
+\newcommand{\RRobPartialBCDiffClubHi}{0.12}  % rob.partial.BC.diff_club.hi
+\newcommand{\RRobPartialBCDiffClubCi}{$-$0.22 to 0.12}  % rob.partial.BC.diff_club.ci
+\newcommand{\RRobStayACNStay}{99}  % rob.stay.AC.nStay
+\newcommand{\RRobStayACNMove}{35}  % rob.stay.AC.nMove
+\newcommand{\RRobStayACEffStayersEst}{0.21}  % rob.stay.AC.eff.stayers.est
+\newcommand{\RRobStayACEffStayersLo}{$-$0.01}  % rob.stay.AC.eff.stayers.lo
+\newcommand{\RRobStayACEffStayersHi}{0.39}  % rob.stay.AC.eff.stayers.hi
+\newcommand{\RRobStayACEffStayersCi}{$-$0.01 to 0.39}  % rob.stay.AC.eff.stayers.ci
+\newcommand{\RRobStayACEffMoversEst}{0.44}  % rob.stay.AC.eff.movers.est
+\newcommand{\RRobStayACEffMoversLo}{0.06}  % rob.stay.AC.eff.movers.lo
+\newcommand{\RRobStayACEffMoversHi}{0.70}  % rob.stay.AC.eff.movers.hi
+\newcommand{\RRobStayACEffMoversCi}{0.06 to 0.70}  % rob.stay.AC.eff.movers.ci
+\newcommand{\RRobStayACVolStayersEst}{0.48}  % rob.stay.AC.vol.stayers.est
+\newcommand{\RRobStayACVolStayersLo}{0.29}  % rob.stay.AC.vol.stayers.lo
+\newcommand{\RRobStayACVolStayersHi}{0.61}  % rob.stay.AC.vol.stayers.hi
+\newcommand{\RRobStayACVolStayersCi}{0.29 to 0.61}  % rob.stay.AC.vol.stayers.ci
+\newcommand{\RRobStayACVolMoversEst}{0.60}  % rob.stay.AC.vol.movers.est
+\newcommand{\RRobStayACVolMoversLo}{0.30}  % rob.stay.AC.vol.movers.lo
+\newcommand{\RRobStayACVolMoversHi}{0.75}  % rob.stay.AC.vol.movers.hi
+\newcommand{\RRobStayACVolMoversCi}{0.30 to 0.75}  % rob.stay.AC.vol.movers.ci
+\newcommand{\RRobPartialACEffPosEst}{0.34}  % rob.partial.AC.eff_pos.est
+\newcommand{\RRobPartialACEffPosLo}{0.18}  % rob.partial.AC.eff_pos.lo
+\newcommand{\RRobPartialACEffPosHi}{0.49}  % rob.partial.AC.eff_pos.hi
+\newcommand{\RRobPartialACEffPosCi}{0.18 to 0.49}  % rob.partial.AC.eff_pos.ci
+\newcommand{\RRobPartialACEffClubEst}{0.34}  % rob.partial.AC.eff_club.est
+\newcommand{\RRobPartialACEffClubLo}{0.06}  % rob.partial.AC.eff_club.lo
+\newcommand{\RRobPartialACEffClubHi}{0.50}  % rob.partial.AC.eff_club.hi
+\newcommand{\RRobPartialACEffClubCi}{0.06 to 0.50}  % rob.partial.AC.eff_club.ci
+\newcommand{\RRobPartialACVolPosEst}{0.49}  % rob.partial.AC.vol_pos.est
+\newcommand{\RRobPartialACVolPosLo}{0.36}  % rob.partial.AC.vol_pos.lo
+\newcommand{\RRobPartialACVolPosHi}{0.60}  % rob.partial.AC.vol_pos.hi
+\newcommand{\RRobPartialACVolPosCi}{0.36 to 0.60}  % rob.partial.AC.vol_pos.ci
+\newcommand{\RRobPartialACVolClubEst}{0.49}  % rob.partial.AC.vol_club.est
+\newcommand{\RRobPartialACVolClubLo}{0.27}  % rob.partial.AC.vol_club.lo
+\newcommand{\RRobPartialACVolClubHi}{0.64}  % rob.partial.AC.vol_club.hi
+\newcommand{\RRobPartialACVolClubCi}{0.27 to 0.64}  % rob.partial.AC.vol_club.ci
+\newcommand{\RRobPartialACDiffPosEst}{0.15}  % rob.partial.AC.diff_pos.est
+\newcommand{\RRobPartialACDiffPosLo}{$-$0.02}  % rob.partial.AC.diff_pos.lo
+\newcommand{\RRobPartialACDiffPosHi}{0.32}  % rob.partial.AC.diff_pos.hi
+\newcommand{\RRobPartialACDiffPosCi}{$-$0.02 to 0.32}  % rob.partial.AC.diff_pos.ci
+\newcommand{\RRobPartialACDiffClubEst}{0.16}  % rob.partial.AC.diff_club.est
+\newcommand{\RRobPartialACDiffClubLo}{$-$0.04}  % rob.partial.AC.diff_club.lo
+\newcommand{\RRobPartialACDiffClubHi}{0.42}  % rob.partial.AC.diff_club.hi
+\newcommand{\RRobPartialACDiffClubCi}{$-$0.04 to 0.42}  % rob.partial.AC.diff_club.ci
+\newcommand{\RRobMvclubABEffLevelNextClubEst}{0.11}  % rob.mvclub.AB.eff.level.next.club.est
+\newcommand{\RRobMvclubABEffLevelNextClubLo}{$-$0.02}  % rob.mvclub.AB.eff.level.next.club.lo
+\newcommand{\RRobMvclubABEffLevelNextClubHi}{0.24}  % rob.mvclub.AB.eff.level.next.club.hi
+\newcommand{\RRobMvclubABEffLevelNextClubCi}{$-$0.02 to 0.24}  % rob.mvclub.AB.eff.level.next.club.ci
+\newcommand{\RRobMvclubABVolLevelNextClubEst}{0.17}  % rob.mvclub.AB.vol.level.next.club.est
+\newcommand{\RRobMvclubABVolLevelNextClubLo}{0.05}  % rob.mvclub.AB.vol.level.next.club.lo
+\newcommand{\RRobMvclubABVolLevelNextClubHi}{0.29}  % rob.mvclub.AB.vol.level.next.club.hi
+\newcommand{\RRobMvclubABVolLevelNextClubCi}{0.05 to 0.29}  % rob.mvclub.AB.vol.level.next.club.ci
+\newcommand{\RRobMvclubABDiffLevelNextClubEst}{0.05}  % rob.mvclub.AB.diff.level.next.club.est
+\newcommand{\RRobMvclubABDiffLevelNextClubLo}{$-$0.08}  % rob.mvclub.AB.diff.level.next.club.lo
+\newcommand{\RRobMvclubABDiffLevelNextClubHi}{0.19}  % rob.mvclub.AB.diff.level.next.club.hi
+\newcommand{\RRobMvclubABDiffLevelNextClubCi}{$-$0.08 to 0.19}  % rob.mvclub.AB.diff.level.next.club.ci
+\newcommand{\RRobMvclubABEffLevelNowClubEst}{0.20}  % rob.mvclub.AB.eff.level.now.club.est
+\newcommand{\RRobMvclubABEffLevelNowClubLo}{0.07}  % rob.mvclub.AB.eff.level.now.club.lo
+\newcommand{\RRobMvclubABEffLevelNowClubHi}{0.31}  % rob.mvclub.AB.eff.level.now.club.hi
+\newcommand{\RRobMvclubABEffLevelNowClubCi}{0.07 to 0.31}  % rob.mvclub.AB.eff.level.now.club.ci
+\newcommand{\RRobMvclubABVolLevelNowClubEst}{0.20}  % rob.mvclub.AB.vol.level.now.club.est
+\newcommand{\RRobMvclubABVolLevelNowClubLo}{0.08}  % rob.mvclub.AB.vol.level.now.club.lo
+\newcommand{\RRobMvclubABVolLevelNowClubHi}{0.33}  % rob.mvclub.AB.vol.level.now.club.hi
+\newcommand{\RRobMvclubABVolLevelNowClubCi}{0.08 to 0.33}  % rob.mvclub.AB.vol.level.now.club.ci
+\newcommand{\RRobMvclubABVolChangeClubEst}{0.03}  % rob.mvclub.AB.vol.change.club.est
+\newcommand{\RRobMvclubABVolChangeClubLo}{$-$0.12}  % rob.mvclub.AB.vol.change.club.lo
+\newcommand{\RRobMvclubABVolChangeClubHi}{0.17}  % rob.mvclub.AB.vol.change.club.hi
+\newcommand{\RRobMvclubABVolChangeClubCi}{$-$0.12 to 0.17}  % rob.mvclub.AB.vol.change.club.ci
+\newcommand{\RRobMvclubABEffChangeClubEst}{$-$0.08}  % rob.mvclub.AB.eff.change.club.est
+\newcommand{\RRobMvclubABEffChangeClubLo}{$-$0.22}  % rob.mvclub.AB.eff.change.club.lo
+\newcommand{\RRobMvclubABEffChangeClubHi}{0.05}  % rob.mvclub.AB.eff.change.club.hi
+\newcommand{\RRobMvclubABEffChangeClubCi}{$-$0.22 to 0.05}  % rob.mvclub.AB.eff.change.club.ci
+\newcommand{\RRobMvclubBCEffLevelNextClubEst}{0.15}  % rob.mvclub.BC.eff.level.next.club.est
+\newcommand{\RRobMvclubBCEffLevelNextClubLo}{0.03}  % rob.mvclub.BC.eff.level.next.club.lo
+\newcommand{\RRobMvclubBCEffLevelNextClubHi}{0.27}  % rob.mvclub.BC.eff.level.next.club.hi
+\newcommand{\RRobMvclubBCEffLevelNextClubCi}{0.03 to 0.27}  % rob.mvclub.BC.eff.level.next.club.ci
+\newcommand{\RRobMvclubBCVolLevelNextClubEst}{0.15}  % rob.mvclub.BC.vol.level.next.club.est
+\newcommand{\RRobMvclubBCVolLevelNextClubLo}{0.02}  % rob.mvclub.BC.vol.level.next.club.lo
+\newcommand{\RRobMvclubBCVolLevelNextClubHi}{0.27}  % rob.mvclub.BC.vol.level.next.club.hi
+\newcommand{\RRobMvclubBCVolLevelNextClubCi}{0.02 to 0.27}  % rob.mvclub.BC.vol.level.next.club.ci
+\newcommand{\RRobMvclubBCDiffLevelNextClubEst}{0.00}  % rob.mvclub.BC.diff.level.next.club.est
+\newcommand{\RRobMvclubBCDiffLevelNextClubLo}{$-$0.12}  % rob.mvclub.BC.diff.level.next.club.lo
+\newcommand{\RRobMvclubBCDiffLevelNextClubHi}{0.11}  % rob.mvclub.BC.diff.level.next.club.hi
+\newcommand{\RRobMvclubBCDiffLevelNextClubCi}{$-$0.12 to 0.11}  % rob.mvclub.BC.diff.level.next.club.ci
+\newcommand{\RRobMvclubBCEffLevelNowClubEst}{0.10}  % rob.mvclub.BC.eff.level.now.club.est
+\newcommand{\RRobMvclubBCEffLevelNowClubLo}{$-$0.03}  % rob.mvclub.BC.eff.level.now.club.lo
+\newcommand{\RRobMvclubBCEffLevelNowClubHi}{0.23}  % rob.mvclub.BC.eff.level.now.club.hi
+\newcommand{\RRobMvclubBCEffLevelNowClubCi}{$-$0.03 to 0.23}  % rob.mvclub.BC.eff.level.now.club.ci
+\newcommand{\RRobMvclubBCVolLevelNowClubEst}{0.16}  % rob.mvclub.BC.vol.level.now.club.est
+\newcommand{\RRobMvclubBCVolLevelNowClubLo}{0.04}  % rob.mvclub.BC.vol.level.now.club.lo
+\newcommand{\RRobMvclubBCVolLevelNowClubHi}{0.28}  % rob.mvclub.BC.vol.level.now.club.hi
+\newcommand{\RRobMvclubBCVolLevelNowClubCi}{0.04 to 0.28}  % rob.mvclub.BC.vol.level.now.club.ci
+\newcommand{\RRobMvclubBCVolChangeClubEst}{0.03}  % rob.mvclub.BC.vol.change.club.est
+\newcommand{\RRobMvclubBCVolChangeClubLo}{$-$0.11}  % rob.mvclub.BC.vol.change.club.lo
+\newcommand{\RRobMvclubBCVolChangeClubHi}{0.16}  % rob.mvclub.BC.vol.change.club.hi
+\newcommand{\RRobMvclubBCVolChangeClubCi}{$-$0.11 to 0.16}  % rob.mvclub.BC.vol.change.club.ci
+\newcommand{\RRobMvclubBCEffChangeClubEst}{0.07}  % rob.mvclub.BC.eff.change.club.est
+\newcommand{\RRobMvclubBCEffChangeClubLo}{$-$0.07}  % rob.mvclub.BC.eff.change.club.lo
+\newcommand{\RRobMvclubBCEffChangeClubHi}{0.20}  % rob.mvclub.BC.eff.change.club.hi
+\newcommand{\RRobMvclubBCEffChangeClubCi}{$-$0.07 to 0.20}  % rob.mvclub.BC.eff.change.club.ci
+\newcommand{\RRobMvclubCDEffLevelNextClubEst}{0.20}  % rob.mvclub.CD.eff.level.next.club.est
+\newcommand{\RRobMvclubCDEffLevelNextClubLo}{0.08}  % rob.mvclub.CD.eff.level.next.club.lo
+\newcommand{\RRobMvclubCDEffLevelNextClubHi}{0.30}  % rob.mvclub.CD.eff.level.next.club.hi
+\newcommand{\RRobMvclubCDEffLevelNextClubCi}{0.08 to 0.30}  % rob.mvclub.CD.eff.level.next.club.ci
+\newcommand{\RRobMvclubCDVolLevelNextClubEst}{0.22}  % rob.mvclub.CD.vol.level.next.club.est
+\newcommand{\RRobMvclubCDVolLevelNextClubLo}{0.10}  % rob.mvclub.CD.vol.level.next.club.lo
+\newcommand{\RRobMvclubCDVolLevelNextClubHi}{0.33}  % rob.mvclub.CD.vol.level.next.club.hi
+\newcommand{\RRobMvclubCDVolLevelNextClubCi}{0.10 to 0.33}  % rob.mvclub.CD.vol.level.next.club.ci
+\newcommand{\RRobMvclubCDDiffLevelNextClubEst}{0.03}  % rob.mvclub.CD.diff.level.next.club.est
+\newcommand{\RRobMvclubCDDiffLevelNextClubLo}{$-$0.08}  % rob.mvclub.CD.diff.level.next.club.lo
+\newcommand{\RRobMvclubCDDiffLevelNextClubHi}{0.13}  % rob.mvclub.CD.diff.level.next.club.hi
+\newcommand{\RRobMvclubCDDiffLevelNextClubCi}{$-$0.08 to 0.13}  % rob.mvclub.CD.diff.level.next.club.ci
+\newcommand{\RRobMvclubCDEffLevelNowClubEst}{0.21}  % rob.mvclub.CD.eff.level.now.club.est
+\newcommand{\RRobMvclubCDEffLevelNowClubLo}{0.10}  % rob.mvclub.CD.eff.level.now.club.lo
+\newcommand{\RRobMvclubCDEffLevelNowClubHi}{0.32}  % rob.mvclub.CD.eff.level.now.club.hi
+\newcommand{\RRobMvclubCDEffLevelNowClubCi}{0.10 to 0.32}  % rob.mvclub.CD.eff.level.now.club.ci
+\newcommand{\RRobMvclubCDVolLevelNowClubEst}{0.22}  % rob.mvclub.CD.vol.level.now.club.est
+\newcommand{\RRobMvclubCDVolLevelNowClubLo}{0.10}  % rob.mvclub.CD.vol.level.now.club.lo
+\newcommand{\RRobMvclubCDVolLevelNowClubHi}{0.33}  % rob.mvclub.CD.vol.level.now.club.hi
+\newcommand{\RRobMvclubCDVolLevelNowClubCi}{0.10 to 0.33}  % rob.mvclub.CD.vol.level.now.club.ci
+\newcommand{\RRobMvclubCDVolChangeClubEst}{0.09}  % rob.mvclub.CD.vol.change.club.est
+\newcommand{\RRobMvclubCDVolChangeClubLo}{$-$0.03}  % rob.mvclub.CD.vol.change.club.lo
+\newcommand{\RRobMvclubCDVolChangeClubHi}{0.20}  % rob.mvclub.CD.vol.change.club.hi
+\newcommand{\RRobMvclubCDVolChangeClubCi}{$-$0.03 to 0.20}  % rob.mvclub.CD.vol.change.club.ci
+\newcommand{\RRobMvclubCDEffChangeClubEst}{0.05}  % rob.mvclub.CD.eff.change.club.est
+\newcommand{\RRobMvclubCDEffChangeClubLo}{$-$0.07}  % rob.mvclub.CD.eff.change.club.lo
+\newcommand{\RRobMvclubCDEffChangeClubHi}{0.16}  % rob.mvclub.CD.eff.change.club.hi
+\newcommand{\RRobMvclubCDEffChangeClubCi}{$-$0.07 to 0.16}  % rob.mvclub.CD.eff.change.club.ci
+\newcommand{\RRobTqEffBCN}{43}  % rob.tq.eff.BC.n
+\newcommand{\RRobTqEffBCObsEst}{0.44}  % rob.tq.eff.BC.obs.est
+\newcommand{\RRobTqEffBCObsLo}{0.30}  % rob.tq.eff.BC.obs.lo
+\newcommand{\RRobTqEffBCObsHi}{0.59}  % rob.tq.eff.BC.obs.hi
+\newcommand{\RRobTqEffBCObsCi}{0.30 to 0.59}  % rob.tq.eff.BC.obs.ci
+\newcommand{\RRobTqEffBCModel}{0.49}  % rob.tq.eff.BC.model
+\newcommand{\RRobTqVolBCN}{43}  % rob.tq.vol.BC.n
+\newcommand{\RRobTqVolBCObsEst}{0.56}  % rob.tq.vol.BC.obs.est
+\newcommand{\RRobTqVolBCObsLo}{0.41}  % rob.tq.vol.BC.obs.lo
+\newcommand{\RRobTqVolBCObsHi}{0.70}  % rob.tq.vol.BC.obs.hi
+\newcommand{\RRobTqVolBCObsCi}{0.41 to 0.70}  % rob.tq.vol.BC.obs.ci
+\newcommand{\RRobTqEffACN}{34}  % rob.tq.eff.AC.n
+\newcommand{\RRobTqEffACObsEst}{0.35}  % rob.tq.eff.AC.obs.est
+\newcommand{\RRobTqEffACObsLo}{0.21}  % rob.tq.eff.AC.obs.lo
+\newcommand{\RRobTqEffACObsHi}{0.52}  % rob.tq.eff.AC.obs.hi
+\newcommand{\RRobTqEffACObsCi}{0.21 to 0.52}  % rob.tq.eff.AC.obs.ci
+\newcommand{\RRobTqEffACModel}{0.36}  % rob.tq.eff.AC.model
+\newcommand{\RRobTqVolACN}{34}  % rob.tq.vol.AC.n
+\newcommand{\RRobTqVolACObsEst}{0.50}  % rob.tq.vol.AC.obs.est
+\newcommand{\RRobTqVolACObsLo}{0.34}  % rob.tq.vol.AC.obs.lo
+\newcommand{\RRobTqVolACObsHi}{0.66}  % rob.tq.vol.AC.obs.hi
+\newcommand{\RRobTqVolACObsCi}{0.34 to 0.66}  % rob.tq.vol.AC.obs.ci
+\newcommand{\RRobIpwEffBCEst}{$-$0.005}  % rob.ipw.eff.BC.est
+\newcommand{\RRobIpwEffBCLo}{$-$0.023}  % rob.ipw.eff.BC.lo
+\newcommand{\RRobIpwEffBCHi}{0.011}  % rob.ipw.eff.BC.hi
+\newcommand{\RRobIpwEffBCCi}{$-$0.023 to 0.011}  % rob.ipw.eff.BC.ci
+\newcommand{\RRobIpwEffACEst}{$-$0.074}  % rob.ipw.eff.AC.est
+\newcommand{\RRobIpwEffACLo}{$-$0.167}  % rob.ipw.eff.AC.lo
+\newcommand{\RRobIpwEffACHi}{0.018}  % rob.ipw.eff.AC.hi
+\newcommand{\RRobIpwEffACCi}{$-$0.167 to 0.018}  % rob.ipw.eff.AC.ci
+\newcommand{\RRobIpwVolBCEst}{$-$0.036}  % rob.ipw.vol.BC.est
+\newcommand{\RRobIpwVolBCLo}{$-$0.076}  % rob.ipw.vol.BC.lo
+\newcommand{\RRobIpwVolBCHi}{0.001}  % rob.ipw.vol.BC.hi
+\newcommand{\RRobIpwVolBCCi}{$-$0.076 to 0.001}  % rob.ipw.vol.BC.ci
+\newcommand{\RRobIpwVolACEst}{$-$0.086}  % rob.ipw.vol.AC.est
+\newcommand{\RRobIpwVolACLo}{$-$0.186}  % rob.ipw.vol.AC.lo
+\newcommand{\RRobIpwVolACHi}{0.004}  % rob.ipw.vol.AC.hi
+\newcommand{\RRobIpwVolACCi}{$-$0.186 to 0.004}  % rob.ipw.vol.AC.ci
+\newcommand{\RRobJointEffBCEst}{$-$0.004}  % rob.joint.eff.BC.est
+\newcommand{\RRobJointEffBCLo}{$-$0.066}  % rob.joint.eff.BC.lo
+\newcommand{\RRobJointEffBCHi}{0.035}  % rob.joint.eff.BC.hi
+\newcommand{\RRobJointEffBCCi}{$-$0.066 to 0.035}  % rob.joint.eff.BC.ci
+\newcommand{\RRobJointEffACEst}{$-$0.033}  % rob.joint.eff.AC.est
+\newcommand{\RRobJointEffACLo}{$-$0.173}  % rob.joint.eff.AC.lo
+\newcommand{\RRobJointEffACHi}{0.047}  % rob.joint.eff.AC.hi
+\newcommand{\RRobJointEffACCi}{$-$0.173 to 0.047}  % rob.joint.eff.AC.ci
+\newcommand{\RRobJointVolBCEst}{$-$0.034}  % rob.joint.vol.BC.est
+\newcommand{\RRobJointVolBCLo}{$-$0.125}  % rob.joint.vol.BC.lo
+\newcommand{\RRobJointVolBCHi}{0.015}  % rob.joint.vol.BC.hi
+\newcommand{\RRobJointVolBCCi}{$-$0.125 to 0.015}  % rob.joint.vol.BC.ci
+\newcommand{\RRobJointVolACEst}{$-$0.083}  % rob.joint.vol.AC.est
+\newcommand{\RRobJointVolACLo}{$-$0.352}  % rob.joint.vol.AC.lo
+\newcommand{\RRobJointVolACHi}{0.015}  % rob.joint.vol.AC.hi
+\newcommand{\RRobJointVolACCi}{$-$0.352 to 0.015}  % rob.joint.vol.AC.ci
+\newcommand{\RRobJointMaxHi}{0.047}  % rob.jointMaxHi
+\newcommand{\RRobAgeOldCut}{30}  % rob.ageOldCut
+\newcommand{\RRobAgeThreeZeroAbsentLo}{19\%}  % rob.age30.absent.lo
+\newcommand{\RRobAgeThreeZeroAbsentHi}{46\%}  % rob.age30.absent.hi
+\newcommand{\RRobAgeThreeZeroAbsentN}{42}  % rob.age30.absent.n
+\newcommand{\RRobAgeThreeZeroEligibleLo}{13\%}  % rob.age30.eligible.lo
+\newcommand{\RRobAgeThreeZeroEligibleHi}{25\%}  % rob.age30.eligible.hi
+\newcommand{\RRobAgeThreeZeroEligibleN}{150}  % rob.age30.eligible.n

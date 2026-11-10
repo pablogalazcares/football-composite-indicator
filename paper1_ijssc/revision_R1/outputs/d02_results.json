@@ -1,0 +1,1163 @@
+{
+  "A_reproduction": {
+    "n_pairs": 211,
+    "max_abs_coef_diff_vs_published": 3.8546943414985435e-12,
+    "intercept_diff": 1.0109246773026825e-11,
+    "beta_s": 0.4755318925323531,
+    "max_abs_diff_vs_p07_panel": 9.893419417039695e-11
+  },
+  "B_rho_operative": {
+    "pooled": [
+      0.9402,
+      0.7204,
+      0.4193,
+      0.2045,
+      0.0839
+    ],
+    "GK": [
+      0.721,
+      0.2096,
+      0.0042,
+      -0.0763,
+      -0.08
+    ],
+    "DEF": [
+      0.9962,
+      0.9734,
+      0.8808,
+      0.6932,
+      0.47
+    ],
+    "MID": [
+      0.9651,
+      0.7946,
+      0.5149,
+      0.2892,
+      0.1496
+    ],
+    "FWD": [
+      0.972,
+      0.8026,
+      0.5088,
+      0.2454,
+      0.074
+    ],
+    "within_weighted": [
+      0.9598,
+      0.8143,
+      0.5987,
+      0.3844,
+      0.2163
+    ]
+  },
+  "C_counterfactual_rho": {
+    "no_age_terms": {
+      "pooled": [
+        0.9996,
+        0.9963,
+        0.9797,
+        0.9096,
+        0.706
+      ],
+      "GK": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "DEF": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "MID": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "FWD": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "within_weighted": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    "age_scale_0.25": {
+      "pooled": [
+        0.9937,
+        0.9524,
+        0.8067,
+        0.5404,
+        0.2868
+      ],
+      "GK": [
+        0.9613,
+        0.7912,
+        0.3802,
+        0.0832,
+        -0.0411
+      ],
+      "DEF": [
+        0.9996,
+        0.9978,
+        0.9891,
+        0.9458,
+        0.8117
+      ],
+      "MID": [
+        0.9971,
+        0.9711,
+        0.8657,
+        0.6236,
+        0.3679
+      ],
+      "FWD": [
+        0.9977,
+        0.9776,
+        0.8766,
+        0.6307,
+        0.3387
+      ],
+      "within_weighted": [
+        0.9955,
+        0.9689,
+        0.875,
+        0.6947,
+        0.478
+      ]
+    },
+    "age_scale_0.5": {
+      "pooled": [
+        0.9803,
+        0.871,
+        0.6277,
+        0.3521,
+        0.1611
+      ],
+      "GK": [
+        0.8994,
+        0.5054,
+        0.1334,
+        -0.0215,
+        -0.0779
+      ],
+      "DEF": [
+        0.9989,
+        0.9925,
+        0.9616,
+        0.8544,
+        0.6487
+      ],
+      "MID": [
+        0.9893,
+        0.9171,
+        0.7008,
+        0.4363,
+        0.2303
+      ],
+      "FWD": [
+        0.9915,
+        0.9262,
+        0.7161,
+        0.4172,
+        0.1763
+      ],
+      "within_weighted": [
+        0.9866,
+        0.9151,
+        0.7518,
+        0.5374,
+        0.3313
+      ]
+    },
+    "age_scale_1.5": {
+      "pooled": [
+        0.8916,
+        0.6043,
+        0.3145,
+        0.1431,
+        0.0558
+      ],
+      "GK": [
+        0.5545,
+        0.0931,
+        -0.0436,
+        -0.0779,
+        -0.08
+      ],
+      "DEF": [
+        0.992,
+        0.9429,
+        0.7991,
+        0.5974,
+        0.3922
+      ],
+      "MID": [
+        0.9338,
+        0.6942,
+        0.4239,
+        0.2291,
+        0.1236
+      ],
+      "FWD": [
+        0.9436,
+        0.7022,
+        0.3988,
+        0.1657,
+        0.0369
+      ],
+      "within_weighted": [
+        0.9286,
+        0.7363,
+        0.5079,
+        0.3102,
+        0.1712
+      ]
+    },
+    "age_scale_2.0": {
+      "pooled": [
+        0.8422,
+        0.5138,
+        0.2527,
+        0.1104,
+        0.0438
+      ],
+      "GK": [
+        0.4148,
+        0.0403,
+        -0.0652,
+        -0.0775,
+        -0.079
+      ],
+      "DEF": [
+        0.9871,
+        0.9069,
+        0.7278,
+        0.5298,
+        0.34
+      ],
+      "MID": [
+        0.9014,
+        0.6219,
+        0.3669,
+        0.1946,
+        0.1151
+      ],
+      "FWD": [
+        0.9097,
+        0.6205,
+        0.3277,
+        0.1233,
+        0.022
+      ],
+      "within_weighted": [
+        0.8971,
+        0.6747,
+        0.4441,
+        0.2646,
+        0.1466
+      ]
+    },
+    "beta_0.3": {
+      "pooled": [
+        0.8822,
+        0.4719,
+        0.156,
+        0.0485,
+        0.0021
+      ],
+      "GK": [
+        0.5281,
+        0.0253,
+        -0.0779,
+        -0.08,
+        -0.08
+      ],
+      "DEF": [
+        0.9911,
+        0.8922,
+        0.617,
+        0.3482,
+        0.1552
+      ],
+      "MID": [
+        0.9285,
+        0.5886,
+        0.2716,
+        0.1253,
+        0.0864
+      ],
+      "FWD": [
+        0.9378,
+        0.5877,
+        0.2123,
+        0.0321,
+        -0.0082
+      ],
+      "within_weighted": [
+        0.9231,
+        0.6491,
+        0.3432,
+        0.1552,
+        0.0668
+      ]
+    },
+    "beta_0.6": {
+      "pooled": [
+        0.9585,
+        0.8141,
+        0.5974,
+        0.3858,
+        0.2281
+      ],
+      "GK": [
+        0.805,
+        0.3708,
+        0.0945,
+        -0.0168,
+        -0.0703
+      ],
+      "DEF": [
+        0.9975,
+        0.987,
+        0.9523,
+        0.8669,
+        0.7239
+      ],
+      "MID": [
+        0.9768,
+        0.8732,
+        0.6754,
+        0.4608,
+        0.2868
+      ],
+      "FWD": [
+        0.981,
+        0.8815,
+        0.6804,
+        0.4472,
+        0.2453
+      ],
+      "within_weighted": [
+        0.9725,
+        0.8772,
+        0.7275,
+        0.5581,
+        0.3945
+      ]
+    },
+    "beta_0.8": {
+      "pooled": [
+        0.9738,
+        0.8997,
+        0.7824,
+        0.5737,
+        0.2014
+      ],
+      "GK": [
+        0.8689,
+        0.5766,
+        0.2899,
+        0.1733,
+        0.035
+      ],
+      "DEF": [
+        0.9985,
+        0.9943,
+        0.9844,
+        0.8001,
+        0.2516
+      ],
+      "MID": [
+        0.9856,
+        0.934,
+        0.8432,
+        0.7037,
+        0.365
+      ],
+      "FWD": [
+        0.9884,
+        0.9439,
+        0.8508,
+        0.5907,
+        0.2091
+      ],
+      "within_weighted": [
+        0.9822,
+        0.9312,
+        0.8525,
+        0.6606,
+        0.2521
+      ]
+    }
+  },
+  "C_share_of_projection_variance_from_current_score": {
+    "k1": {
+      "GK": 0.569,
+      "DEF": 0.993,
+      "MID": 0.962,
+      "FWD": 0.95
+    },
+    "k2": {
+      "GK": 0.109,
+      "DEF": 0.946,
+      "MID": 0.673,
+      "FWD": 0.61
+    },
+    "k3": {
+      "GK": 0.018,
+      "DEF": 0.766,
+      "MID": 0.213,
+      "FWD": 0.173
+    },
+    "k4": {
+      "GK": 0.003,
+      "DEF": 0.379,
+      "MID": 0.04,
+      "FWD": 0.032
+    },
+    "k5": {
+      "GK": 0.001,
+      "DEF": 0.092,
+      "MID": 0.007,
+      "FWD": 0.006
+    }
+  },
+  "C_beta_powers": [
+    0.4755,
+    0.2261,
+    0.1075,
+    0.0511,
+    0.0243
+  ],
+  "C_refits": {
+    "ols": {
+      "beta_s": 0.491,
+      "rho": {
+        "pooled": [
+          0.8994,
+          0.6602,
+          0.3776,
+          0.2068,
+          0.1016
+        ],
+        "GK": [
+          0.4611,
+          0.1035,
+          0.0157,
+          -0.0376,
+          -0.046
+        ],
+        "DEF": [
+          0.9752,
+          0.8493,
+          0.6523,
+          0.4499,
+          0.2783
+        ],
+        "MID": [
+          0.9515,
+          0.7749,
+          0.5162,
+          0.3267,
+          0.1986
+        ],
+        "FWD": [
+          0.9714,
+          0.8173,
+          0.5107,
+          0.2699,
+          0.1394
+        ],
+        "within_weighted": [
+          0.9297,
+          0.7641,
+          0.5234,
+          0.323,
+          0.1883
+        ]
+      },
+      "age_function_peak_GK": 27.2,
+      "recursive_peak_GK_start30": 29,
+      "recursive_peak_GK_start50": 29,
+      "recursive_peak_GK_start70": 20,
+      "age_function_peak_DEF": 28.5,
+      "recursive_peak_DEF_start30": 30,
+      "recursive_peak_DEF_start50": 30,
+      "recursive_peak_DEF_start70": 20,
+      "age_function_peak_MID": 25.8,
+      "recursive_peak_MID_start30": 28,
+      "recursive_peak_MID_start50": 28,
+      "recursive_peak_MID_start70": 20,
+      "age_function_peak_FWD": 16.0,
+      "recursive_peak_FWD_start30": 24,
+      "recursive_peak_FWD_start50": 23,
+      "recursive_peak_FWD_start70": 20
+    },
+    "ridge_raw": {
+      "beta_s": 0.4755,
+      "rho": {
+        "pooled": [
+          0.9402,
+          0.7204,
+          0.4193,
+          0.2045,
+          0.0839
+        ],
+        "GK": [
+          0.721,
+          0.2096,
+          0.0042,
+          -0.0763,
+          -0.08
+        ],
+        "DEF": [
+          0.9962,
+          0.9734,
+          0.8808,
+          0.6932,
+          0.47
+        ],
+        "MID": [
+          0.9651,
+          0.7946,
+          0.5149,
+          0.2892,
+          0.1496
+        ],
+        "FWD": [
+          0.972,
+          0.8026,
+          0.5088,
+          0.2454,
+          0.074
+        ],
+        "within_weighted": [
+          0.9598,
+          0.8143,
+          0.5987,
+          0.3844,
+          0.2163
+        ]
+      },
+      "age_function_peak_GK": 18.6,
+      "recursive_peak_GK_start30": 25,
+      "recursive_peak_GK_start50": 24,
+      "recursive_peak_GK_start70": 20,
+      "age_function_peak_DEF": 28.8,
+      "recursive_peak_DEF_start30": 31,
+      "recursive_peak_DEF_start50": 31,
+      "recursive_peak_DEF_start70": 20,
+      "age_function_peak_MID": 22.7,
+      "recursive_peak_MID_start30": 26,
+      "recursive_peak_MID_start50": 24,
+      "recursive_peak_MID_start70": 20,
+      "age_function_peak_FWD": 21.7,
+      "recursive_peak_FWD_start30": 26,
+      "recursive_peak_FWD_start50": 24,
+      "recursive_peak_FWD_start70": 20
+    },
+    "ridge_beta_unpen": {
+      "beta_s": 0.4759,
+      "rho": {
+        "pooled": [
+          0.9403,
+          0.7207,
+          0.4197,
+          0.2051,
+          0.0842
+        ],
+        "GK": [
+          0.721,
+          0.2096,
+          0.0042,
+          -0.0763,
+          -0.08
+        ],
+        "DEF": [
+          0.9962,
+          0.9735,
+          0.8811,
+          0.694,
+          0.4704
+        ],
+        "MID": [
+          0.9652,
+          0.795,
+          0.515,
+          0.2893,
+          0.1502
+        ],
+        "FWD": [
+          0.972,
+          0.8031,
+          0.5094,
+          0.246,
+          0.0746
+        ],
+        "within_weighted": [
+          0.9598,
+          0.8146,
+          0.599,
+          0.3848,
+          0.2168
+        ]
+      },
+      "age_function_peak_GK": 18.6,
+      "recursive_peak_GK_start30": 25,
+      "recursive_peak_GK_start50": 24,
+      "recursive_peak_GK_start70": 20,
+      "age_function_peak_DEF": 28.8,
+      "recursive_peak_DEF_start30": 31,
+      "recursive_peak_DEF_start50": 31,
+      "recursive_peak_DEF_start70": 20,
+      "age_function_peak_MID": 22.7,
+      "recursive_peak_MID_start30": 26,
+      "recursive_peak_MID_start50": 24,
+      "recursive_peak_MID_start70": 20,
+      "age_function_peak_FWD": 21.7,
+      "recursive_peak_FWD_start30": 26,
+      "recursive_peak_FWD_start50": 24,
+      "recursive_peak_FWD_start70": 20
+    },
+    "ridge_std": {
+      "beta_s": 0.4514,
+      "rho": {
+        "pooled": [
+          0.9697,
+          0.7987,
+          0.4995,
+          0.2545,
+          0.1101
+        ],
+        "GK": [
+          0.991,
+          0.9288,
+          0.7125,
+          0.3089,
+          0.0411
+        ],
+        "DEF": [
+          0.999,
+          0.9916,
+          0.9404,
+          0.7532,
+          0.4261
+        ],
+        "MID": [
+          0.9624,
+          0.7609,
+          0.431,
+          0.2066,
+          0.1014
+        ],
+        "FWD": [
+          0.981,
+          0.8463,
+          0.5107,
+          0.2051,
+          0.0407
+        ],
+        "within_weighted": [
+          0.9829,
+          0.8787,
+          0.6493,
+          0.398,
+          0.1869
+        ]
+      },
+      "age_function_peak_GK": 16.0,
+      "recursive_peak_GK_start30": 26,
+      "recursive_peak_GK_start50": 24,
+      "recursive_peak_GK_start70": 20,
+      "age_function_peak_DEF": 20.8,
+      "recursive_peak_DEF_start30": 27,
+      "recursive_peak_DEF_start50": 25,
+      "recursive_peak_DEF_start70": 20,
+      "age_function_peak_MID": 16.0,
+      "recursive_peak_MID_start30": 25,
+      "recursive_peak_MID_start50": 22,
+      "recursive_peak_MID_start70": 20,
+      "age_function_peak_FWD": 16.0,
+      "recursive_peak_FWD_start30": 25,
+      "recursive_peak_FWD_start50": 23,
+      "recursive_peak_FWD_start70": 20
+    },
+    "ridge_raw_age_centered_26": {
+      "beta_s": 0.5004,
+      "rho": {
+        "pooled": [
+          0.9206,
+          0.7034,
+          0.4276,
+          0.2279,
+          0.1169
+        ],
+        "GK": [
+          0.6621,
+          0.2854,
+          0.0545,
+          -0.0442,
+          -0.063
+        ],
+        "DEF": [
+          0.9741,
+          0.845,
+          0.6499,
+          0.4518,
+          0.2796
+        ],
+        "MID": [
+          0.9404,
+          0.7388,
+          0.477,
+          0.3011,
+          0.1893
+        ],
+        "FWD": [
+          0.9772,
+          0.8502,
+          0.5631,
+          0.2943,
+          0.1372
+        ],
+        "within_weighted": [
+          0.9431,
+          0.7771,
+          0.5319,
+          0.3243,
+          0.1843
+        ]
+      },
+      "age_function_peak_GK": 27.2,
+      "recursive_peak_GK_start30": 29,
+      "recursive_peak_GK_start50": 29,
+      "recursive_peak_GK_start70": 20,
+      "age_function_peak_DEF": 28.4,
+      "recursive_peak_DEF_start30": 30,
+      "recursive_peak_DEF_start50": 30,
+      "recursive_peak_DEF_start70": 20,
+      "age_function_peak_MID": 26.1,
+      "recursive_peak_MID_start30": 28,
+      "recursive_peak_MID_start50": 28,
+      "recursive_peak_MID_start70": 20,
+      "age_function_peak_FWD": 16.0,
+      "recursive_peak_FWD_start30": 25,
+      "recursive_peak_FWD_start50": 23,
+      "recursive_peak_FWD_start70": 20
+    },
+    "prespecified_ols_ar1_pos_quadage": {
+      "beta_s": 0.4745,
+      "rho": {
+        "pooled": [
+          0.9662,
+          0.7856,
+          0.4838,
+          0.251,
+          0.1015
+        ],
+        "GK": [
+          0.961,
+          0.7995,
+          0.4283,
+          0.0909,
+          -0.0344
+        ],
+        "DEF": [
+          0.9743,
+          0.8266,
+          0.5699,
+          0.2992,
+          0.0649
+        ],
+        "MID": [
+          0.9745,
+          0.849,
+          0.6134,
+          0.3949,
+          0.2282
+        ],
+        "FWD": [
+          0.9897,
+          0.9202,
+          0.7367,
+          0.5047,
+          0.2809
+        ],
+        "within_weighted": [
+          0.9783,
+          0.8608,
+          0.6249,
+          0.3756,
+          0.1708
+        ]
+      },
+      "age_function_peak_GK": 25.3,
+      "recursive_peak_GK_start30": 28,
+      "recursive_peak_GK_start50": 27,
+      "recursive_peak_GK_start70": 20,
+      "age_function_peak_DEF": 25.3,
+      "recursive_peak_DEF_start30": 28,
+      "recursive_peak_DEF_start50": 27,
+      "recursive_peak_DEF_start70": 20,
+      "age_function_peak_MID": 25.3,
+      "recursive_peak_MID_start30": 27,
+      "recursive_peak_MID_start50": 27,
+      "recursive_peak_MID_start70": 20,
+      "age_function_peak_FWD": 25.3,
+      "recursive_peak_FWD_start30": 28,
+      "recursive_peak_FWD_start50": 27,
+      "recursive_peak_FWD_start70": 20
+    },
+    "operative_published": {
+      "beta_s": 0.4755,
+      "age_function_peak_GK": 18.6,
+      "recursive_peak_GK_start30": 25,
+      "recursive_peak_GK_start50": 24,
+      "recursive_peak_GK_start70": 20,
+      "age_function_peak_DEF": 28.8,
+      "recursive_peak_DEF_start30": 31,
+      "recursive_peak_DEF_start50": 31,
+      "recursive_peak_DEF_start70": 20,
+      "age_function_peak_MID": 22.7,
+      "recursive_peak_MID_start30": 26,
+      "recursive_peak_MID_start50": 24,
+      "recursive_peak_MID_start70": 20,
+      "age_function_peak_FWD": 21.7,
+      "recursive_peak_FWD_start30": 26,
+      "recursive_peak_FWD_start50": 24,
+      "recursive_peak_FWD_start70": 20
+    }
+  },
+  "D_predictive_simulation": {
+    "residual_sd_oof": 7.685,
+    "n_sims": 500,
+    "rho_simulated_outcome_vs_current_mean": [
+      0.56,
+      0.274,
+      0.126,
+      0.054,
+      0.021
+    ],
+    "rho_simulated_outcome_vs_current_p05_p95": [
+      [
+        0.518,
+        0.598
+      ],
+      [
+        0.22,
+        0.325
+      ],
+      [
+        0.071,
+        0.18
+      ],
+      [
+        0.003,
+        0.106
+      ],
+      [
+        -0.029,
+        0.071
+      ]
+    ],
+    "rho_simulated_outcome_vs_point_projection_mean": [
+      0.596,
+      0.4,
+      0.36,
+      0.38,
+      0.416
+    ],
+    "note": "Model-conditional: assumes the fitted AR(1) with Gaussian residuals is the true process."
+  },
+  "E_observed_persistence": {
+    "k1_training_211_pooled": 0.4872,
+    "k1_training_211_within": {
+      "GK": 0.091,
+      "DEF": 0.448,
+      "MID": 0.319,
+      "FWD": 0.55
+    },
+    "k1_training_211_pooled_OBV_only": 0.4831,
+    "k1_training_PSR_component": {
+      "n": 211,
+      "rho": 0.4335
+    },
+    "third_season_chain_consistency_max_abs_diff_scoreOBV_2223_2324": 0.0,
+    "third_season_preliminary": {
+      "k1_2223_2324_min0": {
+        "n": 342,
+        "rho_pooled_composite": 0.353,
+        "rho_pooled_OBV": 0.369,
+        "rho_within": {
+          "GK": -0.068,
+          "DEF": 0.317,
+          "MID": 0.226,
+          "FWD": 0.527
+        }
+      },
+      "k1_2223_2324_min1000": {
+        "n": 191,
+        "rho_pooled_composite": 0.483,
+        "rho_pooled_OBV": 0.474,
+        "rho_within": {
+          "GK": 0.091,
+          "DEF": 0.4,
+          "MID": 0.352,
+          "FWD": 0.55
+        }
+      },
+      "k1_2324_2425_min0": {
+        "n": 337,
+        "rho_pooled_composite": 0.328,
+        "rho_pooled_OBV": 0.36,
+        "rho_within": {
+          "GK": -0.129,
+          "DEF": 0.339,
+          "MID": 0.176,
+          "FWD": 0.548
+        }
+      },
+      "k1_2324_2425_min1000": {
+        "n": 211,
+        "rho_pooled_composite": 0.458,
+        "rho_pooled_OBV": 0.493,
+        "rho_within": {
+          "GK": -0.029,
+          "DEF": 0.449,
+          "MID": 0.319,
+          "FWD": 0.612
+        }
+      },
+      "k2_2223_2425_min0": {
+        "n": 304,
+        "rho_pooled_composite": 0.296,
+        "rho_pooled_OBV": 0.298,
+        "rho_within": {
+          "GK": 0.58,
+          "DEF": 0.084,
+          "MID": 0.223,
+          "FWD": 0.403
+        }
+      },
+      "k2_2223_2425_min1000": {
+        "n": 170,
+        "rho_pooled_composite": 0.308,
+        "rho_pooled_OBV": 0.326,
+        "rho_within": {
+          "GK": 0.28,
+          "DEF": 0.153,
+          "MID": 0.247,
+          "FWD": 0.415
+        }
+      },
+      "same_set_all": {
+        "n": 262,
+        "k1_2223_2324": 0.356,
+        "k1_2324_2425": 0.332,
+        "k2_2223_2425": 0.351
+      },
+      "same_set_ge1000": {
+        "n": 140,
+        "k1_2223_2324": 0.542,
+        "k1_2324_2425": 0.515,
+        "k2_2223_2425": 0.289
+      }
+    }
+  },
+  "F_subgroups": {
+    "base_2324_setB": {
+      "n": 557,
+      "pooled": [
+        0.9525,
+        0.7502,
+        0.4282,
+        0.1988,
+        0.0762
+      ],
+      "GK": [
+        0.8081,
+        0.3314,
+        0.048,
+        -0.0769,
+        -0.0769
+      ],
+      "DEF": [
+        0.9948,
+        0.9662,
+        0.8493,
+        0.6275,
+        0.3971
+      ],
+      "MID": [
+        0.9707,
+        0.8272,
+        0.5742,
+        0.3416,
+        0.1828
+      ],
+      "FWD": [
+        0.9759,
+        0.8358,
+        0.5593,
+        0.292,
+        0.0952
+      ],
+      "within_weighted": [
+        0.9695,
+        0.8446,
+        0.6305,
+        0.3985,
+        0.2136
+      ]
+    },
+    "base_2223_setE": {
+      "n": 202,
+      "pooled": [
+        0.9052,
+        0.6349,
+        0.3662,
+        0.195,
+        0.0743
+      ],
+      "GK": [
+        0.527,
+        0.0368,
+        -0.1005,
+        -0.1324,
+        -0.1324
+      ],
+      "DEF": [
+        0.9971,
+        0.9894,
+        0.9637,
+        0.8879,
+        0.7054
+      ],
+      "MID": [
+        0.9374,
+        0.7019,
+        0.32,
+        0.0791,
+        -0.0129
+      ],
+      "FWD": [
+        0.9508,
+        0.7006,
+        0.3136,
+        0.0638,
+        -0.0498
+      ],
+      "within_weighted": [
+        0.9248,
+        0.728,
+        0.4672,
+        0.2881,
+        0.1701
+      ]
+    },
+    "base_minutes_ge1000": {
+      "n": 419,
+      "pooled": [
+        0.9182,
+        0.6985,
+        0.4343,
+        0.2639,
+        0.1633
+      ],
+      "GK": [
+        0.6525,
+        0.2104,
+        0.0968,
+        0.0674,
+        0.0674
+      ],
+      "DEF": [
+        0.9946,
+        0.9633,
+        0.8541,
+        0.6117,
+        0.3448
+      ],
+      "MID": [
+        0.9347,
+        0.6786,
+        0.3738,
+        0.1826,
+        0.0808
+      ],
+      "FWD": [
+        0.9697,
+        0.8074,
+        0.5522,
+        0.3435,
+        0.222
+      ],
+      "within_weighted": [
+        0.9447,
+        0.781,
+        0.5738,
+        0.3718,
+        0.2146
+      ]
+    },
+    "base_minutes_lt1000_or_missing": {
+      "n": 340,
+      "pooled": [
+        0.9613,
+        0.7531,
+        0.4274,
+        0.1751,
+        0.041
+      ],
+      "GK": [
+        0.78,
+        0.1939,
+        -0.0757,
+        -0.153,
+        -0.153
+      ],
+      "DEF": [
+        0.9966,
+        0.9802,
+        0.9028,
+        0.744,
+        0.6034
+      ],
+      "MID": [
+        0.9858,
+        0.8918,
+        0.6551,
+        0.4368,
+        0.2753
+      ],
+      "FWD": [
+        0.9756,
+        0.8064,
+        0.506,
+        0.2505,
+        0.075
+      ],
+      "within_weighted": [
+        0.9713,
+        0.8423,
+        0.6335,
+        0.4319,
+        0.2838
+      ]
+    }
+  }
+}
